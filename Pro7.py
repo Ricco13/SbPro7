@@ -12,43 +12,43 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
-cl.login(token='EvZzUeWJGHBmHae5BS05.jt4jxo0QbZHtv5jsH6bmDq.zrPJj1S8eSn1yko9XrL+TpOI9jKM7Pq5FrtPEFPtkmU=')
+cl.login(token='Ev9zlPnmIxfjeUXxnKW7.c3QkYcvlmbtibfbllPtUTW.s9hqEUlPpvtq1T5BDm+8+WUDHsiZ4FxuAd1sd3Q26cI=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
 ki = LINETCR.LINE()
 #ki.login(qr=True)
-ki.login(token='Ev9qNTiaCpqQW8dVvy51.MDYVhzMV4DyUakir+e4l8q.R82XUGw85gOcdOUd4NSwe3icyswFD0bEIa3i4mhzfZQ=')
+ki.login(token='Ev9M0JFIech6f96PvZ35.L/0T2wlsjlklKMxZqoBpjq.JaG9lH7F76rL+8XgzRarGgtml7D3kT5HNp5n4NqzTRg=')
 ki.loginResult()
 print "Ki-Login Success\n"
 
 kk = LINETCR.LINE()
 #kk.login(qr=True)
-kk.login(token='EvvUWt73GGjXRbotLfn7.c3QkYcvlmbtibfbllPtUTW.W1MoSNesdibpThC1gefUvBYkz0yEPbhvLWzRTFC/3RA=')
+kk.login(token='Ev7LotKlR4852ANO8DLd.z/87WpbvdOsAOUP+LMoQdq.H0Oc79FgUHEOBfewQ/xP94xxN5eLODHtlNZdTcZDAGA=')
 kk.loginResult()
 print "Kk-Login Success\n"
 
 kc = LINETCR.LINE()
 #kc.login(qr=True)
-kc.login(token='EvSHlZu3wQa6Hzzg2uU5.L/0T2wlsjlklKMxZqoBpjq.AJrZn14zybBPSbS3opdn03wCLP1BJrN+r9Ap+fxpma8=')
+kc.login(token='Ev4jTWXWjpDP3bICzFn1.MDYVhzMV4DyUakir+e4l8q.YJ6rF34LHrlFNvQj+owrXpJWUIHCYDy30UEhkbtj2cU=')
 kc.loginResult()
 print "Kc-Login Success\n"
 
 kr = LINETCR.LINE()
 #kr.login(qr=True)
-kr.login(token='EvRqPod3HqDy3pZPprAd.z/87WpbvdOsAOUP+LMoQdq.tCydlTXOO2PDkO2VQxGBW6SJBqb5Qwu+3DBBlZpAfYE=')
+kr.login(token='EvFlp1UbdmgDXVOsiaa5.jt4jxo0QbZHtv5jsH6bmDq.uBUGcVoFTIbnKr4Cov/8FHrjyl1ERgRCIdolS8wnj6E=')
 kr.loginResult()
 print "Kr-Login Success\n"
 
 zz7 = LINETCR.LINE() #(isi dengan akun utama fungsinya biar akun utama di kick langsung di invite bot)
 #zz7.login(qr=True)
-zz7.login(token='EvoNQChPf2K0pB7mPTqa.gIHgalwJsMTFisMR+xM0wG.ZLB4FwpbMM+lU5tzye7IQBoYVRJ20qrETVhnc3/ecXg=')
+zz7.login(token='EvTGoKH3MUGeqyQLhvFa.gIHgalwJsMTFisMR+xM0wG.wIlp2mynTyANF+eEommW7tL5am6DI+CVGEEG5AdKOeM=')
 zz7.loginResult()
 print "zz7-Login Success\n"
 
 km = LINETCR.LINE() #(bot ini di luar grup fungsinya jadi algojo kaya kicker siri)
 #km.login(qr=True)
-km.login(token='EvU5Erpr57o6jNMdjKqa.vOdrWyvXy/NrnYPaSyXyEG.DzcQFA556Rp621pM5BKuwF1SGymw0vcqotZo8BoB2/o=')
+km.login(token='EvqMZSNjFR8T8zGyYVMa.vOdrWyvXy/NrnYPaSyXyEG.78UgeP0pjCWx8yHSN8rBSGBpez6Jen9k5m5Pk9XeYo8=')
 km.loginResult()
 print "Km-Login Success\n\n=====[Sukses All Login]====="
 
@@ -4170,36 +4170,36 @@ def bot(op):
 
             elif msg.text in ["Spam"]:
               if msg.from_ in admin:
-                cl.sendText(msg.to,"eeh kamu")
-                ki.sendText(msg.to,"iyaa kamu")
-                kk.sendText(msg.to,"ngapain ngintip mulu")
-                kc.sendText(msg.to,"mending sini ikut chat")
-                kr.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Tak tun tuang")
-                ki.sendText(msg.to,"daripada loe ngelamun")
-                kk.sendText(msg.to,"Tak tun tuang")
-                kc.sendText(msg.to,"cari hiburan aja disini")
-                kr.sendText(msg.to,"banyak bodong loh disini")
-                cl.sendText(msg.to,"Kalau orang lain melihatku")
-                ki.sendText(msg.to,"Tak tun tuang")
-                kk.sendText(msg.to,"udah kayak")
-                kc.sendText(msg.to,"artis online")
-                kr.sendText(msg.to,"Tak tuntuang")
-                cl.sendText(msg.to,"Tapi kalau lagi online")
-                ki.sendText(msg.to,"Tak tun tuang")
-                kk.sendText(msg.to,"Astagfirullah baunya")
-                kc.sendText(msg.to,"Males lanjutin ah")
-                kr.sendText(msg.to,"Sepi bot")
-                cl.sendText(msg.to,"Iya sepi udah udah")
-                ki.sendText(msg.to,"Ga ada yang denger juga kita nyanyi")
-                kk.sendText(msg.to,"Nah")
-                kc.sendText(msg.to,"Mending gua makan dulu")
+                cl.sendText(msg.to,"woyy team")
+                ki.sendText(msg.to,"iyaa ada apa boss??")
+                kk.sendText(msg.to,"hei big boss manggil tuh")
+                kc.sendText(msg.to,"iya bentaran napa")
+                kr.sendText(msg.to,"eeh ayam ayam ayam")
+                cl.sendText(msg.to,"sini loe semua")
+                ki.sendText(msg.to,"mau bagi bagi tikel ya boss")
+                kk.sendText(msg.to,"dasar loe muka tikel")
+                kc.sendText(msg.to,"lagi anu dipanggil")
+                kr.sendText(msg.to,"gue juga kaget lagi modol dipanggil")
+                cl.sendText(msg.to,"gue mau nanya nih")
+                ki.sendText(msg.to,"nanya apaan boss??")
+                kk.sendText(msg.to,"kayak hakim aja nih boss pake nanya nanya")
+                kc.sendText(msg.to,"cepetan bos mau nanya apa")
+                kr.sendText(msg.to,"kayaknya boss kita lagi marah nih")
+                cl.sendText(msg.to,"loe semua tau gak??")
+                ki.sendText(msg.to,"apaan??")
+                kk.sendText(msg.to,"Astagfirullah belat belit nih si boss")
+                kc.sendText(msg.to,"Males ah,,,paling juga nanya nama janda yang baru")
+                kr.sendText(msg.to,"tau apaan sih boss??")
+                cl.sendText(msg.to,"tapi jangan bilang ke orang lain yaa")
+                ki.sendText(msg.to,"iya ngga boss")
+                kk.sendText(msg.to,"Nah, apaan dulu boss")
+                kc.sendText(msg.to,"iya siap boss")
                 kr.sendText(msg.to,"wookkeeehhh")
-                cl.sendText(msg.to,"Okeh")
-                ki.sendText(msg.to,"Katanya disini banyak janda bodong yaa")
+                cl.sendText(msg.to,"tau gak kalo gue sekarang lagi pengen modol...wkwkwkwk")
+                ki.sendText(msg.to,"su'e...dasar boss lagi error")
                 kk.sendText(msg.to,"Iya emang")
-                kc.sendText(msg.to,"Aku pesen 1 dong")
-                kr.sendText(msg.to,"Boleh ntar gue kirim lewat bluetooth")
+                kc.sendText(msg.to,"Aku pesen 1 dong boss")
+                kr.sendText(msg.to,"wadduuhh korban fitnah yaa gini boss kita")
  
             elif "Getvid @" in msg.text:
                 print "[Command]dp executing"
