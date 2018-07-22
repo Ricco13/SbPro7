@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 zz7 = LINETCR.LINE()
 #zz7.login(qr=True)
-zz7.login(token='EvoNQChPf2K0pB7mPTqa.gIHgalwJsMTFisMR+xM0wG.ZLB4FwpbMM+lU5tzye7IQBoYVRJ20qrETVhnc3/ecXg=')
+zz7.login(token='EvTGoKH3MUGeqyQLhvFa.gIHgalwJsMTFisMR+xM0wG.wIlp2mynTyANF+eEommW7tL5am6DI+CVGEEG5AdKOeM=')
 zz7.loginResult()
 print "zz7-Login Success\n\n=====[Sukses Login]====="
 
