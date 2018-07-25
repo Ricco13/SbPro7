@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 zz7 = LINETCR.LINE()
 #zz7.login(qr=True)
-zz7.login(token='EvTGoKH3MUGeqyQLhvFa.gIHgalwJsMTFisMR+xM0wG.wIlp2mynTyANF+eEommW7tL5am6DI+CVGEEG5AdKOeM=')
+zz7.login(token='Ev7zryWQiYfUGMyUxFs7.hCYF094H2hUBauqaoqGbLW.k2HF+AvKAS7UlHfjRM3G6qnN0/B6lMcvmkmYbNBL+1c=')
 zz7.loginResult()
 print "zz7-Login Success\n\n=====[Sukses Login]====="
 
@@ -143,7 +143,7 @@ groupMessage ="""
 ║     👽 By : ZeroZeveN 👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════"""
-vip="u1a284600b5a34a6b5f2129abfd79b45a"
+vip="u1dcc9fd3de21d87b9b01440039080197"
 
 setMessage ="""
 ╔═════════════════════════
@@ -287,8 +287,8 @@ helpMessage ="""
 KAC=[zz7]
 mid = zz7.getProfile().mid
 Bots=[mid]
-Creator=["u1a284600b5a34a6b5f2129abfd79b45a"]
-admin=["u1a284600b5a34a6b5f2129abfd79b45a"]
+Creator=["u1dcc9fd3de21d87b9b01440039080197"]
+admin=["u1dcc9fd3de21d87b9b01440039080197"]
 
 contact = zz7.getProfile()
 backup1 = zz7.getProfile()
@@ -634,11 +634,11 @@ def bot(op):
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
-                                        zz7.sendText(op.param1, "🇮🇩👽zz7Bot🇮🇩Jakarta🇮🇩Indonesia👽🇮🇩"+"\nHallo" + Name + "\nNgapain Ngintip??Sini Ikutan Chat Sama Kita(-__-)")
+                                        zz7.sendText(op.param1, "🇮🇩👽zz7Bot🇮🇩HackersCombat🇮🇩Indonesia👽🇮🇩"+"\nHallo" + Name + "\nNgapain Ngintip??Sini Ikutan Chat Sama Kita(-__-)")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    zz7.sendText(op.param1, "🇮🇩👽zz7Bot🇮🇩Jakarta🇮🇩Indonesia👽🇮🇩"+"\nHaaii" + Name + "\nNgapain Ngintip??Kagak Ada Janda Atau Bujang Disini\nSana Cari Di Room Laen")
+                                    zz7.sendText(op.param1, "🇮🇩👽zz7Bot🇮🇩HackersCombat🇮🇩Indonesia👽🇮🇩"+"\nHaaii" + Name + "\nNgapain Ngintip??Kagak Ada Janda Atau Bujang Disini\nSana Cari Di Room Laen")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -1266,7 +1266,7 @@ def bot(op):
                 
             elif msg.text in ["Team","team"]:
             	zz7.sendText(msg.to,teamMessage)               
-                zz7.sendText(msg.to, "MY FAMS")
+                zz7.sendText(msg.to, "My zz7Combat Team")
                 
             elif msg.text in ["Key media","help media","Help media"]:
                 zz7.sendText(msg.to,mediaMessage)
@@ -3097,35 +3097,56 @@ def bot(op):
                 msg.contentMetadata = {'mid': msg.from_}
                 zz7.sendMessage(msg)
 
-            elif msg.text in ["Kibaran","MY FAMS"]:
-                msg.contentType = 13
-                fams2 = "u1dcc9fd3de21d87b9b01440039080197"
-                fams3 = "uc00a7fc61069447f8db907f40233fb34"
-		fams5 = "u5680d1c1857163e9d1372a40b18c587a"
-                fams6 = "u99dcaf1d99afe1d62e00a211fc4e0bf1"
-                fams7 = "u97ed2dd962d224b28b9265f340e6cf25"
-                fams8 = "u67ef3bc0f0550e849aa2ea7f9663aa0d"
-		fams9 = "u0b7a8ac8254b3014c804504b2e94eeb7"
-                fams10 = "u253e095ced2a07385357925287a04c75"
-                msg.contentMetadata = {'mid': vip}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': fams2}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': fams3}
-                random.choice(KAC).sendMessage(msg)
-		msg.contentMetadata = {'mid': fams5}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': fams6}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': fams7}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': fams8}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': fams9}
-                random.choice(KAC).sendMessage(msg)
-		msg.contentMetadata = {'mid': fams10}
-                random.choice(KAC).sendMessage(msg)
-		random.choice(KAC).sendText(msg.to,"👽LOE SONGONG BERARTI LOE ANCUR👽")
+            elif msg.text in ["Kibaran","My zz7Combat Team"]:
+                   msg.contentType = 13
+                   fams1 = "uc00a7fc61069447f8db907f40233fb34"
+                   fams2 = "u1dcc9fd3de21d87b9b01440039080197"
+		   fams3 = "u5680d1c1857163e9d1372a40b18c587a"
+                   fams4 = "u99dcaf1d99afe1d62e00a211fc4e0bf1"
+                   fams5 = "u97ed2dd962d224b28b9265f340e6cf25"
+                   fams6 = "u67ef3bc0f0550e849aa2ea7f9663aa0d"
+		   fams7 = "u0b7a8ac8254b3014c804504b2e94eeb7"
+                   fams8 = "u253e095ced2a07385357925287a04c75"
+                   fams9 = "u1a271c5ea008d408b8b222a3da811033"
+                   fams10 = "u23ce3b963c750ad9d3dc5c913a82a2ac"
+		   fams11 = "ubd396f2a77618e2942dd8344b2e1f797"
+                   fams12 = "uf1a0867ee483bae351fe50247099a18c"
+                   fams13 = "uebb63a9d4f5b00064dde1b388adb4cf1"
+                   fams14 = "uff0da18a1c365ac365d729fbc8e34a45"
+		   fams15 = "uaeb6354399e465e3f137565c729d5d67"
+                   msg.contentMetadata = {'mid': vip}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams1}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams2}
+                   random.choice(KAC).sendMessage(msg)
+		   msg.contentMetadata = {'mid': fams3}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams4}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams5}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams6}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams7}
+                   random.choice(KAC).sendMessage(msg)
+		   msg.contentMetadata = {'mid': fams8}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams9}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams10}
+                   random.choice(KAC).sendMessage(msg)
+		   msg.contentMetadata = {'mid': fams11}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams12}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams13}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams14}
+                   random.choice(KAC).sendMessage(msg)
+                   msg.contentMetadata = {'mid': fams15}
+                   random.choice(KAC).sendMessage(msg)
+		   random.choice(KAC).sendText(msg.to,"👽♅LOE SONGONG BERARTI LOE SIAP ANCUR♅👽SALAM JARI TENGAH BUAT PECUNDANG♅👽")
 		
             elif "apakah " in msg.text:
                 apk = msg.text.replace("apakah ","")
@@ -3176,13 +3197,11 @@ def bot(op):
  
             elif msg.text in ["Simisimi on","Simisimi:on"]:
                 settings["simiSimi"][msg.to] = True
-                wait["Simi"] = True
-                zz7.sendText(msg.to," Simisimi Di Aktifkan")
-                
+                zz7.sendText(msg.to,"BOT SIMISIMI TURN ON")
+                ki.sendText(msg.to,"already turn active")
             elif msg.text in ["Simisimi off","Simisimi:off"]:
                 settings["simiSimi"][msg.to] = False
-                wait["Simi"] = False
-                zz7.sendText(msg.to,"Simisimi Di Nonaktifkan")
+                zz7.sendText(msg.to,"BOT SIMISIMI TURN OFF")
 
  
             elif "Image " in msg.text:
