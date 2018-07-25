@@ -1739,7 +1739,7 @@ def bot(op):
                 
             elif msg.text in ["Kibar","kibar","Kibar"]:
                 cl.sendText(msg.to,kibarMessage)                 
-                zz7.sendText(msg.to, "MY FAMS")
+                zz7.sendText(msg.to, "My zz7Combat Team")
                 
 
  
