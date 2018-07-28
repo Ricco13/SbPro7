@@ -11,7 +11,7 @@ from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
 vipro = LINETCR.LINE()
-vipro.login(token='Ev3VuzPvB2c7TEIDrXra.gIHgalwJsMTFisMR+xM0wG.RYQcXjh7TSoDX92TQZU7QxE0MqgQzRWeiRrTZkeQdZM=')
+vipro.login(token='Ev1GmIWObPyH0SFPUk57.hCYF094H2hUBauqaoqGbLW.+S+YIOHEA/El379oCuBv6JamrdwCoqrNfdKcz2pilow=')
 vipro.loginResult()
 
 print "👽👽👽👽zz7Bot-Ciee Ciee Login\n\n=====[AWAS JANGAN SONGONG LOE]=====👽👽👽👽"
@@ -145,7 +145,7 @@ groupMessage ="""
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
-vip="u1a284600b5a34a6b5f2129abfd79b45a"
+vip="u1dcc9fd3de21d87b9b01440039080197"
 
 setMessage ="""
 ╔═════════════════════════
@@ -292,8 +292,8 @@ helpMessage ="""
 KAC=[vipro]
 mid = vipro.getProfile().mid
 Bots=[mid]
-Creator=["u1a284600b5a34a6b5f2129abfd79b45a"]
-admin=["u1a284600b5a34a6b5f2129abfd79b45a"]
+Creator=["u1dcc9fd3de21d87b9b01440039080197"]
+admin=["u1dcc9fd3de21d87b9b01440039080197"]
 
 contact = vipro.getProfile()
 backup1 = vipro.getProfile()
