@@ -42,7 +42,7 @@ print "Kr-Login Success\n"
 
 vipro = LINETCR.LINE() #(isi dengan akun utama fungsinya biar akun utama di kick langsung di invite bot)
 #vipro.login(qr=True)
-vipro.login(token='EvHQk35SqmiNtB2NVaX7.hCYF094H2hUBauqaoqGbLW.Fp8rmPJ+rHxD9KdDpyMUIQUV6dd0+BQNdUJ8l8VQgbw=')
+vipro.login(token='EvTGoKH3MUGeqyQLhvFa.gIHgalwJsMTFisMR+xM0wG.wIlp2mynTyANF+eEommW7tL5am6DI+CVGEEG5AdKOeM=')
 vipro.loginResult()
 print "Vipro-Login Success\n"
 
@@ -58,129 +58,129 @@ sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ S E L F ۩۞۩
+║   ♅۩۞۩ S E L F ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Hi〙
-╠➩〘Me〙
-╠➩〘Mymid〙
-╠➩〘Mid @〙
-╠➩〘SearchID: (ID LINE)〙
-╠➩〘Checkdate (DD/MM/YY)〙
-╠➩〘Kalender〙
-╠➩〘Steal contact〙
-╠➩〘Pp @〙
-╠➩〘Cover @〙
-╠➩〘Auto like〙
-╠➩〘Scbc Text〙
-╠➩〘Cbc Text〙
-╠➩〘Gbc Text〙
-╠➩〘Bio @〙
-╠➩〘Info @〙
-╠➩〘Name @〙
-╠➩〘Profile @〙
-╠➩〘Contact @〙
-╠➩〘Getvid @〙
-╠➩〘Friendlist〙
+╠✪〘Hi〙
+╠✪〘Me〙
+╠✪〘Mymid〙
+╠✪〘Mid @〙
+╠✪〘SearchID: (ID LINE)〙
+╠✪〘Checkdate (DD/MM/YY)〙
+╠✪〘Kalender〙
+╠✪〘Steal contact〙
+╠✪〘Pp @〙
+╠✪〘Cover @〙
+╠✪〘Auto like〙
+╠✪〘Scbc Text〙
+╠✪〘Cbc Text〙
+╠✪〘Gbc Text〙
+╠✪〘Bio @〙
+╠✪〘Info @〙
+╠✪〘Name @〙
+╠✪〘Profile @〙
+╠✪〘Contact @〙
+╠✪〘Getvid @〙
+╠✪〘Friendlist〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║      👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 botMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ B O T ۩۞۩
+║   ♅۩۞۩ B O T ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Absen〙
-╠➩〘Respon〙
-╠➩〘Runtime〙
-╠➩〘copy @〙
-╠➩〘Vipro1 copy @〙
-╠➩〘Vipro2 copy @〙
-╠➩〘Vipro3 copy @〙
-╠➩〘Vipro4 copy @〙
-╠➩〘Backup all〙
-╠➩〘bio Text〙
-╠➩〘@bye (Usir Bot Utama)〙
-╠➩〘Bye bot (Usir Semua Bot)〙
+╠✪〘Absen〙
+╠✪〘Respon〙
+╠✪〘Runtime〙
+╠✪〘copy @〙
+╠✪〘Vipro1 copy @〙
+╠✪〘Vipro2 copy @〙
+╠✪〘Vipro3 copy @〙
+╠✪〘Vipro4 copy @〙
+╠✪〘Backup all〙
+╠✪〘bio Text〙
+╠✪〘@bye (Usir Bot Utama)〙
+╠✪〘Bye bot (Usir Semua Bot)〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║      👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 mediaMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ M E D I A ۩۞۩
+║   ♅۩۞۩ M E D I A ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Gift〙
-╠➩〘Giftbycontact〙
-╠➩〘Gif gore〙
-╠➩〘Google (Text)〙
-╠➩〘Playstore NamaApp〙
-╠➩〘Fancytext Text〙
-╠➩〘Musik Judul-Penyanyi〙
-╠➩〘Lirik Judul-Penyanyi〙
-╠➩〘Musrik Judul-Penyanyi〙
-╠➩〘Ig UrsnameInstagram〙
-╠➩〘Checkig UrsnameInstagram〙
-╠➩〘Apakah Text (Kerang Ajaib)〙
-╠➩〘Kapan Text (Kerang Ajaib)〙
-╠➩〘Hari Text (Kerang Ajaib)〙
-╠➩〘Berapa Text (Kerang Ajaib)〙
-╠➩〘Berapakah Text〙
-╠➩〘Youtube Judul Video〙
-╠➩〘Youtubevideo Judul Video〙
-╠➩〘Youtubesearch Judul Video〙
-╠➩〘Image NamaGambar〙
-╠➩〘Say Text〙
-╠➩〘Say-en Text〙
-╠➩〘Say-jp Text〙
-╠➩〘Tr-id Text (Translate En Ke ID〙
-╠➩〘Tr-en Text (Translate ID Ke En〙
-╠➩〘Tr-th Text (Translate ID Ke Th〙
-╠➩〘Id@en Text (Translate ID Ke En〙
-╠➩〘Id@th Text (Translate ID Ke TH〙
-╠➩〘En@id Text (Translate En Ke ID〙
+╠✪〘Gift〙
+╠✪〘Giftbycontact〙
+╠✪〘Gif gore〙
+╠✪〘Google (Text)〙
+╠✪〘Playstore NamaApp〙
+╠✪〘Fancytext Text〙
+╠✪〘Musik Judul-Penyanyi〙
+╠✪〘Lirik Judul-Penyanyi〙
+╠✪〘Musrik Judul-Penyanyi〙
+╠✪〘Ig UrsnameInstagram〙
+╠✪〘Checkig UrsnameInstagram〙
+╠✪〘Apakah Text (Kerang Ajaib)〙
+╠✪〘Kapan Text (Kerang Ajaib)〙
+╠✪〘Hari Text (Kerang Ajaib)〙
+╠✪〘Berapa Text (Kerang Ajaib)〙
+╠✪〘Berapakah Text〙
+╠✪〘Youtube Judul Video〙
+╠✪〘Youtubevideo Judul Video〙
+╠✪〘Youtubesearch Judul Video〙
+╠✪〘Image NamaGambar〙
+╠✪〘Say Text〙
+╠✪〘Say-en Text〙
+╠✪〘Say-jp Text〙
+╠✪〘Tr-id Text (Translate En Ke ID〙
+╠✪〘Tr-en Text (Translate ID Ke En〙
+╠✪〘Tr-th Text (Translate ID Ke Th〙
+╠✪〘Id@en Text (Translate ID Ke En〙
+╠✪〘Id@th Text (Translate ID Ke TH〙
+╠✪〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║       👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 groupMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ G R O U P ۩۞۩
+║   ♅۩۞۩ G R O U P ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Welcome〙
-╠➩〘Say:welcome〙
-╠➩〘Invite creator〙
-╠➩〘Setview/Cctv〙
-╠➩〘Viewseen/Ciduk〙
-╠➩〘Gn: (NamaGroup)〙
-╠➩〘Tag all〙
-╠➩〘Sepi〙
-╠➩〘lurk on/off〙
-╠➩〘lurkers〙
-╠➩〘Recover〙
-╠➩〘Cancel〙
-╠➩〘Cancelall〙
-╠➩〘Gcreator〙
-╠➩〘Ginfo〙
-╠➩〘Gurl〙
-╠➩〘List group〙
-╠➩〘Pict group: (NamaGroup)〙
-╠➩〘Spam: (Text)〙
-╠➩〘Spam〙
-╠➩〘Add all〙
-╠➩〘Kick: (Mid)〙
-╠➩〘Invite: (Mid)〙
-╠➩〘Invite〙
-╠➩〘Memlist〙
-╠➩〘Getgroup image〙
-╠➩〘Urlgroup Image〙
+╠✪〘Welcome〙
+╠✪〘Say:welcome〙
+╠✪〘Invite creator〙
+╠✪〘Setview/Cctv〙
+╠✪〘Viewseen/Ciduk〙
+╠✪〘Gn: (NamaGroup)〙
+╠✪〘Tag all〙
+╠✪〘Sepi〙
+╠✪〘lurk on/off〙
+╠✪〘lurkers〙
+╠✪〘Recover〙
+╠✪〘Cancel〙
+╠✪〘Cancelall〙
+╠✪〘Gcreator〙
+╠✪〘Ginfo〙
+╠✪〘Gurl〙
+╠✪〘List group〙
+╠✪〘Pict group: (NamaGroup)〙
+╠✪〘Spam: (Text)〙
+╠✪〘Spam〙
+╠✪〘Add all〙
+╠✪〘Kick: (Mid)〙
+╠✪〘Invite: (Mid)〙
+╠✪〘Invite〙
+╠✪〘Memlist〙
+╠✪〘Getgroup image〙
+╠✪〘Urlgroup Image〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║       👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
@@ -188,123 +188,123 @@ vip="u1a284600b5a34a6b5f2129abfd79b45a"
 
 setMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ S E T ۩۞۩
+║   ♅۩۞۩ S E T ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Notif on/off〙
-╠➩〘Url on/off〙
-╠➩〘Alwaysread on/off〙
-╠➩〘Sider on/off〙
-╠➩〘Contact on/off〙
-╠➩〘Simisimi on/off〙
+╠✪〘Notif on/off〙
+╠✪〘Url on/off〙
+╠✪〘Alwaysread on/off〙
+╠✪〘Sider on/off〙
+╠✪〘Contact on/off〙
+╠✪〘Simisimi on/off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║      👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 creatorMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ C R E A T O R ۩۞۩
+║   ♅۩۞۩ C R E A T O R ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Admin add @〙
-╠➩〘Admin remove @〙
-╠➩〘/vipro〙
-╠➩〘/vipro1〙
-╠➩〘/vipro2〙
-╠➩〘/vipro3〙
-╠➩〘/vipro4〙
-╠➩〘Crash〙
-╠➩〘Kickall〙
-╠➩〘Bc: (Text)〙
-╠➩〘Nk: @〙
-╠➩〘Ulti @〙
-╠➩〘Join group: (NamaGroup〙
-╠➩〘Leave group: (NamaGroup〙
-╠➩〘Leave all group〙
-╠➩〘Bot restart〙
-╠➩〘Turn off〙
+╠✪〘Admin add @〙
+╠✪〘Admin remove @〙
+╠✪〘/vipro〙
+╠✪〘/vipro1〙
+╠✪〘/vipro2〙
+╠✪〘/vipro3〙
+╠✪〘/vipro4〙
+╠✪〘Crash〙
+╠✪〘Kickall〙
+╠✪〘Bc: (Text)〙
+╠✪〘Nk: @〙
+╠✪〘Ulti @〙
+╠✪〘Join group: (NamaGroup〙
+╠✪〘Leave group: (NamaGroup〙
+╠✪ Leave all group〙
+╠✪〘Bot restart〙
+╠✪〘Turn off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║       👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 adminMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ A D M I N ۩۞۩
+║   ♅۩۞۩ A D M I N ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Admin list〙
-╠➩〘Ban〙
-╠➩〘Unban〙
-╠➩〘Ban @〙
-╠➩〘Unban @〙
-╠➩〘Ban list〙
-╠➩〘Clear ban〙
-╠➩〘Kill〙
-╠➩〘Kick @〙
-╠➩〘Set member: (Jumlah)〙
-╠➩〘Ban group: (NamaGroup〙
-╠➩〘Del ban: (NamaGroup〙
-╠➩〘List ban〙
-╠➩〘Kill ban〙
-╠➩〘Glist〙
-╠➩〘Glistmid〙
-╠➩〘Details group: (Gid)〙
-╠➩〘Cancel invite: (Gid)〙
-╠➩〘Invitemeto: (Gid)〙
-╠➩〘Kapten acc invite〙
-╠➩〘Vipro1 acc invite〙
-╠➩〘Vipro2 acc invite〙
-╠➩〘Vipro3 acc invite〙
-╠➩〘Vipro4 acc invite〙
-╠➩〘Removechat〙
-╠➩〘Join on/off〙
-╠➩〘Joincancel on/off〙
-╠➩〘Respon on/off〙
-╠➩〘Responkick on/off〙
-╠➩〘Leave on/off〙
-╠➩〘All join / (Vipro1/2/3/4 Join)〙
+╠✪〘Admin list〙
+╠✪〘Ban〙
+╠✪〘Unban〙
+╠✪〘Ban @〙
+╠✪〘Unban @〙
+╠✪〘Ban list〙
+╠✪〘Clear ban〙
+╠✪〘Kill〙
+╠✪〘Kick @〙
+╠✪〘Set member: (Jumlah)〙
+╠✪〘Ban group: (NamaGroup〙
+╠✪〘Del ban: (NamaGroup〙
+╠✪〘List ban〙
+╠✪〘Kill ban〙
+╠✪〘Glist〙
+╠✪〘Glistmid〙
+╠✪〘Details group: (Gid)〙
+╠✪〘Cancel invite: (Gid)〙
+╠✪〘Invitemeto: (Gid)〙
+╠✪〘Kapten acc invite〙
+╠✪〘Vipro1 acc invite〙
+╠✪〘Vipro2 acc invite〙
+╠✪〘Vipro3 acc invite〙
+╠✪〘Vipro4 acc invite〙
+╠✪〘Removechat〙
+╠✪〘Join on/off〙
+╠✪〘Joincancel on/off〙
+╠✪〘Respon on/off〙
+╠✪〘Responkick on/off〙
+╠✪〘Leave on/off〙
+╠✪〘All join / (Vipro1/2/3/4 Join)〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║       👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 helpMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ H E L P ۩۞۩
+║   ♅۩۞۩ H E L P ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Help protect〙
-╠➩〘Help self〙
-╠➩〘Help bot〙
-╠➩〘Help group〙
-╠➩〘Help set〙
-╠➩〘Help media〙
-╠➩〘Help admin〙
-╠➩〘Help creator〙
-╠➩〘Owner〙
-╠➩〘Admin〙
-╠➩〘Speed〙
-╠➩〘Speed test〙
-╠➩〘Status〙
+╠✪〘Help protect〙
+╠✪〘Help self〙
+╠✪〘Help bot〙
+╠✪〘Help group〙
+╠✪〘Help set〙
+╠✪〘Help media〙
+╠✪〘Help admin〙
+╠✪〘Help creator〙
+╠✪〘Owner〙
+╠✪〘Admin〙
+╠✪〘Speed〙
+╠✪〘Speed test〙
+╠✪〘Status〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║      👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
 
 protectMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ P R O T E C T ۩۞۩
+║   ♅۩۞۩ P R O T E C T ۩۞۩♅
 ╠═════════════════════════
-╠➩〘Allprotect on/off〙
-╠➩〘Autocancel on/off〙
-╠➩〘Qr on/off〙
-╠➩〘Autokick on/off〙
-╠➩〘Ghost on/off〙
-╠➩〘Invitepro on/off〙
+╠✪〘Allprotect on/off〙
+╠✪〘Autocancel on/off〙
+╠✪〘Qr on/off〙
+╠✪〘Autokick on/off〙
+╠✪〘Ghost on/off〙
+╠✪〘Invitepro on/off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║      👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
 ╚═════════════════════════
 """
@@ -318,9 +318,9 @@ Cmid = kc.getProfile().mid
 Dmid = kr.getProfile().mid
 Emid = km.getProfile().mid
 Fmid = vipro.getProfile().mid
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,"u1dcc9fd3de21d87b9b01440039080197"]
-Creator=["u1dcc9fd3de21d87b9b01440039080197"]
-admin=["u1dcc9fd3de21d87b9b01440039080197"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,"u1a284600b5a34a6b5f2129abfd79b45a"]
+Creator=["u1a284600b5a34a6b5f2129abfd79b45a"]
+admin=["u1a284600b5a34a6b5f2129abfd79b45a"]
 
 contact = cl.getProfile()
 backup1 = cl.getProfile()
@@ -361,7 +361,7 @@ responsename5 = kr.getProfile().displayName
 
 wait = {
     "LeaveRoom":True,
-    "AutoJoin":False,
+    "AutoJoin":True,
     "AutoJoinCancel":True,
     "memberscancel":3,
     "Members":1,
@@ -395,7 +395,7 @@ wait = {
     "Qron":False,
     "Contact":False,
     "Sambutan":True,
-    "Ghost":True,
+    "Ghost":False,
     "inviteprotect":False,   
     "alwaysRead":False,    
     "Sider":{},
@@ -694,11 +694,11 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[0] + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        random.choice(KAC).sendText(op.param1, "Waduh Ada" + "☞ " + nick[0] + " ☜" + "\nLagi Ngintip\nSini Ikutan Chat Bos Jangan Sider Mulu(-__-)")
                                     else:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        random.choice(KAC).sendText(op.param1, "Idiihh" + "☞ " + nick[1] + " ☜" + "\nGimana Kabarnya??\nSini Ikutan Chat Sama Kita(-__-)")
                                 else:
-                                    random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    random.choice(KAC).sendText(op.param1, "Eehh Ada" + "☞ " + Name + " ☜" + "\nNongol\nUdah Mandi Belum???\nCepetan Mandi Pake Rinso Biar Gak Jomblo Terus"")
                         else:
                             pass
                     else:
@@ -1484,7 +1484,7 @@ def bot(op):
                   cl.sendText(msg.to,"The Admin List Is Empty")
               else:
                   cl.sendText(msg.to,"Tunggu...")
-                  mc = "╔═════════════════════════\n║        ☆☞ ADMIN VIPRO ☜☆\n╠═════════════════════════\n"
+                  mc = "╔═════════════════════════\n║        ☆☞ ADMIN ZZ7 ☜☆\n╠═════════════════════════\n"
                   for mi_d in admin:
                       mc += "╠••> " +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc + "╚═════════════════════════")
@@ -3005,7 +3005,7 @@ def bot(op):
                 ki.sendText(msg.to,"Hadir Boss  \(ˆ▿ˆ)/")
                 kk.sendText(msg.to,"Ikut Nongol Boss  \(ˆ▿ˆ)/")
                 kc.sendText(msg.to,"Siap Laksanakan Boss  \(ˆ▿ˆ)/")
-                kr.sendText(msg.to,"Hadir Semua Pasuka  \(ˆ▿ˆ)/")
+                kr.sendText(msg.to,"Hadir Semua Pasukan  \(ˆ▿ˆ)/")
 
 
             elif msg.text.lower() in ["respon"]:
@@ -3195,23 +3195,27 @@ def bot(op):
                      if msg.toType == 2:
                         print "Kick all member"
                         _name = msg.text.replace("Kickall","")
-                        gs = vipro.getGroup(msg.to)
-                        vipro.sendText(msg.to,"Dadaaah~")
+                        gs = ki.getGroup(msg.to)
+                        gs = kk.getGroup(msg.to)
+                        gs = kc.getGroup(msg.to)
+                        ki.sendText(msg.to,"Fuck You All")
+                        kc.sendText(msg.to,"Bye Bye")
                         targets = []
                         for g in gs.members:
                             if _name in g.displayName:
                                 targets.append(g.mid)
                         if targets == []:
-                            vipro.sendText(msg.to,"Not found.")
+                            ki.sendText(msg.to,"Not found.")
                         else:
                             for target in targets:
 				if target not in admin:
                                     try:
-                                        vipro.kickoutFromGroup(msg.to,[target])
+                                        klist=[ki,kk,kc]
+                                        kicker=random.choice(klist)
+                                        kicker.kickoutFromGroup(msg.to,[target])
                                         print (msg.to,[g.mid])
-                                    except Exception as e:
-                                        vipro.sendText(msg.to,str(e))
-			    vipro.inviteIntoGroup(msg.to, targets)
+                                    except:
+					pass
  
 
 	    elif msg.text in ["Bot restart","Reboot"]:
