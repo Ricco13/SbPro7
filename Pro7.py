@@ -3195,27 +3195,23 @@ def bot(op):
                      if msg.toType == 2:
                         print "Kick all member"
                         _name = msg.text.replace("Kickall","")
-                        gs = ki.getGroup(msg.to)
-                        gs = kk.getGroup(msg.to)
-                        gs = kc.getGroup(msg.to)
-                        ki.sendText(msg.to,"Fuck You All")
-                        kc.sendText(msg.to,"Bye Bye")
+                        gs = vipro.getGroup(msg.to)
+                        vipro.sendText(msg.to,"Dadaaah~")
                         targets = []
                         for g in gs.members:
                             if _name in g.displayName:
                                 targets.append(g.mid)
                         if targets == []:
-                            ki.sendText(msg.to,"Not found.")
+                            vipro.sendText(msg.to,"Not found.")
                         else:
                             for target in targets:
 				if target not in admin:
                                     try:
-                                        klist=[ki,kk,kc]
-                                        kicker=random.choice(klist)
-                                        kicker.kickoutFromGroup(msg.to,[target])
+                                        vipro.kickoutFromGroup(msg.to,[target])
                                         print (msg.to,[g.mid])
-                                    except:
-					pass
+                                    except Exception as e:
+                                        vipro.sendText(msg.to,str(e))
+			    vipro.inviteIntoGroup(msg.to, targets)
  
 
 	    elif msg.text in ["Bot restart","Reboot"]:
