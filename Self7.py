@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#zz7 Bot
+#zz7_Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
@@ -10,221 +10,224 @@ from googletrans import Translator
 from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-zz7 = LINETCR.LINE()
-#zz7.login(qr=True)
-zz7.login(token='Ev7zryWQiYfUGMyUxFs7.hCYF094H2hUBauqaoqGbLW.k2HF+AvKAS7UlHfjRM3G6qnN0/B6lMcvmkmYbNBL+1c=')
-zz7.loginResult()
-print "zz7-Login Success\n\n=====[Sukses Login]====="
+vipro = LINETCR.LINE()
+vipro.login(token='Ev1GmIWObPyH0SFPUk57.hCYF094H2hUBauqaoqGbLW.+S+YIOHEA/El379oCuBv6JamrdwCoqrNfdKcz2pilow=')
+vipro.loginResult()
 
+print "zz7Bot-Ciee Ciee Login\n\n=====[AWAS JANGAN SONGONG LOE]====="
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-
 selfMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ S E L F ۩۞۩ 
+║   ♅۩۞۩ S E L F ۩۞۩♅ 
 ╠═════════════════════════
-┣🇮🇩━⏩〔Hi〕
-┣🇮🇩━⏩〔Me〕
-┣🇮🇩━⏩〔Mymid〕
-┣🇮🇩━⏩〔Mid @〕
-┣🇮🇩━⏩〔SearchID〕
-┣🇮🇩━⏩〔Checkdate 〕
-┣🇮🇩━⏩〔Kalender〕
-┣🇮🇩━⏩〔Steal contact〕
-┣🇮🇩━⏩〔Pp @〕
-┣🇮🇩━⏩〔Cover @〕
-┣🇮🇩━⏩〔Auto like〕
-┣🇮🇩━⏩〔Scbc Text〕
-┣🇮🇩━⏩〔Cbc Text〕
-┣🇮🇩━⏩〔Gbc Text〕
-┣🇮🇩━⏩〔Bio @〕
-┣🇮🇩━⏩〔Info @〕
-┣🇮🇩━⏩〔Name @〕
-┣🇮🇩━⏩〔Profile @〕
-┣🇮🇩━⏩〔Contact @〕
-┣🇮🇩━⏩〔Getvid @〕
-┣🇮🇩━⏩〔Friendlist〕
-┣🇮🇩━⏩〔Micadd @〕
-┣🇮🇩━⏩〔Micdel @〕
-┣🇮🇩━⏩〔Miclist〕
+╠✪〘Hi〙
+╠✪〘Me〙
+╠✪〘Mymid〙
+╠✪〘Mid @〙
+╠✪〘SearchID (ID LINE)〙
+╠✪〘Checkdate (DD/MM/YY)〙
+╠✪〘Kalender〙
+╠✪〘Steal contact〙
+╠✪〘Pp @〙
+╠✪〘Cover @〙
+╠✪〘Auto like〙
+╠✪〘Scbc Text〙
+╠✪〘Cbc Text〙
+╠✪〘Gbc Text〙
+╠✪〘Bio @〙
+╠✪〘Info @〙
+╠✪〘Name @〙
+╠✪〘Profile @〙
+╠✪〘Contact @〙
+╠✪〘Getvid @〙
+╠✪〘Friendlist〙
+╠✪〘Micadd @〙
+╠✪〘Micdel @〙
+╠✪〘Miclist〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║      👽By : zz7ComBat👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 botMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ B O T ۩۞۩
+║   ♅۩۞۩ B O T ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Absen〕
-┣🇮🇩━⏩〔Respon〕
-┣🇮🇩━⏩〔Runtime〕
-┣🇮🇩━⏩〔copy @〕
-┣🇮🇩━⏩〔Copycontact〕
-┣🇮🇩━⏩〔Mybackup〕
-┣🇮🇩━⏩〔Mybio 〔T〕
-┣🇮🇩━⏩〔Myname 〔T〕
-┣🇮🇩━⏩〔@bye〕
-┣🇮🇩━⏩〔Bot on/off〕
+╠✪〘Absen〙
+╠✪〘Respon〙
+╠✪〘Runtime〙
+╠✪〘copy @〙
+╠✪〘Copycontact〙
+╠✪〘Mybackup〙
+╠✪〘Mybio (Text)〙
+╠✪〘Myname:〙
+╠✪〘@bye〙
+╠✪〘Bot on/off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 mediaMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ M E D I A ۩۞۩
+║   ♅۩۞۩ M E D I A ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Youtube J 〕
-┣🇮🇩━⏩〔Youtubevideo J〕
-┣🇮🇩━⏩〔Youtubesearch:0 J〕
-┣🇮🇩━⏩〔Image NamaGambar〕
-┣🇮🇩━⏩〔Say T〕
-┣🇮🇩━⏩〔Say-en T〕
-┣🇮🇩━⏩〔Say-jp T〕
-┣🇮🇩━⏩〔Tr-id T 〔 En  ID〕
-┣🇮🇩━⏩〔Tr-en T 〔ID  En〕
-┣🇮🇩━⏩〔Tr-th T 〔ID Th〕
-┣🇮🇩━⏩〔Id@en T 〔ID En〕
-┣🇮🇩━⏩〔Id@th T 〔ID TH〕
-┣🇮🇩━⏩〔En@id T 〔 En  ID〕
-┣🇮🇩━⏩〔Gift〕
-┣🇮🇩━⏩〔Giftbycontact〕
-┣🇮🇩━⏩〔Gif gore〕
-┣🇮🇩━⏩〔Google 〔T〕
-┣🇮🇩━⏩〔Playstore NamaApp〕
-┣🇮🇩━⏩〔Fancytext T〕
-┣🇮🇩━⏩〔musik J-Penyanyi〕
-┣🇮🇩━⏩〔lirik J-Penyanyi〕
-┣🇮🇩━⏩〔musrik J-Penyanyi〕
-┣🇮🇩━⏩〔ig 〔UsrNameIG〕
-┣🇮🇩━⏩〔Checkig 〔UsrIG〕
-┣🇮🇩━⏩〔apakah 〔T〕
-┣🇮🇩━⏩〔kapan 〔T〕
-┣🇮🇩━⏩〔hari 〔T 〕
-┣🇮🇩━⏩〔berapa〔 T 〕
-┣🇮🇩━⏩〔berapakah 〔T〕
+╠✪〘Gift〙
+╠✪〘Giftbycontact〙
+╠✪〘Gif gore〙
+╠✪〘Google (Text)〙
+╠✪〘Playstore NamaApp〙
+╠✪〘Fancytext Text〙
+╠✪〘musik Judul-Penyanyi〙
+╠✪〘lirik Judul-Penyanyi〙
+╠✪〘musrik Judul-Penyanyi〙
+╠✪〘ig UrsnameInstagram〙
+╠✪〘Checkig UrsnameInstagram〙
+╠✪〘apakah Text (Kerang Ajaib)〙
+╠✪〘kapan Text (Kerang Ajaib)〙
+╠✪〘hari Text (Kerang Ajaib)〙
+╠✪〘berapa Text (Kerang Ajaib)〙
+╠✪〘berapakah Text〙
+╠✪〘Youtube Judul Video〙
+╠✪〘Youtubevideo Judul Video〙
+╠✪〘Youtubesearch:0 Judul Video〙
+╠✪〘Image NamaGambar〙
+╠✪〘Say Text〙
+╠✪〘Say-en Text〙
+╠✪〘Say-jp Text〙
+╠✪〘Tr-id Text (Translate En Ke ID〙
+╠✪〘Tr-en Text (Translate ID Ke En〙
+╠✪〘Tr-th Text (Translate ID Ke Th〙
+╠✪〘Id@en Text (Translate ID Ke En〙
+╠✪〘Id@th Text (Translate ID Ke TH〙
+╠✪〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 groupMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ G R O U P ۩۞۩
+║   ♅۩۞۩ G R O U P ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Welcome〕
-┣🇮🇩━⏩〔Say welcome〕
-┣🇮🇩━⏩〔Invite creator〕
-┣🇮🇩━⏩〔Cctv〕
-┣🇮🇩━⏩〔Ciduk〕
-┣🇮🇩━⏩〔Gn:〔NG〕
-┣🇮🇩━⏩〔Tag all〕
-┣🇮🇩━⏩〔lurk on/off〕
-┣🇮🇩━⏩〔lurkers〕
-┣🇮🇩━⏩〔Recover〕
-┣🇮🇩━⏩〔Cancel〕
-┣🇮🇩━⏩〔Cancelall〕
-┣🇮🇩━⏩〔Gcreator〕
-┣🇮🇩━⏩〔Ginfo〕
-┣🇮🇩━⏩〔Gurl〕
-┣🇮🇩━⏩〔List group〕
-┣🇮🇩━⏩〔Pict group:〔NG〕
-┣🇮🇩━⏩〔Spam: 〔T〕
-┣🇮🇩━⏩〔Add all〕
-┣🇮🇩━⏩〔Kick: (Mid)〕
-┣🇮🇩━⏩〔Invite: (Mid)〕
-┣🇮🇩━⏩〔Invite〕
-┣🇮🇩━⏩〔Memlist〕
-┣🇮🇩━⏩〔Getgroup image〕
-┣🇮🇩━⏩〔Urlgroup Image〕
+╠✪〘Welcome〙
+╠✪〘Say welcome〙
+╠✪〘Invite creator〙
+╠✪〘Setview/Cctv〙
+╠✪〘Viewseen/Ciduk〙
+╠✪〘Gn: (NamaGroup)〙
+╠✪〘Tag all〙
+╠✪〘lurk on/off〙
+╠✪〘lurkers〙
+╠✪〘Recover〙
+╠✪〘Cancel〙
+╠✪〘Cancelall〙
+╠✪〘Gcreator〙
+╠✪〘Ginfo〙
+╠✪〘Gurl〙
+╠✪〘List group〙
+╠✪〘Pict group: (NamaGroup)〙
+╠✪〘Spam: (Text)〙
+╠✪〘Add all〙
+╠✪〘Kick: (Mid)〙
+╠✪〘Invite: (Mid)〙
+╠✪〘Invite〙
+╠✪〘Memlist〙
+╠✪〘Getgroup image〙
+╠✪〘Urlgroup Image〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 vip="u1dcc9fd3de21d87b9b01440039080197"
 
 setMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ S E T ۩۞۩
+║   ♅۩۞۩ S E T ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Notif on/off〕
-┣🇮🇩━⏩〔Mimic on/off〕
-┣🇮🇩━⏩〔Url on/off〕
-┣🇮🇩━⏩〔Read on/off〕
-┣🇮🇩━⏩〔Sider on/off〕
-┣🇮🇩━⏩〔K on/off〕
-┣🇮🇩━⏩〔Sticker on/off〕
-┣🇮🇩━⏩〔Simi on/off〕
-┣🇮🇩━⏩〔lurk on/off〕
-┣🇮🇩━⏩〔Bot on/off 〕
+╠✪〘Notif on/off〙
+╠✪〘Mimic on/off〙
+╠✪〘Url on/off〙
+╠✪〘Alwaysread on/off〙
+╠✪〘Sider on/off〙
+╠✪〘Contact on/off〙
+╠✪〘Sticker on〙
+╠✪〘Simisimi on/off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 creatorMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ C R E A T O R ۩۞۩
+║   ♅۩۞۩ C R E A T O R ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Crash〕
-┣🇮🇩━⏩〔Kickall〕
-┣🇮🇩━⏩〔Bc: 〔T〕
-┣🇮🇩━⏩〔Join group: 〔NG〕
-┣🇮🇩━⏩〔Leave group: 〔NG〕
-┣🇮🇩━⏩〔Leave all group〕
-┣🇮🇩━⏩〔Tag on/off〕
-┣🇮🇩━⏩〔Bot restart〕
-┣🇮🇩━⏩〔Turn off〕
+╠✪〘Crash〙
+╠✪〘Kickall〙
+╠✪〘Bc: (Text)〙
+╠✪〘Join group: (NamaGroup〙
+╠✪〘Leave group: (NamaGroup〙
+╠✪〘Leave all group〙
+╠✪〘Tag on/off〙
+╠✪〘Bot restart〙
+╠✪〘Turn off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 adminMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ A D M I N ۩۞۩
+║   ♅۩۞۩ A D M I N ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Allprotect on/off〕
-┣🇮🇩━⏩〔Ban〕
-┣🇮🇩━⏩〔Unban〕
-┣🇮🇩━⏩〔Ban @〕
-┣🇮🇩━⏩〔Unban @〕
-┣🇮🇩━⏩〔Ban list〕
-┣🇮🇩━⏩〔Clear ban〕
-┣🇮🇩━⏩〔Kill〕
-┣🇮🇩━⏩〔Kick @〕
-┣🇮🇩━⏩〔Set member: (Jml)〕
-┣🇮🇩━⏩〔Ban group: 〔NG〕
-┣🇮🇩━⏩〔Del ban: 〔NG〕
-┣🇮🇩━⏩〔List ban〕
-┣🇮🇩━⏩〔Kill ban〕
-┣🇮🇩━⏩〔Glist〕
-┣🇮🇩━⏩〔Glistmid〕
-┣🇮🇩━⏩〔Details group: 〔〔(Gid)〕
-┣🇮🇩━⏩〔Cancel invite: 〔(Gid)〕
-┣🇮🇩━⏩〔Invitemeto: 〔(Gid)〕
-┣🇮🇩━⏩〔Acc invite〕
-┣🇮🇩━⏩〔Removechat〕
-┣🇮🇩━⏩〔Qr on/off〕
-┣🇮🇩━⏩〔Autokick on/off〕
-┣🇮🇩━⏩〔Autocancel on/off〕
-┣🇮🇩━⏩〔Invitepro on/off〕
-┣🇮🇩━⏩〔Join on/off〕
-┣🇮🇩━⏩〔Joincancel on/off〕
-┣🇮🇩━⏩〔R1 on/off〕
-┣🇮🇩━⏩〔R2 on/off〕
-┣🇮🇩━⏩〔R3 on/off〕
-┣🇮🇩━⏩〔Rkick on/off〕
+╠✪〘Allprotect on/off〙
+╠✪〘Ban〙
+╠✪〘Unban〙
+╠✪〘Ban @〙
+╠✪〘Unban @〙
+╠✪〘Ban list〙
+╠✪〘Clear ban〙
+╠✪〘Kill〙
+╠✪〘Kick @〙
+╠✪〘Set member: (Jumblah)〙
+╠✪〘Ban group: (NamaGroup〙
+╠✪〘Del ban: (NamaGroup〙
+╠✪〘List ban〙
+╠✪〘Kill ban〙
+╠✪〘Glist〙
+╠✪〘Glistmid〙
+╠✪〘Details group: (Gid)〙
+╠✪〘Cancel invite: (Gid)〙
+╠✪〘Invitemeto: (Gid)〙
+╠✪〘Acc invite〙
+╠✪〘Removechat〙
+╠✪〘Qr on/off〙
+╠✪〘Autokick on/off〙
+╠✪〘Autocancel on/off〙
+╠✪〘Invitepro on/off〙
+╠✪〘Join on/off〙
+╠✪〘Joincancel on/off〙
+╠✪〘Respon1 on/off〙
+╠✪〘Respon2 on/off〙
+╠✪〘Respon3 on/off〙
+╠✪〘Responkick on/off〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 teamMessage ="""👽👽👽WELCOME👽👽👽
 ┏━┳┳┳┓┏┳┳┳┳┳┓┏┳┳┓
-┃zz7Bot┃ Bantai Pembangkang┃
+┃zz7Bot┃   BANTAI PECUNDANG ┃
 ┗ⓞ━━ⓞ┻━┻ⓞ━ⓞ┻┻ⓞ━ⓞ╯
 👽line.me/ti/p/ricco1311👽
 .        (҂`_´)
@@ -264,45 +267,46 @@ teamMessage ="""👽👽👽WELCOME👽👽👽
 
 helpMessage ="""
 ╔═════════════════════════
-║   ۩۞۩ H E L P ۩۞۩
+║   ♅۩۞۩ H E L P ۩۞۩♅
 ╠═════════════════════════
-┣🇮🇩━⏩〔Help self〕
-┣🇮🇩━⏩〔Help bot〕
-┣🇮🇩━⏩〔Help group〕
-┣🇮🇩━⏩〔Help set〕
-┣🇮🇩━⏩〔Help media〕
-┣🇮🇩━⏩〔Help admin〕
-┣🇮🇩━⏩〔Help creator〕
-┣🇮🇩━⏩〔Owner〕
-┣🇮🇩━⏩〔Speed〕
-┣🇮🇩━⏩〔Speed test〕
-┣🇮🇩━⏩〔Status〕
-┣🇮🇩━⏩〔Team〕
+╠✪〘Help self〙
+╠✪〘Help bot〙
+╠✪〘Help group〙
+╠✪〘Help set〙
+╠✪〘Help media〙
+╠✪〘Help admin〙
+╠✪〘Help creator〙
+╠✪〘Owner〙
+╠✪〘Speed〙
+╠✪〘Speed test〙
+╠✪〘Status〙
+╠✪〘Team〙
 ╠═════════════════════════
-║     👽 By : ZeroZeveN 👽
+║     👽 By : zz7ComBat 👽
 ║  👽line.me/ti/p/ricco1311👽
-╚═════════════════════════"""
+╚═════════════════════════
+"""
 
 
-KAC=[zz7]
-mid = zz7.getProfile().mid
+KAC=[vipro]
+mid = vipro.getProfile().mid
 Bots=[mid]
 Creator=["u1dcc9fd3de21d87b9b01440039080197"]
 admin=["u1dcc9fd3de21d87b9b01440039080197"]
 
-contact = zz7.getProfile()
-backup1 = zz7.getProfile()
+contact = vipro.getProfile()
+backup1 = vipro.getProfile()
 backup1.displayName = contact.displayName
 backup1.statusMessage = contact.statusMessage                        
 backup1.pictureStatus = contact.pictureStatus
 
-responsename = zz7.getProfile().displayName
+responsename = vipro.getProfile().displayName
 
 
 wait = {
     "LeaveRoom":True,
     "Bot":True,
-    "AutoJoin":False,
+    "AutoJoin":True,
     "AutoJoinCancel":False,
     "memberscancel":30,
     "Members":1,
@@ -319,15 +323,9 @@ wait = {
     'detectMention3':False,
     'kickMention':False,  
     'sticker':False,  
-    'timeline':False,
-    "Timeline":False,
-    "comment":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",    
-    "comment1":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
-    "comment2":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
-    "comment3":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
-    "comment4":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
-    "comment5":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
-    "comment6":"SEKIAN LIKE DAN KOMENTAR GUE SEMOGA LU BAHAGIA DISANA WKWKWK",
+    'timeline':True,
+    "Timeline":True,
+    "comment":"Bot Auto Like ©By : zz7Bot\nContact Me : 👉 line.me/ti/p/ricco1311",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -336,7 +334,7 @@ wait = {
     "dblacklist":False,
     "Qr":False,
     "Contact":False,
-    "Notif":False,
+    "Sambutan":False,
     "inviteprotect":False,    
     "alwaysRead":False,    
     "Sider":{},
@@ -346,7 +344,7 @@ wait = {
 }
 
 settings = {
-    "simiSimi":{True}
+    "simiSimi":{}
     }
     
 cctv = {
@@ -568,7 +566,7 @@ def summon(to, nama):
     msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
     print "[Command] Tag All"
     try:
-       zz7.sendMessage(msg)
+       vipro.sendMessage(msg)
     except Exception as error:
        print error          
                         
@@ -587,11 +585,11 @@ def bot(op):
 
         if op.type == 5:
            if wait["autoAdd"] == True:
-              zz7.findAndAddContactsByMid(op.param1)
+              vipro.findAndAddContactsByMid(op.param1)
               if(wait["message"]in[""," ","\n",None]):
                 pass
               else:
-                zz7.sendText(op.param1,str(wait["ThankS for add me"]))
+                vipro.sendText(op.param1,str(wait["message"]))
 
 
         if op.type == 55:
@@ -621,7 +619,7 @@ def bot(op):
                 try:
                     if cctv['cyduk'][op.param1]==True:
                         if op.param1 in cctv['point']:
-                            Name = zz7.getContact(op.param2).displayName
+                            Name = vipro.getContact(op.param2).displayName
 #                            Name = summon(op.param2)
                             if Name in cctv['sidermem'][op.param1]:
                                 pass
@@ -630,15 +628,15 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        zz7.sendText(op.param1, "Waduh Ada"+"🇮🇩━⏩" + Name + "╦╩"+"\nLagi Ngintip\nSini Ikutan Chat Bos Jangan Sider Mulu(-__-)")
+                                        vipro.sendText(op.param1, "Eehh" + "♠♠ " + Name + " ♠♠" + "\nNgapain Ngintip2??\nSini Chat\nDemen Banget Loe Ngintipin Janda")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
-                                        zz7.sendText(op.param1, "🇮🇩👽zz7Bot🇮🇩HackersCombat🇮🇩Indonesia👽🇮🇩"+"\nHallo" + Name + "\nNgapain Ngintip??Sini Ikutan Chat Sama Kita(-__-)")
+                                        vipro.sendText(op.param1, "Yaeellaahh" + "♠♠ " + Name + " ♠♠" + "\nKalo Mau Cari Tikungan Jangan Disini\nDisini Yang Ada Jones Kayak Loe\nYang Doyannya Ngintip Doang")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    zz7.sendText(op.param1, "🇮🇩👽zz7Bot🇮🇩HackersCombat🇮🇩Indonesia👽🇮🇩"+"\nHaaii" + Name + "\nNgapain Ngintip??Kagak Ada Janda Atau Bujang Disini\nSana Cari Di Room Laen")
+                                    vipro.sendText(op.param1, "Waduuuhhh ada" + "♠♠ " + Name + " ♠♠" + "\nNongol\nKabur Aah Daripada Dibajak Tikel")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -653,49 +651,49 @@ def bot(op):
 	      
 
         if op.type == 22:
-            zz7.leaveRoom(op.param1)
+            vipro.leaveRoom(op.param1)
 
         if op.type == 21:
-            zz7.leaveRoom(op.param1)
+            vipro.leaveRoom(op.param1)
 
 
         if op.type == 13:
 	    print op.param3
             if op.param3 in mid:
 		if op.param2 in Creator:
-		    zz7.acceptGroupInvitation(op.param1)
+		    vipro.acceptGroupInvitation(op.param1)
 
 		    
 	    if mid in op.param3:	        
                 if wait["AutoJoinCancel"] == True:
-		    G = zz7.getGroup(op.param1)
+		    G = vipro.getGroup(op.param1)
                     if len(G.members) <= wait["memberscancel"]:
-                        zz7.acceptGroupInvitation(op.param1)
-                        zz7.sendText(op.param1,"Maaf " + zz7.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
-                        zz7.leaveGroup(op.param1)                        
+                        vipro.acceptGroupInvitation(op.param1)
+                        vipro.sendText(op.param1,"Maaf " + vipro.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
+                        vipro.leaveGroup(op.param1)                        
 		    else:
-                        zz7.acceptGroupInvitation(op.param1)
-			zz7.sendText(op.param1,"♠Ketik ✴Help✴ Untuk Bantuan♠\n♠Harap Gunakan Dengan Bijak ^_^ ♠")
+                        vipro.acceptGroupInvitation(op.param1)
+			vipro.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
                         		    
  
 	    if mid in op.param3:
                 if wait["AutoJoin"] == True:
-		    G = zz7.getGroup(op.param1)
+		    G = vipro.getGroup(op.param1)
                     if len(G.members) <= wait["Members"]:
-                        zz7.rejectGroupInvitation(op.param1)
+                        vipro.rejectGroupInvitation(op.param1)
 		    else:
-                        zz7.acceptGroupInvitation(op.param1)
-			zz7.sendText(op.param1,"♠Ketik ✴Help✴ Untuk Bantuan♠\n♠Harap Gunakan Dengan Bijak ^_^ ♠")
+                        vipro.acceptGroupInvitation(op.param1)
+			vipro.sendText(op.param1,"☆Halloo ☞Assalamu'alaikum☜ Ikut Gabung Ya All☆\n☆Mau Ikut Cari Janda Bodong Disini wkwkwkwk ^_^ ☆")
 	    else:
                 if wait["AutoCancel"] == True:
 		    if op.param3 in Bots:
 			pass
 		    else:
-                        zz7.cancelGroupInvitation(op.param1, [op.param3])
+                        vipro.cancelGroupInvitation(op.param1, [op.param3])
 		else:
 		    if op.param3 in wait["blacklist"]:
-			zz7.cancelGroupInvitation(op.param1, [op.param3])
-			zz7.sendText(op.param1, "Blacklist Detected")
+			vipro.cancelGroupInvitation(op.param1, [op.param3])
+			vipro.sendText(op.param1, "Blacklist Detected")
 		    else:
 			pass
 			
@@ -709,8 +707,8 @@ def bot(op):
                     pass
                 elif wait["inviteprotect"] == True:
                     wait ["blacklist"][op.param2] = True
-                    zz7.cancelGroupInvitation(op.param1,[op.param3])
-                    zz7.kickoutFromGroup(op.param1,[op.param2])
+                    vipro.cancelGroupInvitation(op.param1,[op.param3])
+                    vipro.kickoutFromGroup(op.param1,[op.param2])
                     if op.param2 not in Creator:
                      if op.param2 not in admin:
                       if op.param2 not in Bots:
@@ -731,21 +729,21 @@ def bot(op):
 		           if op.param2 in Bots:
 		               pass
 		           else:
-		               zz7.kickoutFromGroup(op.param1,[op.param2])
+		               vipro.kickoutFromGroup(op.param1,[op.param2])
 		               if op.param2 in wait["blacklist"]:
 		                   pass
 		        else:
-			    zz7.inviteIntoGroup(op.param1,[op.param3])
+			    vipro.inviteIntoGroup(op.param1,[op.param3])
 		    except:
 		        try:
 			    if op.param2 not in Creator:
 			        if op.param2 not in admin:
 			            if op.param2 not in Bots:
-                                        zz7.kickoutFromGroup(op.param1,[op.param2])
+                                        vipro.kickoutFromGroup(op.param1,[op.param2])
 			    if op.param2 in wait["blacklist"]:
 			        pass
 			    else:
-			        zz7.inviteIntoGroup(op.param1,[op.param3])
+			        vipro.inviteIntoGroup(op.param1,[op.param3])
 		        except:
 			    print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -775,11 +773,11 @@ def bot(op):
                       if op.param2 in Bots:
                         pass
                     try:
-                        zz7.kickoutFromGroup(op.param1,[op.param2])
-			zz7.kickoutFromGroup(op.param1,[op.param2])
+                        vipro.kickoutFromGroup(op.param1,[op.param2])
+			vipro.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
-			    zz7.kickoutFromGroup(op.param1,[op.param2])
+			    vipro.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -801,16 +799,16 @@ def bot(op):
                     if op.param2 in Bots:
                         pass
                     try:
-                        zz7.kickoutFromGroup(op.param1,[op.param2])
-			zz7.kickoutFromGroup(op.param1,[op.param2])
+                        vipro.kickoutFromGroup(op.param1,[op.param2])
+			vipro.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
 			    if op.param2 not in Bots:
-                                zz7.kickoutFromGroup(op.param1,[op.param2])
+                                vipro.kickoutFromGroup(op.param1,[op.param2])
 			    if op.param2 in wait["blacklist"]:
 			        pass
 			    else:
-			        zz7.inviteIntoGroup(op.param1,[op.param3])
+			        vipro.inviteIntoGroup(op.param1,[op.param3])
                         except:
                             print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -819,7 +817,7 @@ def bot(op):
                             pass
                         else:
                             wait["blacklist"][op.param2] = True
-                    zz7.inviteIntoGroup(op.param1,[op.param3])
+                    vipro.inviteIntoGroup(op.param1,[op.param3])
                     if op.param2 in wait["blacklist"]:
                         pass
                     if op.param2 in wait["whitelist"]:
@@ -835,51 +833,51 @@ def bot(op):
 		  if op.param2 in Bots:
 		   pass		
 		else:
-                    zz7.kickoutFromGroup(op.param1,[op.param2])
+                    vipro.kickoutFromGroup(op.param1,[op.param2])
             else:
                 pass
 
 
         if op.type == 17:
-          if wait["Notif"] == True:
+          if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            ginfo = zz7.getGroup(op.param1)
-            contact = zz7.getContact(op.param2)
+            ginfo = vipro.getGroup(op.param1)
+            contact = vipro.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            zz7.sendText(op.param1,"Assalamualaikum.wr.wb" + zz7.getContact(op.param2).displayName + "⋱ ⋮ ⋰" + "\n⋯ ◯ ⋯ ︵ 　　　　　　^v^" + "\n¸︵︵( ░░ )︵.︵.︵" + "\n(´░░░░░░ ') ░░░' ) `´︶´¯`︶´`︶´︶´`　^v^　　^v^" + "\n" + "\n╔┓┏╦━━╦┓╔┓╔━━╗╔╗" + "\n║┗┛║┗━╣┃║┃║╯╰║║║" + "\n║┏┓║┏━╣┗╣┗╣╰╯║╠╣" + "\n╚┛┗╩━━╩━╩━╩━━╝╚╝" + "\n♪♫•*¨*•.¸¸❤¸¸.•*¨*•♫♪♪♫•*¨*•.¸¸❤¸¸.•*¨*•♫♪" + "\nSELAMAT DATANG DI ✴ " + str(ginfo.name) + " ✴" + "\nYuk kenalan sama temen-temen 😄\nJangan lupa baca note ya kak...\nSemoga Betah Disini ^_^")
+            vipro.sendText(op.param1,"Hallo " + vipro.getContact(op.param2).displayName + "\nWelcome To ╩╦♠ " + str(ginfo.name) + " ♠╦╩" + "\nIni Rumah Kami Yang Sederhana\nSemoga Betah Disini ^_^")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
-            zz7.sendMessage(c)  
-            zz7.sendImageWithURL(op.param1,image)
+            vipro.sendMessage(c)  
+            vipro.sendImageWithURL(op.param1,image)
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
                                     "STKID": "13269548",
                                     "STKPKGID": "1329191",
                                     "STKVER": "1" }                
-            zz7.sendMessage(d)             
+            vipro.sendMessage(d)             
             print "MEMBER JOIN TO GROUP"
 
         if op.type == 15:
-          if wait["Notif"] == True:
+          if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            zz7.sendText(op.param1,"Good Bye " + zz7.getContact(op.param2).displayName +  "\nBawain Sekalian Bajunya Dan Sendalnya Awas Ketinggalan . . . (p′︵‵。) 🤗")
+            vipro.sendText(op.param1,"Good Bye " + vipro.getContact(op.param2).displayName +  "\nBawain Sekalian Bajunya Dan Sendalnya Awas Ketinggalan . . . (p′︵‵。) 🤗")
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
                                     "STKID": "13269542",
                                     "STKPKGID": "1329191",
                                     "STKVER": "1" }                
-            zz7.sendMessage(d)                  
+            vipro.sendMessage(d)                  
             print "MEMBER HAS LEFT THE GROUP"
             
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             
             if msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
                     text = msg.text
                     if text is not None:
-                        zz7.sendText(msg.to,text)             
+                        vipro.sendText(msg.to,text)             
             
             
             if msg.to in settings["simiSimi"]:
@@ -891,61 +889,61 @@ def bot(op):
                         data = json.loads(data)
                         if data['status'] == 200:
                             if data['result']['result'] == 100:
-                                zz7.sendText(msg.to,data['result']['response'].encode('utf-8'))
+                                vipro.sendText(msg.to,data['result']['response'].encode('utf-8'))
 
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["kickMention"] == True:
-                     contact = zz7.getContact(msg.from_)
+                     contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Aku Bilang Jangan Ngetag Lagi " + cName + "\nAku Kick Kamu! Sorry, Byee!!!"]
+                     balas = ["Gue Bilang Jangan Ngetag" + cName + "\nGue Kick Loe! Sorry, Byee!!!"]
                      ret_ = random.choice(balas)                     
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
                            if mention['M'] in Bots:
-                                  zz7.sendText(msg.to,ret_)
-                                  zz7.kickoutFromGroup(msg.to,[msg.from_])
+                                  vipro.sendText(msg.to,ret_)
+                                  vipro.kickoutFromGroup(msg.to,[msg.from_])
                                   break                              
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention"] == True:
-                     contact = zz7.getContact(msg.from_)
+                     contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk Anu",cName + " Ngapain Ngetag? Mau Dicipok?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Japri Aja","Eeh Dasar Pekok Loe, Gue Lagi Nanggung", cName + " Eeh KoplakcNgapain Sih Tag Gue Trus?","Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gue " + cName, "Loe Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, lagi Modol!"]
+                     balas = ["Dont Tag!! Lagi Sibuk Anu",cName + " Ngapain Ngetag? Mau Dicipok?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Japri Aja","Dia Lagi Nanggung", cName + " Ngapain Sih Tag Gue Trus?","Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gue " + cName, "Loe Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, lagi Modol!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
                            if mention['M'] in Bots:
-                                  zz7.sendText(msg.to,ret_)
+                                  vipro.sendText(msg.to,ret_)
                                   break   
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention2"] == True:          
-                    contact = zz7.getContact(msg.from_)
+                    contact = vipro.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = [ "Sekali lagi ngetag gw sumpahin Jempol Loe Kutilan!!","Nggak Usah Tag-Tag! Gue Tau Loe Kangen Berat Ke Gue","Woii " + cName + " Jangan Ngetag, Lagi Enak Anu Nih!"  ]
+                    balas = ["Gda Kerjaan Nih Jones, Ngetag Mulu!","Nggak Usah Tag-Tag! Gue Tau Loe Kangen Berat Ke Gue","Woii " + cName + " Jangan Ngetag, Lagi Enak Nih!"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                     mentionees = mention['MENTIONEES']
                     for mention in mentionees:
-                           if mention['M'] in Bots:
-                                  zz7.sendText(msg.to,ret_)
+                                if mention['M'] in Bots:
+                                  vipro.sendText(msg.to,ret_)
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
-                                                       "STKID": "20001316",
-                                                       "STKPKGID": "1582380",
-                                                       "STKVER": "1" }
-                                  zz7.sendMessage(msg)                                
+                                  "STKID": "20001316",
+                                  "STKPKGID": "1582380",
+                                  "STKVER": "1" }
+                                  vipro.sendMessage(msg)                                
                                   break
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention3"] == True:          
-                    contact = zz7.getContact(msg.from_)
+                    contact = vipro.getContact(msg.from_)
                     cName = contact.displayName
                     balas = ["Woii " + cName + ", Dasar Jones Ngetag Mulu!"]
                     balas1 = "Ini Foto Sii Jones Yang Suka Ngetag. . ."
@@ -956,16 +954,16 @@ def bot(op):
                     mentionees = mention['MENTIONEES']
                     for mention in mentionees:
                            if mention['M'] in Bots:
-                                  zz7.sendText(msg.to,ret_)
-                                  zz7.sendText(msg.to,balas1)
-                                  zz7.sendImageWithURL(msg.to,image)
+                                  vipro.sendText(msg.to,ret_)
+                                  vipro.sendText(msg.to,balas1)
+                                  vipro.sendImageWithURL(msg.to,image)
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
                                                        "STKID": "11764508",
                                                        "STKPKGID": "6641",
                                                        "STKVER": "1" }
-                                  zz7.sendMessage(msg)                                
+                                  vipro.sendMessage(msg)                                
                                   break  
                                   
         if op.type == 25:
@@ -973,7 +971,7 @@ def bot(op):
                               
             if msg.text in ["Bot on"]:
                 wait["Bot"] = True
-                zz7.sendText(msg.to,"Combat Team On")  
+                vipro.sendText(msg.to,"Siap Lapor Kalo Ada Yang Nongol Bos.")  
 
         if op.type == 25:
           if wait["Bot"] == True:    
@@ -987,31 +985,24 @@ def bot(op):
                 stk_ver = msg.contentMetadata['STKVER']
                 pkg_id = msg.contentMetadata['STKPKGID']
                 filler = "『 Sticker Check 』\nSTKID : %s\nSTKPKGID : %s\nSTKVER : %s\n『 Link 』\nline://shop/detail/%s" % (stk_id,pkg_id,stk_ver,pkg_id)
-                zz7.sendText(msg.to, filler)
+                vipro.sendText(msg.to, filler)
                 wait["sticker"] = False
             else:
                 pass              
 
             if wait["alwaysRead"] == True:
                 if msg.toType == 0:
-                    zz7.sendChatChecked(msg.from_,msg.id)
+                    vipro.sendChatChecked(msg.from_,msg.id)
                 else:
-                    zz7.sendChatChecked(msg.to,msg.id)
+                    vipro.sendChatChecked(msg.to,msg.id)
                     
                     
             if msg.contentType == 16:
                 if wait['likeOn'] == True:
                      url = msg.contentMetadata["postEndUrl"]
-                     zz7.like(url[25:58], url[66:], likeType=1005)
-                     zz7.comment(url[25:58], url[66:], wait["comment"])
-                     zz7.comment(url[25:58], url[66:], wait["comment1"])
-                     zz7.comment(url[25:58], url[66:], wait["comment2"])
-                     zz7.comment(url[25:58], url[66:], wait["comment3"])
-                     zz7.comment(url[25:58], url[66:], wait["comment4"])
-                     zz7.comment(url[25:58], url[66:], wait["comment5"])
-                     zz7.comment(url[25:58], url[66:], wait["comment6"])
-                     zz7.comment(url[25:58], url[66:], wait["comment7"])
-                     zz7.sendText(msg.to,"Like Success")                     
+                     vipro.like(url[25:58], url[66:], likeType=1005)
+                     vipro.comment(url[25:58], url[66:], wait["comment"])
+                     vipro.sendText(msg.to,"Like Success")                     
                      wait['likeOn'] = False
 
 
@@ -1019,51 +1010,51 @@ def bot(op):
                 if wait["wblacklist"] == True:
 		    if msg.contentMetadata["mid"] not in admin:
                         if msg.contentMetadata["mid"] in wait["blacklist"]:
-                            zz7.sendText(msg.to,"Sudah")
+                            vipro.sendText(msg.to,"Sudah")
                             wait["wblacklist"] = False
                         else:
                             wait["blacklist"][msg.contentMetadata["mid"]] = True
                             wait["wblacklist"] = False
-                            zz7.sendText(msg.to,"Ditambahkan")
+                            vipro.sendText(msg.to,"Ditambahkan")
 		    else:
-			zz7.sendText(msg.to,"Admin Detected~")
+			vipro.sendText(msg.to,"Admin Detected~")
 			
 
                 elif wait["dblacklist"] == True:
                     if msg.contentMetadata["mid"] in wait["blacklist"]:
                         del wait["blacklist"][msg.contentMetadata["mid"]]
-                        zz7.sendText(msg.to,"Terhapus")
+                        vipro.sendText(msg.to,"Terhapus")
                         wait["dblacklist"] = False
 
                     else:
                         wait["dblacklist"] = False
-                        zz7.sendText(msg.to,"Tidak Ada Black List")
+                        vipro.sendText(msg.to,"Tidak Ada Black List")
             
                     
  
                 elif wait["Contact"] == True:
                      msg.contentType = 0
-                     zz7.sendText(msg.to,msg.contentMetadata["mid"])
+                     vipro.sendText(msg.to,msg.contentMetadata["mid"])
                      if 'displayName' in msg.contentMetadata:
-                         contact = zz7.getContact(msg.contentMetadata["mid"])
+                         contact = vipro.getContact(msg.contentMetadata["mid"])
                          try:
-                             cu = zz7.channel.getCover(msg.contentMetadata["mid"])
+                             cu = vipro.channel.getCover(msg.contentMetadata["mid"])
                          except:
                              cu = ""
-                         zz7.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
+                         vipro.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
                      else:
-                         contact = zz7.getContact(msg.contentMetadata["mid"])
+                         contact = vipro.getContact(msg.contentMetadata["mid"])
                          try:
-                             cu = zz7.channel.getCover(msg.contentMetadata["mid"])
+                             cu = vipro.channel.getCover(msg.contentMetadata["mid"])
                          except:
                              cu = ""
-                         zz7.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
+                         vipro.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
 
 
  
             elif msg.text == "Ginfo":
                 if msg.toType == 2:
-                    ginfo = zz7.getGroup(msg.to)
+                    ginfo = vipro.getGroup(msg.to)
                     try:
                         gCreator = ginfo.creator.displayName
                     except:
@@ -1077,14 +1068,14 @@ def bot(op):
                             u = "close"
                         else:
                             u = "open"
-                        zz7.sendText(msg.to,"[Group name]\n" + str(ginfo.name) + "\n\n[Gid]\n" + msg.to + "\n\n[Group creator]\n" + gCreator + "\n\n[Profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nMembers:" + str(len(ginfo.members)) + "members\nPending:" + sinvitee + "people\nURL:" + u + "it is inside")
+                        vipro.sendText(msg.to,"[Group name]\n" + str(ginfo.name) + "\n\n[Gid]\n" + msg.to + "\n\n[Group creator]\n" + gCreator + "\n\n[Profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nMembers:" + str(len(ginfo.members)) + "members\nPending:" + sinvitee + "people\nURL:" + u + "it is inside")
                     else:
-                        zz7.sendText(msg.to,"[group name]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[group creator]\n" + gCreator + "\n[profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
+                        vipro.sendText(msg.to,"[group name]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[group creator]\n" + gCreator + "\n[profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
                 else:
                     if wait["lang"] == "JP":
-                        zz7.sendText(msg.to,"Can not be used outside the group")
+                        vipro.sendText(msg.to,"Can not be used outside the group")
                     else:
-                        zz7.sendText(msg.to,"Not for use less than group")
+                        vipro.sendText(msg.to,"Not for use less than group")
                         
 
  
@@ -1093,19 +1084,19 @@ def bot(op):
  
             elif msg.text in ["Creator","Owner"]:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': vip}
-                zz7.sendMessage(msg)
-		zz7.sendText(msg.to,"Itu Majikan Kami (^_^)")
+                msg.contentMetadata = {'mid': tjia}
+                vipro.sendMessage(msg)
+		vipro.sendText(msg.to,"Itu Majikan Kami (^_^)")
 
  
 
 	    elif msg.text in ["Group creator","Gcreator","gcreator"]:
-		ginfo = zz7.getGroup(msg.to)
+		ginfo = vipro.getGroup(msg.to)
 		gCreator = ginfo.creator.mid
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': gCreator}
-                zz7.sendMessage(msg)
-		zz7.sendText(msg.to,"Itu Yang Buat Grup Ini")
+                vipro.sendMessage(msg)
+		vipro.sendText(msg.to,"Itu Yang Buat Grup Ini")
  
 
                 
@@ -1113,14 +1104,14 @@ def bot(op):
                 if wait["Timeline"] == True:
                     msg.contentType = 0
                     msg.text = "post URL\n" + msg.contentMetadata["postEndUrl"]
-                    zz7.sendText(msg.to,msg.text)
+                    vipro.sendText(msg.to,msg.text)
 
             
             if msg.contentType == 13:
                 if wait["steal"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = zz7.getGroup(msg.to)
+                    groups = vipro.getGroup(msg.to)
                     pending = groups.invitee
                     targets = []
                     for s in groups.members:
@@ -1134,16 +1125,16 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                zz7.findAndAddContactsByMid(target)
-                                contact = zz7.getContact(target)
-                                cu = zz7.channel.getCover(target)
+                                vipro.findAndAddContactsByMid(target)
+                                contact = vipro.getContact(target)
+                                cu = vipro.channel.getCover(target)
                                 path = str(cu)
                                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                zz7.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
-                                zz7.sendText(msg.to,"Profile Picture " + contact.displayName)
-                                zz7.sendImageWithURL(msg.to,image)
-                                zz7.sendText(msg.to,"Cover " + contact.displayName)
-                                zz7.sendImageWithURL(msg.to,path)
+                                vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
+                                vipro.sendText(msg.to,"Profile Picture " + contact.displayName)
+                                vipro.sendImageWithURL(msg.to,image)
+                                vipro.sendText(msg.to,"Cover " + contact.displayName)
+                                vipro.sendImageWithURL(msg.to,path)
                                 wait["steal"] = False
                                 break
                             except:
@@ -1154,7 +1145,7 @@ def bot(op):
                 if wait["gift"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = zz7.getGroup(msg.to)
+                    groups = vipro.getGroup(msg.to)
                     pending = groups.invitee
                     targets = []
                     for s in groups.members:
@@ -1168,7 +1159,7 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                zz7.sendText(msg.to,"Gift Sudah Terkirim!")
+                                vipro.sendText(msg.to,"Gift Sudah Terkirim!")
                                 msg.contentType = 9
                                 msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1176,7 +1167,7 @@ def bot(op):
                                                          'STKPKGID': '1296261'}
                                 msg.to = target
                                 msg.text = None
-                                zz7.sendMessage(msg)
+                                vipro.sendMessage(msg)
                                 wait['gift'] = False
                                 break
                             except:
@@ -1188,7 +1179,7 @@ def bot(op):
                 if wait["copy"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = zz7.getGroup(msg.to)
+                    groups = vipro.getGroup(msg.to)
                     targets = []
                     for s in groups.members:
                         if _name in s.displayName:
@@ -1197,13 +1188,13 @@ def bot(op):
                         else:
                             targets.append(copy)
                     if targets == []:
-                        zz7.sendText(msg.to, "Not Found...")
+                        vipro.sendText(msg.to, "Not Found...")
                         pass
                     else:
                         for target in targets:
                             try:
-                                zz7.CloneContactProfile(target)
-                                zz7.sendText(msg.to, "Copied (^_^)")
+                                vipro.CloneContactProfile(target)
+                                vipro.sendText(msg.to, "Copied (^_^)")
                                 wait['copy'] = False
                                 break
                             except:
@@ -1216,12 +1207,12 @@ def bot(op):
                 if wait['invite'] == True:
                      _name = msg.contentMetadata["displayName"]
                      invite = msg.contentMetadata["mid"]
-                     groups = zz7.getGroup(msg.to)
+                     groups = vipro.getGroup(msg.to)
                      pending = groups.invitee
                      targets = []
                      for s in groups.members:
                          if _name in s.displayName:
-                             zz7.sendText(msg.to, _name + " Berada DiGrup Ini")
+                             vipro.sendText(msg.to, _name + " Berada DiGrup Ini")
                          else:
                              targets.append(invite)
                      if targets == []:
@@ -1229,351 +1220,343 @@ def bot(op):
                      else:
                          for target in targets:
                              try:
-                                 zz7.findAndAddContactsByMid(target)
-                                 zz7.inviteIntoGroup(msg.to,[target])
-                                 zz7.sendText(msg.to,"Invite " + _name)
+                                 vipro.findAndAddContactsByMid(target)
+                                 vipro.inviteIntoGroup(msg.to,[target])
+                                 vipro.sendText(msg.to,"Invite " + _name)
                                  wait['invite'] = False
                                  break                              
                              except:             
-                                      zz7.sendText(msg.to,"Limit Invite")
+                                      vipro.sendText(msg.to,"Limit Invite")
                                       wait['invite'] = False
                                       break
+									  
+	    elif msg.text in ["Team","team"]:
+            	 vipro.sendText(msg.to,teamMessage)               
+                 vipro.sendText(msg.to, "My zz7Combat Team")
                                   
  
             elif msg.text in ["Key creator","help creator","Help creator"]:
-                zz7.sendText(msg.to,creatorMessage)
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,creatorMessage)
 
             elif msg.text in ["Key group","help group","Help group"]:
-                zz7.sendText(msg.to,groupMessage)
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
-                zz7.sendText(msg.to,helpMessage)
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,helpMessage)
 
             elif msg.text in ["Key self","help self","Help self"]:
-                zz7.sendText(msg.to,selfMessage)              
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,selfMessage)
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
-                zz7.sendText(msg.to,botMessage)
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,botMessage)
 
             elif msg.text in ["Key set","help set","Help set"]:
-                zz7.sendText(msg.to,setMessage)
-                zz7.sendText(msg)
-                
-            elif msg.text in ["Team","team"]:
-            	zz7.sendText(msg.to,teamMessage)               
-                zz7.sendText(msg.to, "My zz7Combat Team")
-                
+                vipro.sendText(msg.to,setMessage)
+				
             elif msg.text in ["Key media","help media","Help media"]:
-                zz7.sendText(msg.to,mediaMessage)
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,mediaMessage)
                 
             elif msg.text in ["Key admin","help admin","Help admin"]:
-                zz7.sendText(msg.to,adminMessage)               
-                zz7.sendText(msg)
+                vipro.sendText(msg.to,adminMessage)               
                 
 
  
             elif msg.text in ["List group"]:
-                    gid = zz7.getGroupIdsJoined()
+                    gid = vipro.getGroupIdsJoined()
                     h = ""
 		    jml = 0
                     for i in gid:
-		        gn = zz7.getGroup(i).name
+		        gn = vipro.getGroup(i).name
                         h += "♦【%s】\n" % (gn)
 		        jml += 1
-                    zz7.sendText(msg.to,"=======[List Group]=======\n"+ h +"\nTotal Group: "+str(jml))
+                    vipro.sendText(msg.to,"=======[List Group]=======\n"+ h +"\nTotal Group: "+str(jml))
  
 	    elif "Ban group: " in msg.text:
 		grp = msg.text.replace("Ban group: ","")
-		gid = zz7.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in admin:
 		    for i in gid:
-		        h = zz7.getGroup(i).name
+		        h = vipro.getGroup(i).name
 			if h == grp:
 			    wait["BlGroup"][i]=True
-			    zz7.sendText(msg.to, "Success Ban Group : "+grp)
+			    vipro.sendText(msg.to, "Success Ban Group : "+grp)
 			else:
 			    pass
 		else:
-		    zz7.sendText(msg.to, "Khusus Admin")
+		    vipro.sendText(msg.to, "Khusus Admin")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
                     if wait["BlGroup"] == {}:
-                        zz7.sendText(msg.to,"Tidak Ada")
+                        vipro.sendText(msg.to,"Tidak Ada")
                     else:
                         mc = ""
                         for gid in wait["BlGroup"]:
-                            mc += "-> " +zz7.getGroup(gid).name + "\n"
-                        zz7.sendText(msg.to,"===[Ban Group]===\n"+mc)
+                            mc += "-> " +vipro.getGroup(gid).name + "\n"
+                        vipro.sendText(msg.to,"===[Ban Group]===\n"+mc)
 		else:
-		    zz7.sendText(msg.to, "Khusus Admin")
+		    vipro.sendText(msg.to, "Khusus Admin")
  
 	    elif msg.text in ["Del ban: "]:
 		if msg.from_ in admin:
 		    ng = msg.text.replace("Del ban: ","")
 		    for gid in wait["BlGroup"]:
-		        if zz7.getGroup(gid).name == ng:
+		        if vipro.getGroup(gid).name == ng:
 			    del wait["BlGroup"][gid]
-			    zz7.sendText(msg.to, "Success del ban "+ng)
+			    vipro.sendText(msg.to, "Success del ban "+ng)
 		        else:
 			    pass
 		else:
-		    zz7.sendText(msg.to, "Khusus Admin")
+		    vipro.sendText(msg.to, "Khusus Admin")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
-		gid = zz7.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		try:
 		    if msg.from_ in Creator:
                         for i in gid:
-                            h = zz7.getGroup(i).name
+                            h = vipro.getGroup(i).name
 		            if h == ng:
-		                zz7.inviteIntoGroup(i,[Creator])
-			        zz7.sendText(msg.to,"Success Join To ["+ h +"] Group")
+		                vipro.inviteIntoGroup(i,[Creator])
+			        vipro.sendText(msg.to,"Success Join To ["+ h +"] Group")
 			    else:
 			        pass
 		    else:
-		        zz7.sendText(msg.to,"Khusus Admin")
+		        vipro.sendText(msg.to,"Khusus Admin")
 		except Exception as e:
-		    zz7.sendText(msg.to, str(e))
+		    vipro.sendText(msg.to, str(e))
  
 	    elif "Leave group: " in msg.text:
 		ng = msg.text.replace("Leave group: ","")
-		gid = zz7.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in Creator:
                     for i in gid:
-                        h = zz7.getGroup(i).name
+                        h = vipro.getGroup(i).name
 		        if h == ng:
-			    zz7.sendText(i,"Combat Di Paksa Keluar Oleh Owner!")
-		            zz7.leaveGroup(i)
-			    zz7.sendText(msg.to,"Success Left ["+ h +"] group")
+			    vipro.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
+		            vipro.leaveGroup(i)
+			    vipro.sendText(msg.to,"Success Left ["+ h +"] group")
 			else:
 			    pass
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
  
 	    elif "Leave all group" == msg.text:
-		gid = zz7.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
                 if msg.from_ in Creator:
 		    for i in gid:
-			zz7.sendText("Combat Di Paksa Keluar Oleh Owner!")
-		        zz7.leaveGroup(i)
-		    zz7.sendText(msg.to,"Success Leave All Group")
+			vipro.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
+		        vipro.leaveGroup(i)
+		    vipro.sendText(msg.to,"Success Leave All Group")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 		   
 
             elif "Pict group: " in msg.text:
                 saya = msg.text.replace('Pict group: ','')
-                gid = zz7.getGroupIdsJoined()
+                gid = vipro.getGroupIdsJoined()
                 for i in gid:
-                    h = zz7.getGroup(i).name
-                    gna = zz7.getGroup(i)
+                    h = vipro.getGroup(i).name
+                    gna = vipro.getGroup(i)
                     if h == saya:
-                        zz7.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)		    
+                        vipro.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)		    
 		    
  
             elif msg.text in ["cancelall","Cancelall"]:
                 if msg.toType == 2:
-                    X = zz7.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     if X.invitee is not None:
                         gInviMids = [contact.mid for contact in X.invitee]
-                        zz7.cancelGroupInvitation(msg.to, gInviMids)
+                        vipro.cancelGroupInvitation(msg.to, gInviMids)
                     else:
-                        zz7.sendText(msg.to,"Tidak Ada Yang Pending")
+                        vipro.sendText(msg.to,"Tidak Ada Yang Pending")
                 else:
-                    zz7.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
+                    vipro.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
  
             elif msg.text in ["Ourl","Url on"]:
                 if msg.toType == 2:
-                    X = zz7.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     X.preventJoinByTicket = False
-                    zz7.updateGroup(X)
-                    zz7.sendText(msg.to,"Url Sudah Aktif")
+                    vipro.updateGroup(X)
+                    vipro.sendText(msg.to,"Url Sudah Aktif")
                 else:
-                    zz7.sendText(msg.to,"Can not be used outside the group")
+                    vipro.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Curl","Url off"]:
                 if msg.toType == 2:
-                    X = zz7.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     X.preventJoinByTicket = True
-                    zz7.updateGroup(X)
-                    zz7.sendText(msg.to,"Url Sudah Di Nonaktifkan")
+                    vipro.updateGroup(X)
+                    vipro.sendText(msg.to,"Url Sudah Di Nonaktifkan")
 
                 else:
-                    zz7.sendText(msg.to,"Can not be used outside the group")
+                    vipro.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Join on","Autojoin on"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = True
                     wait["AutoJoinCancel"] = False
-                    zz7.sendText(msg.to,"Auto Join Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Join Sudah Aktif")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Join off","Autojoin off"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
-                    zz7.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
+                    vipro.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 		    
 		    
             elif msg.text in ["Joincancel on","Autojoincancel on"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = True
                     wait["AutoJoin"] = False
-                    zz7.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Joincancel off","Autojoincancel off"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
-                    zz7.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
+                    vipro.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")		    
+		    vipro.sendText(msg.to,"Khusus Admin")		    
 		    
  
-            elif msg.text in ["R1 on"]:
+            elif msg.text in ["Respon1 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = True
                     wait["detectMention2"] = False
                     wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    zz7.sendText(msg.to,"Auto R1 Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Respon1 Sudah Aktif")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["R1 off"]:
+            elif msg.text in ["Respon1 off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
-                    zz7.sendText(msg.to,"Auto R1 Sudah Off")
+                    vipro.sendText(msg.to,"Auto Respon1 Sudah Off")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")	
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
 		    
-            elif msg.text in ["R2 on"]:
+            elif msg.text in ["Respon2 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     wait["detectMention2"] = True
                     wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    zz7.sendText(msg.to,"Auto R2 Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Respon2 Sudah Aktif")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
-            elif msg.text in ["R2 off"]:
+		    vipro.sendText(msg.to,"Khusus Admin")
+            elif msg.text in ["Respon2 off"]:
 		if msg.from_ in admin:
                     wait["detectMention2"] = False
-                    zz7.sendText(msg.to,"Auto R2 Sudah Off")
+                    vipro.sendText(msg.to,"Auto Respon2 Sudah Off")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")	
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
 
-            elif msg.text in ["R3 on"]:
+            elif msg.text in ["Respon3 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     wait["detectMention2"] = False
                     wait["detectMention3"] = True
                     wait["kickMention"] = False
-                    zz7.sendText(msg.to,"Auto R3 Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Respon3 Sudah Aktif")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["R3 off"]:
+            elif msg.text in ["Respon3 off"]:
 		if msg.from_ in admin:
                     wait["detectMention3"] = False
-                    zz7.sendText(msg.to,"Auto R3 Sudah Off")
+                    vipro.sendText(msg.to,"Auto Respon3 Sudah Off")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")	
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
  
-            elif msg.text in ["Rkick on"]:
+            elif msg.text in ["Responkick on"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
                     wait["detectMention2"] = False
                     wait["detectMention3"] = False                    
-                    zz7.sendText(msg.to,"Auto R Kick Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["Rkick off"]:
+            elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
-                    zz7.sendText(msg.to,"Auto R Kick Sudah Off")
+                    vipro.sendText(msg.to,"Auto Respon Kick Sudah Off")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")			  
+		    vipro.sendText(msg.to,"Khusus Admin")			  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = True
-                zz7.sendText(msg.to,"Auto Cancel Sudah Aktif")
+                vipro.sendText(msg.to,"Auto Cancel Sudah Aktif")
 		print wait["AutoCancel"]
 	     else:
-		    zz7.sendText(msg.to,"Khusus Admin")		
+		    vipro.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Autocancel off"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = False
-                zz7.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
+                vipro.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
 		print wait["AutoCancel"]
 	     else:
-		    zz7.sendText(msg.to,"Khusus Admin")	
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
 
 	    elif msg.text in ["Invitepro on"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
-                zz7.sendText(msg.to,"Invite Protect Sudah Aktif")
+                vipro.sendText(msg.to,"Invite Protect Sudah Aktif")
 		print wait["inviteprotect"]
 	     else:
-		    zz7.sendText(msg.to,"Khusus Admin")		
+		    vipro.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Invitepro off"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
-                zz7.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
+                vipro.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
 		print wait["inviteprotect"]
 	     else:
-		    zz7.sendText(msg.to,"Khusus Admin")		    
+		    vipro.sendText(msg.to,"Khusus Admin")		    
 
 	    elif "Qr on" in msg.text:
 	     if msg.from_ in admin:	        
 	        wait["Qr"] = True
-	    	zz7.sendText(msg.to,"QR Protect Sudah Aktif")
+	    	vipro.sendText(msg.to,"QR Protect Sudah Aktif")
 	     else:
-		    zz7.sendText(msg.to,"Khusus Admin")	    	
+		    vipro.sendText(msg.to,"Khusus Admin")	    	
 
 	    elif "Qr off" in msg.text:
 	     if msg.from_ in admin:	        
 	    	wait["Qr"] = False
-	    	zz7.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
+	    	vipro.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
 	     else:
-		    zz7.sendText(msg.to,"Khusus Admin")	    	
+		    vipro.sendText(msg.to,"Khusus Admin")	    	
 
                         
 
 	    elif "Autokick on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = True
-		     zz7.sendText(msg.to,"Auto Kick Sudah Aktif")
+		     vipro.sendText(msg.to,"Auto Kick Sudah Aktif")
 	     else:
-	        zz7.sendText(msg.to,"Khusus Admin")	     
+	        vipro.sendText(msg.to,"Khusus Admin")	     
 
 	    elif "Autokick off" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = False
-		     zz7.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
+		     vipro.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
 	     else:
-	        zz7.sendText(msg.to,"Khusus Admin")	     
+	        vipro.sendText(msg.to,"Khusus Admin")	     
 
 
             elif msg.text in ["Allprotect on"]:
@@ -1582,9 +1565,9 @@ def bot(op):
                     wait["inviteprotect"] = True                   
                     wait["AutoKick"] = True
                     wait["Qr"] = True
-                    zz7.sendText(msg.to,"All Protect Sudah Aktif Semua")
+                    vipro.sendText(msg.to,"All Protect Sudah Aktif Semua")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -1592,61 +1575,48 @@ def bot(op):
                     wait["inviteprotect"] = False                    
                     wait["AutoKick"] = False
                     wait["Qr"] = False
-                    zz7.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
+                    vipro.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
 
             elif msg.text in ["K on","Contact on"]:
                 wait["Contact"] = True
-                zz7.sendText(msg.to,"Contact Sudah Aktif")
+                vipro.sendText(msg.to,"Contact Sudah Aktif")
 
             elif msg.text in ["K off","Contact off"]:
                 wait["Contact"] = False
-                zz7.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
+                vipro.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
                 
 
             elif msg.text in ["Alwaysread on"]:
                 wait["alwaysRead"] = True
-                zz7.sendText(msg.to,"Always Read Sudah Aktif")
+                vipro.sendText(msg.to,"Always Read Sudah Aktif")
 
             elif msg.text in ["Alwaysread off"]:
                 wait["alwaysRead"] = False
-                zz7.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
+                vipro.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
 
 
             elif msg.text in ["Notif on"]:
-                if wait["Notif"] == True:
+                if wait["Sambutan"] == True:
                     if wait["lang"] == "JP":
-                        zz7.sendText(msg.to,"Notif Di Aktifkanヾ(*´∀｀*)ﾉ")
+                        vipro.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
                 else:
-                    wait["Notif"] = True
+                    wait["Sambutan"] = True
                     if wait["lang"] == "JP":
-                        zz7.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
+                        vipro.sendText(msg.to,"Sudah On Bos Ku")
 
             elif msg.text in ["Notif off"]:
-                if wait["Notif"] == False:
+                if wait["Sambutan"] == False:
                     if wait["lang"] == "JP":
-                        zz7.sendText(msg.to,"Notif Di Nonaktifkan(　＾∇＾)")
+                        vipro.sendText(msg.to,"Sambutan Di Nonaktifkan(　＾∇＾)")
                 else:
-                    wait["Notif"] = False
+                    wait["Sambutan"] = False
                     if wait["lang"] == "JP":
-                        zz7.sendText(msg.to,"Sudah Off(p′︵‵。)")
+                        vipro.sendText(msg.to,"Sudah Off(p′︵‵。)")
                         
                         
-            elif "Dooorrrr" in msg.text:
-                try:
-                    del cctv['point'][msg.to]
-                    del cctv['sidermem'][msg.to]
-                    del cctv['cyduk'][msg.to]
-                except:
-                    pass
-                cctv['point'][msg.to] = msg.id
-                cctv['sidermem'][msg.to] = ""
-                cctv['cyduk'][msg.to]=True
-                wait["Sider"] = True
-                zz7.sendText(msg.to,"Ngintip nih....!!!!!")
-				
             elif "Sider on" in msg.text:
                 try:
                     del cctv['point'][msg.to]
@@ -1658,50 +1628,50 @@ def bot(op):
                 cctv['sidermem'][msg.to] = ""
                 cctv['cyduk'][msg.to]=True
                 wait["Sider"] = True
-                zz7.sendText(msg.to,"Siap Lempar Bata Si Tukang Ngintip")
+                vipro.sendText(msg.to,"Siap Ciduk Tukang Ngintip")
                 
             elif "Sider off" in msg.text:
                 if msg.to in cctv['point']:
                     cctv['cyduk'][msg.to]=False
                     wait["Sider"] = False
-                    zz7.sendText(msg.to, "Cek Sider Off")
+                    vipro.sendText(msg.to, "Cek Sider Off")
                 else:
-                    zz7.sendText(msg.to, "Set Dulu Boss")                         
+                    vipro.sendText(msg.to, "Heh Belom Di Set")                         
 
 
-            elif msg.text in ["Settings","Status"]:
+            elif msg.text in ["Status"]:
                 md = ""
-		if wait["Notif"] == True: md+="┣🇮🇩━⏩✔️ Notif : On\n"
-		else:md+="┣🇮🇩━⏩✖ Notif : Off\n"
-		if wait["AutoJoin"] == True: md+="┣🇮🇩━⏩✔️ Auto Join : On\n"
-                else: md +="┣🇮🇩━⏩✖ Auto Join : Off\n"
-		if wait["AutoJoinCancel"] == True: md+="┣🇮🇩━⏩✔️ Auto Join Cancel : On\n"
-                else: md +="┣🇮🇩━⏩✖ Auto Join Cancel : Off\n"                
-		if wait["Contact"] == True: md+="┣🇮🇩━⏩✔️ Info Contact : On\n"
-		else: md+="┣🇮🇩━⏩✖ Info Contact : Off\n"
-                if wait["AutoCancel"] == True:md+="┣🇮🇩━⏩✔️ Auto Cancel : On\n"
-                else: md+= "┣🇮🇩━⏩✖ Auto Cancel : Off\n"
-                if wait["inviteprotect"] == True:md+="┣🇮🇩━⏩✔️ Invite Protect : On\n"
-                else: md+= "┣🇮🇩━⏩✖ Invite Protect : Off\n"                
-		if wait["Qr"] == True: md+="┣🇮🇩━⏩✔️ Qr Protect : On\n"
-		else:md+="┣🇮🇩━⏩✖ Qr Protect : Off\n"
-		if wait["AutoKick"] == True: md+="┣🇮🇩━⏩✔️ Auto Kick : On\n"
-		else:md+="┣🇮🇩━⏩✖ Auto Kick : Off\n"
-		if wait["alwaysRead"] == True: md+="┣🇮🇩━⏩✔️ Always Read : On\n"
-		else:md+="┣🇮🇩━⏩✖ Always Read: Off\n"
-		if wait["detectMention"] == True: md+="┣🇮🇩━⏩✔️ Auto R1 : On\n"
-		else:md+="┣🇮🇩━⏩✖ Auto R1 : Off\n"		
-		if wait["detectMention2"] == True: md+="┣🇮🇩━⏩✔️ Auto R2 : On\n"
-		else:md+="┣🇮🇩━⏩✖ Auto R2 : Off\n"	
-		if wait["detectMention3"] == True: md+="┣🇮🇩━⏩✔️ Auto R3 : On\n"
-		else:md+="┣🇮🇩━⏩✖ Auto R3 : Off\n"			
-		if wait["kickMention"] == True: md+="┣🇮🇩━⏩✔️ Auto R Kick : On\n"
-		else:md+="┣🇮🇩━⏩✖ Auto R Kick : Off\n"				
-		if wait["Sider"] == True: md+="┣🇮🇩━⏩✔️ Auto Sider : On\n"
-		else:md+="┣🇮🇩━⏩✖ Auto Sider: Off\n"	
-		if wait["Simi"] == True: md+="┣🇮🇩━⏩✔️ Simisimi : On\n"
-		else:md+="┣🇮🇩━⏩✖ Simisimi: Off\n"		
-                zz7.sendText(msg.to,"╭━━━━━━━━━━━━━━━━━━━━╮\n""│♠✴ SETTINGS ✴♠\n""│━━━━━━━━━━━━━━━━━━━━\n"+md+"╰━━━━━━━━━━━━━━━━━━━━╯")
+		if wait["Sambutan"] == True: md+="╠👽✔️ Sambutan : On\n"
+		else:md+="╠👽❌ Sambutan : Off\n"
+		if wait["AutoJoin"] == True: md+="╠👽✔️ Auto Join : On\n"
+                else: md +="╠👽❌ Auto Join : Off\n"
+		if wait["AutoJoinCancel"] == True: md+="╠👽✔️ Auto Join Cancel : On\n"
+                else: md +="╠👽❌ Auto Join Cancel : Off\n"                
+		if wait["Contact"] == True: md+="╠👽✔️ Info Contact : On\n"
+		else: md+="╠👽❌ Info Contact : Off\n"
+                if wait["AutoCancel"] == True:md+="╠👽✔️ Auto Cancel : On\n"
+                else: md+= "╠👽❌ Auto Cancel : Off\n"
+                if wait["inviteprotect"] == True:md+="╠👽✔️ Invite Protect : On\n"
+                else: md+= "╠👽❌ Invite Protect : Off\n"                
+		if wait["Qr"] == True: md+="╠👽✔️ Qr Protect : On\n"
+		else:md+="╠👽❌ Qr Protect : Off\n"
+		if wait["AutoKick"] == True: md+="╠👽✔️ Auto Kick : On\n"
+		else:md+="╠👽❌ Auto Kick : Off\n"
+		if wait["alwaysRead"] == True: md+="╠👽✔️ Always Read : On\n"
+		else:md+="╠👽❌ Always Read: Off\n"
+		if wait["detectMention"] == True: md+="╠👽✔️ Auto Respon1 : On\n"
+		else:md+="╠👽❌ Auto Respon1 : Off\n"		
+		if wait["detectMention2"] == True: md+="╠👽✔️ Auto Respon2 : On\n"
+		else:md+="╠👽❌ Auto Respon2 : Off\n"	
+		if wait["detectMention3"] == True: md+="╠👽✔️ Auto Respon3 : On\n"
+		else:md+="╠👽❌ Auto Respon3 : Off\n"			
+		if wait["kickMention"] == True: md+="╠👽✔️ Auto Respon Kick : On\n"
+		else:md+="╠👽❌ Auto Respon Kick : Off\n"				
+		if wait["Sider"] == True: md+="╠👽✔️ Auto Sider : On\n"
+		else:md+="╠👽❌ Auto Sider: Off\n"	
+		if wait["Simi"] == True: md+="╠👽✔️ Simisimi : On\n"
+		else:md+="╠👽❌ Simisimi: Off\n"		
+                vipro.sendText(msg.to,"╔═════════════════════════\n""║         👽۩۞۩ S T A T U S ۩۞۩👽\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
 
 
             elif msg.text in ["Gift","gift"]:
@@ -1710,7 +1680,7 @@ def bot(op):
                                     'PRDTYPE': 'THEME',
                                     'MSGTPL': '8'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
                 
                 
             elif "Gift1 " in msg.text:
@@ -1720,7 +1690,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1731,7 +1701,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1739,7 +1709,7 @@ def bot(op):
                                                          'STKPKGID': '1380280'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1750,7 +1720,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1761,7 +1731,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1769,7 +1739,7 @@ def bot(op):
                                                          'STKPKGID': '1360738'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1780,7 +1750,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1791,7 +1761,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1799,7 +1769,7 @@ def bot(op):
                                                          'STKPKGID': '1395389'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1810,7 +1780,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1821,7 +1791,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1829,7 +1799,7 @@ def bot(op):
                                                          'STKPKGID': '1329191'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1840,7 +1810,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1851,7 +1821,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1859,7 +1829,7 @@ def bot(op):
                                                          'STKPKGID': '9057'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1870,7 +1840,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1881,7 +1851,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1889,7 +1859,7 @@ def bot(op):
                                                          'STKPKGID': '9167'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1900,7 +1870,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1911,7 +1881,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1919,7 +1889,7 @@ def bot(op):
                                                          'STKPKGID': '7334'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1930,7 +1900,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1941,7 +1911,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1949,7 +1919,7 @@ def bot(op):
                                                          'STKPKGID': '1380280'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1960,7 +1930,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -1971,7 +1941,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1979,7 +1949,7 @@ def bot(op):
                                                          'STKPKGID': '1405277'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -1990,7 +1960,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = zz7.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2001,7 +1971,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    zz7.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2009,7 +1979,7 @@ def bot(op):
                                                          'STKPKGID': '1296261'}
                                     msg.to = target
                                     msg.text = None
-                                    zz7.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2020,7 +1990,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["hehehe","hehe"]:
                 msg.contentType = 7
@@ -2028,7 +1998,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["galau"]:
                 msg.contentType = 7
@@ -2036,7 +2006,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["you","kau","kamu"]:
                 msg.contentType = 7
@@ -2044,7 +2014,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["marah","hadeuh","hadeh"]:
                 msg.contentType = 7
@@ -2052,7 +2022,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["please","pliss","mohon","tolong"]:
                 msg.contentType = 7
@@ -2060,7 +2030,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["haa","haaa","kaget"]:
                 msg.contentType = 7
@@ -2068,7 +2038,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["lucu","ngakak","lol"]:
                 msg.contentType = 7
@@ -2076,7 +2046,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["hmm","hmmm"]:
                 msg.contentType = 7
@@ -2084,7 +2054,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["tidur"]:
                 msg.contentType = 7
@@ -2092,7 +2062,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["gemes"]:
                 msg.contentType = 7
@@ -2100,7 +2070,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["cantik","imut"]:
                 msg.contentType = 7
@@ -2108,7 +2078,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["nyanyi","lalala"]:
                 msg.contentType = 7
@@ -2116,7 +2086,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["gugup"]:
                 msg.contentType = 7
@@ -2124,7 +2094,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["ok","oke","okay","oce","okee","sip","siph"]:
                 msg.contentType = 7
@@ -2132,7 +2102,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["mantab","mantap","nice","keren"]:
                 msg.contentType = 7
@@ -2140,7 +2110,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["ngejek"]:
                 msg.contentType = 7
@@ -2148,7 +2118,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["nangis","sedih"]:
                 msg.contentType = 7
@@ -2156,7 +2126,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["woi","kampret"]:
                 msg.contentType = 7
@@ -2164,7 +2134,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["huft"]:
                 msg.contentType = 7
@@ -2172,11 +2142,11 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
                 
 
             elif "tag all" == msg.text.lower():
-                 group = zz7.getGroup(msg.to)
+                 group = vipro.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
                  if jml <= 100:
@@ -2232,10 +2202,10 @@ def bot(op):
                  cnt = Message()
                  cnt.text = "Jumlah:\n" + str(jml) +  " Members"
                  cnt.to = msg.to
-                 zz7.sendMessage(cnt)
+                 vipro.sendMessage(cnt)
                  
             elif "tagall" == msg.text.lower():
-                 group = zz7.getGroup(msg.to)
+                 group = vipro.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
                  if jml <= 100:
@@ -2291,12 +2261,12 @@ def bot(op):
                  cnt = Message()
                  cnt.text = "Jumlah:\n" + str(jml) +  " Members"
                  cnt.to = msg.to
-                 zz7.sendMessage(cnt)                 
+                 vipro.sendMessage(cnt)                 
 
 
             elif msg.text in ["Setview","Setpoint","Cctv"]:
                 subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
-                zz7.sendText(msg.to, "♠Checkpoint Checked♠")
+                vipro.sendText(msg.to, "☆Checkpoint Checked☆")
                 print "Setview"
 
             elif msg.text in ["Viewseen","Check","Ciduk","Cyduk"]:
@@ -2322,19 +2292,19 @@ def bot(op):
                         except IndexError:
                             conName.append('nones')
                             pass
-                    contactId = zz7.getContacts(recheckData)
+                    contactId = vipro.getContacts(recheckData)
                     for v in range(len(recheckData)):
                         dataResult.append(contactId[v].displayName + ' ('+timeSeen[v]+')')
                         pass
                     if len(dataResult) > 0:
-                        tukang = "╭━━━━━━━━━━━━━━━━━━━━╮\n│     ♠✴ LIST VIEWERS ✴♠\n│━━━━━━━━━━━━━━━━━━━━\n┣🇮🇩━⏩"
-                        grp = '\n┣🇮🇩━⏩ '.join(str(f) for f in dataResult)
-                        total = '\n│━━━━━━━━━━━━━━━━━━━━\n┣🇮🇩━⏩ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╰━━━━━━━━━━━━━━━━━━━━╯"
-                        zz7.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
+                        tukang = "╔═════════════════════════\n║         ☆☞ LIST VIEWERS ☜☆\n╠═════════════════════════\n╠➩"
+                        grp = '\n╠➩ '.join(str(f) for f in dataResult)
+                        total = '\n╠═════════════════════════\n╠➩ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╚═════════════════════════"
+                        vipro.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
                         subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
-                        zz7.sendText(msg.to, "♠Auto Checkpoint♠")                        
+                        vipro.sendText(msg.to, "☆Auto Checkpoint☆")                        
                     else:
-                        zz7.sendText(msg.to, "♠Belum Ada Viewers♠")
+                        vipro.sendText(msg.to, "☆Belum Ada Viewers☆")
                     print "Viewseen"
 
 
@@ -2346,168 +2316,168 @@ def bot(op):
 		        mentionees = mention['MENTIONEES']
 		        print mentionees
 		        for mention in mentionees:
-			    zz7.kickoutFromGroup(msg.to,[mention['M']])
+			    vipro.kickoutFromGroup(msg.to,[mention['M']])
 
 	    elif "Set member: " in msg.text:
 		if msg.from_ in admin:	 	        
 		    jml = msg.text.replace("Set member: ","")
 		    wait["Members"] = int(jml)
-		    zz7.sendText(msg.to, "Jumlah minimal member telah di set : "+jml)
+		    vipro.sendText(msg.to, "Jumlah minimal member telah di set : "+jml)
 
 	    elif "Add all" in msg.text:
-		    thisgroup = zz7.getGroups([msg.to])
+		    thisgroup = vipro.getGroups([msg.to])
 		    Mids = [contact.mid for contact in thisgroup[0].members]
 		    mi_d = Mids[:33]
-		    zz7.findAndAddContactsByMids(mi_d)
-		    zz7.sendText(msg.to,"Success Add all")
+		    vipro.findAndAddContactsByMids(mi_d)
+		    vipro.sendText(msg.to,"Success Add all")
 
 
             elif msg.text in ["Invite"]:
                 wait["invite"] = True
-                zz7.sendText(msg.to,"Send Contact")
+                vipro.sendText(msg.to,"Send Contact")
                 
                 
 
-            elif msg.text in ["Autolike"]:
+            elif msg.text in ["Auto like"]:
                 wait["likeOn"] = True
-                zz7.sendText(msg.to,"Sudah on")                
+                vipro.sendText(msg.to,"Shere Post Kamu Yang Mau Di Like!")                
 
 
             elif msg.text in ["Steal contact"]:
                 wait["steal"] = True
-                zz7.sendText(msg.to,"Send Contact")
+                vipro.sendText(msg.to,"Send Contact")
                 
 
             elif msg.text in ["Giftbycontact"]:
                 wait["gift"] = True
-                zz7.sendText(msg.to,"Send Contact") 
+                vipro.sendText(msg.to,"Send Contact") 
                 
             elif msg.text in ["Copycontact"]:
                 wait["copy"] = True
-                zz7.sendText(msg.to,"Send Contact") 
+                vipro.sendText(msg.to,"Send Contact") 
                 
             elif msg.text in ["Sticker on"]:
                 wait["sticker"] = True
-                zz7.sendText(msg.to,"Sticker ID Detect Already On.")  
+                vipro.sendText(msg.to,"Sticker ID Detect Already On.")  
                 
             elif msg.text in ["Bot off"]:
                 wait["Bot"] = False
-                zz7.sendText(msg.to,"Bot Sudah Di Nonaktifkan.")  
+                vipro.sendText(msg.to,"Bot Sudah Di Nonaktifkan.")  
 
 	    elif "Recover" in msg.text:
-		thisgroup = zz7.getGroups([msg.to])
+		thisgroup = vipro.getGroups([msg.to])
 		Mids = [contact.mid for contact in thisgroup[0].members]
 		mi_d = Mids[:33]
-		zz7.createGroup("Recover", mi_d)
-		zz7.sendText(msg.to,"Success recover")
+		vipro.createGroup("Recover", mi_d)
+		vipro.sendText(msg.to,"Success recover")
 
 
 
             elif ("Gn: " in msg.text):
                 if msg.toType == 2:
-                    X = zz7.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     X.name = msg.text.replace("Gn: ","")
-                    zz7.updateGroup(X)
+                    vipro.updateGroup(X)
                 else:
-                    zz7.sendText(msg.to,"It can't be used besides the group.")
+                    vipro.sendText(msg.to,"It can't be used besides the group.")
 
             elif "Kick: " in msg.text:
                 midd = msg.text.replace("Kick: ","")
 		if midd not in admin:
-		    zz7.kickoutFromGroup(msg.to,[midd])
+		    vipro.kickoutFromGroup(msg.to,[midd])
 		else:
-		    zz7.sendText(msg.to,"Admin Detected")
+		    vipro.sendText(msg.to,"Admin Detected")
 
             elif "Invite: " in msg.text:
                 midd = msg.text.replace("Invite: ","")
-                zz7.findAndAddContactsByMid(midd)
-                zz7.inviteIntoGroup(msg.to,[midd])
+                vipro.findAndAddContactsByMid(midd)
+                vipro.inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "uc889c1f8f74274f117e0a0d69ccc559c"
-                zz7.inviteIntoGroup(msg.to,[midd])
+                midd = "u51f9c821d9cd41aa4cf6c5573f7b0340"
+                vipro.inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
-                gs = zz7.getGroup(msg.to)
-                zz7.sendText(msg.to,"Selamat Datang Di "+ gs.name)
+                gs = vipro.getGroup(msg.to)
+                vipro.sendText(msg.to,"Selamat Datang Di "+ gs.name)
                 msg.contentType = 7
                 msg.contentMetadata={'STKID': '247',
                                     'STKPKGID': '3',
                                     'STKVER': '100'}
                 msg.text = None
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
 	    elif "Bc: " in msg.text:
 		bc = msg.text.replace("Bc: ","")
-		gid = zz7.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			zz7.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/ricco1311")
-		    zz7.sendText(msg.to,"Success BC BosQ")
+			vipro.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/ricco1311.")
+		    vipro.sendText(msg.to,"Success BC BosQ")
 		else:
-		    zz7.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Cancel"]:
-                gid = zz7.getGroupIdsInvited()
+                gid = vipro.getGroupIdsInvited()
                 for i in gid:
-                    zz7.rejectGroupInvitation(i)
-                zz7.sendText(msg.to,"All invitations have been refused")
+                    vipro.rejectGroupInvitation(i)
+                vipro.sendText(msg.to,"All invitations have been refused")
 
             elif msg.text in ["Gurl"]:
                 if msg.toType == 2:
-                    x = zz7.getGroup(msg.to)
+                    x = vipro.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
-                        zz7.updateGroup(x)
-                    gurl = zz7.reissueGroupTicket(msg.to)
-                    zz7.sendText(msg.to,"line://ti/g/" + gurl)
+                        vipro.updateGroup(x)
+                    gurl = vipro.reissueGroupTicket(msg.to)
+                    vipro.sendText(msg.to,"line://ti/g/" + gurl)
                 else:
                     if wait["lang"] == "JP":
-                        zz7.sendText(msg.to,"Can't be used outside the group")
+                        vipro.sendText(msg.to,"Can't be used outside the group")
                     else:
-                        zz7.sendText(msg.to,"Not for use less than group")
+                        vipro.sendText(msg.to,"Not for use less than group")
 
 
             elif msg.text in ["timeline"]:
 		try:
-                    url = zz7.activity(limit=5)
-		    zz7.sendText(msg.to,url['result']['posts'][0]['postInfo']['postId'])
+                    url = vipro.activity(limit=5)
+		    vipro.sendText(msg.to,url['result']['posts'][0]['postInfo']['postId'])
 		except Exception as E:
 		    print E
 
             elif msg.text in ["@bye","@Bye"]:
-		    zz7.leaveGroup(msg.to)		    
+		    vipro.leaveGroup(msg.to)		    
 		    
 
             elif msg.text in ["Absen"]:
-		zz7.sendText(msg.to,"Hadir!!")
+		vipro.sendText(msg.to,"Hadir!!")
 
 
             elif msg.text.lower() in ["respon"]:
-                zz7.sendText(msg.to,responsename)
+                vipro.sendText(msg.to,responsename)
 
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
                 print("Speed")                
                 elapsed_time = time.time() - start
-		zz7.sendText(msg.to, "Progress...")
-                zz7.sendText(msg.to, "%sseconds" % (elapsed_time))
+		vipro.sendText(msg.to, "Progress...")
+                vipro.sendText(msg.to, "%sseconds" % (elapsed_time))
                 
             elif msg.text in ["Speed test"]:
                 start = time.time()
-                zz7.sendText(msg.to, "Progress...")
+                vipro.sendText(msg.to, "Progress...")
                 elapsed_time = time.time() - start
-                zz7.sendText(msg.to, "%sseconds" % (elapsed_time))                
+                vipro.sendText(msg.to, "%sseconds" % (elapsed_time))                
  
             elif msg.text in ["Ban"]:
                 if msg.from_ in admin:
                     wait["wblacklist"] = True
-                    zz7.sendText(msg.to,"send contact")
+                    vipro.sendText(msg.to,"send contact")
 
             elif msg.text in ["Unban"]:
                 if msg.from_ in admin:
                     wait["dblacklist"] = True
-                    zz7.sendText(msg.to,"send contact")
+                    vipro.sendText(msg.to,"send contact")
  
             elif "Ban @" in msg.text:
                 if msg.from_ in admin:
@@ -2515,13 +2485,13 @@ def bot(op):
                     print "@Ban by mention"
                     _name = msg.text.replace("Ban @","")
                     _nametarget = _name.rstrip('  ')
-                    gs = zz7.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        zz7.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
 			    if target not in admin:
@@ -2529,21 +2499,21 @@ def bot(op):
                                     wait["blacklist"][target] = True
                                     f=codecs.open('st2__b.json','w','utf-8')
                                     json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                    zz7.sendText(msg.to,"Succes BosQ")
+                                    vipro.sendText(msg.to,"Succes BosQ")
                                 except:
-                                    zz7.sendText(msg.to,"Error")
+                                    vipro.sendText(msg.to,"Error")
 			    else:
-				zz7.sendText(msg.to,"Admin Detected~")
+				vipro.sendText(msg.to,"Admin Detected~")
  
             elif msg.text in ["Banlist","Ban list"]:
               if msg.from_ in admin:
                 if wait["blacklist"] == {}:
-                    zz7.sendText(msg.to,"Tidak Ada")
+                    vipro.sendText(msg.to,"Tidak Ada")
                 else:
                     mc = ""
                     for mi_d in wait["blacklist"]:
-                        mc += "->" +zz7.getContact(mi_d).displayName + "\n"
-                    zz7.sendText(msg.to,"===[Blacklist User]===\n"+mc)
+                        mc += "->" +vipro.getContact(mi_d).displayName + "\n"
+                    vipro.sendText(msg.to,"===[Blacklist User]===\n"+mc)
 
  
             elif "Unban @" in msg.text:
@@ -2552,61 +2522,61 @@ def bot(op):
                 if msg.from_ in admin:
                     _name = msg.text.replace("Unban @","")
                     _nametarget = _name.rstrip('  ')
-                    gs = zz7.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        zz7.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
                                 del wait["blacklist"][target]
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                zz7.sendText(msg.to,"Succes BosQ")
+                                vipro.sendText(msg.to,"Succes BosQ")
                             except:
-                                zz7.sendText(msg.to,"Succes BosQ")
+                                vipro.sendText(msg.to,"Succes BosQ")
                                 
                                 
             elif msg.text.lower() == 'clear ban':
                 if msg.from_ in admin:
                     wait["blacklist"] = {}
-                    zz7.sendText(msg.to,"ヽ( ^ω^)ﾉ└ ❉Unbanned All Success❉ ┐") 
+                    vipro.sendText(msg.to,"ヽ( ^ω^)ﾉ└ ❉Unbanned All Success❉ ┐") 
 
  
             elif msg.text in ["Kill ban"]:
 		if msg.from_ in admin:
                     if msg.toType == 2:
-                        group = zz7.getGroup(msg.to)
+                        group = vipro.getGroup(msg.to)
                         gMembMids = [contact.mid for contact in group.members]
                         matched_list = []
                         for tag in wait["blacklist"]:
                             matched_list+=filter(lambda str: str == tag, gMembMids)
                         if matched_list == []:
-                            zz7.sendText(msg.to,"There was no blacklist user")
+                            vipro.sendText(msg.to,"There was no blacklist user")
                             return
                         for jj in matched_list:
-                            zz7.kickoutFromGroup(msg.to,[jj])
-                        zz7.sendText(msg.to,"Blacklist emang pantas tuk di usir")
+                            vipro.kickoutFromGroup(msg.to,[jj])
+                        vipro.sendText(msg.to,"Blacklist emang pantas tuk di usir")
 		else:
-		    zz7.sendText(msg.to, "Khusus creator")
+		    vipro.sendText(msg.to, "Khusus creator")
  
             elif msg.text in ["Kill"]:
                     if msg.toType == 2:
                       if msg.from_ in admin:
-                        group = zz7.getGroup(msg.to)
+                        group = vipro.getGroup(msg.to)
                         gMembMids = [contact.mid for contact in group.members]
                         matched_list = []
                         for tag in wait["blacklist"]:
                             matched_list+=filter(lambda str: str == tag, gMembMids)
                         if matched_list == []:
-                            zz7.sendText(msg.to,"Fuck You")
+                            vipro.sendText(msg.to,"Fuck You")
                             return
                         for jj in matched_list:
                             try:
-                                zz7.kickoutFromGroup(msg.to,[jj])
+                                vipro.kickoutFromGroup(msg.to,[jj])
                                 print (msg.to,[jj])
                             except:
                                 pass
@@ -2617,32 +2587,31 @@ def bot(op):
                      if msg.toType == 2:
                         print "Kick all member"
                         _name = msg.text.replace("Kickall","")
-                        gs = zz7.getGroup(msg.to)
-                        zz7.sendText(msg.to,"Dadaaah~")
+                        gs = vipro.getGroup(msg.to)
+                        vipro.sendText(msg.to,"Dadaaah~")
                         targets = []
                         for g in gs.members:
                             if _name in g.displayName:
                                 targets.append(g.mid)
                         if targets == []:
-                            zz7.sendText(msg.to,"Not found.")
+                            vipro.sendText(msg.to,"Not found.")
                         else:
                             for target in targets:
 				if target not in admin:
                                     try:
-                                        zz7.kickoutFromGroup(msg.to,[target])
+                                        vipro.kickoutFromGroup(msg.to,[target])
                                         print (msg.to,[g.mid])
-                                    except Exception as e:
-                                        zz7.sendText(msg.to,str(e))
-			    zz7.inviteIntoGroup(msg.to, targets)
+                                    except:
+					pass
  
 
 	    elif msg.text in ["Bot restart","Reboot"]:
 		if msg.from_ in Creator:
-		    zz7.sendText(msg.to, "Reload Boss...")
+		    vipro.sendText(msg.to, "Bot Has Been Restarted...")
 		    restart_program()
 		    print "@Restart"
 		else:
-		    zz7.sendText(msg.to, "No Access")
+		    vipro.sendText(msg.to, "No Access")
 		    
             elif msg.text in ["Turn off"]: 
 	        if msg.from_ in Creator:                
@@ -2656,36 +2625,36 @@ def bot(op):
             elif 'Crash' in msg.text:
               if msg.from_ in Creator:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "zz7,'"}
-                zz7.sendMessage(msg)
+                msg.contentMetadata = {'mid': "vipro,'"}
+                vipro.sendMessage(msg)
 
  
             elif "copy @" in msg.text:
                    print "[COPY] Ok"
                    _name = msg.text.replace("copy @","")
                    _nametarget = _name.rstrip('  ')
-                   gs = zz7.getGroup(msg.to)
+                   gs = vipro.getGroup(msg.to)
                    targets = []
                    for g in gs.members:
                        if _nametarget == g.displayName:
                            targets.append(g.mid)
                    if targets == []:
-                       zz7.sendText(msg.to, "Not Found...")
+                       vipro.sendText(msg.to, "Not Found...")
                    else:
                        for target in targets:
                             try:
-                               zz7.CloneContactProfile(target)
-                               zz7.sendText(msg.to, "Copied (^_^)")
+                               vipro.CloneContactProfile(target)
+                               vipro.sendText(msg.to, "Copied (^_^)")
                             except Exception as e:
                                 print e
 
             elif msg.text in ["Mybackup"]:
                 try:
-                    zz7.updateDisplayPicture(backup1.pictureStatus)
-                    zz7.updateProfile(backup1)
-                    zz7.sendText(msg.to, "Done (^_^)")
+                    vipro.updateDisplayPicture(backup1.pictureStatus)
+                    vipro.updateProfile(backup1)
+                    vipro.sendText(msg.to, "Done (^_^)")
                 except Exception as e:
-                    zz7.sendText(msg.to, str(e))
+                    vipro.sendText(msg.to, str(e))
 
  
 	    elif "musik " in msg.text:
@@ -2696,10 +2665,10 @@ def bot(op):
 					data = json.loads(data)
 					for song in data:
 						abc = song[3].replace('https://','http://')
-						zz7.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
-						zz7.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
-						zz7.sendAudioWithURL(msg.to,abc)
-						zz7.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
+						vipro.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
+						vipro.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
+						vipro.sendAudioWithURL(msg.to,abc)
+						vipro.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
 	
             elif 'lirik ' in msg.text.lower():
                 try:
@@ -2713,15 +2682,32 @@ def bot(op):
                         hasil += song[0]
                         hasil += ')\n\n'
                         hasil += song[5]
-                        zz7.sendText(msg.to, hasil)
+                        vipro.sendText(msg.to, hasil)
                 except Exception as wak:
-                        zz7.sendText(msg.to, str(wak))
+                        vipro.sendText(msg.to, str(wak))
+                        
+	    elif "musrik " in msg.text:
+					songname = msg.text.replace("musrik ","")
+					params = {"songname": songname}
+					r = requests.get('http://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
+					data = r.text
+					data = json.loads(data)
+					for song in data:
+						abc = song[3].replace('https://','http://')
+						hasil = 'Lyric Lagu ('
+						hasil += song[0]
+						hasil += ')\n\n'
+						hasil += song[5]
+						vipro.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
+						vipro.sendAudioWithURL(msg.to,abc)
+						vipro.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4] +"\n\n" + hasil)
+						vipro.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
              
             
             
             elif "Fancytext " in msg.text:
                     txt = msg.text.replace("Fancytext ", "")
-                    zz7.kedapkedip(msg.to,txt)
+                    vipro.kedapkedip(msg.to,txt)
                     print "[Command] Kedapkedip"
 
 
@@ -2729,119 +2715,119 @@ def bot(op):
                 if msg.toType == 2:
                     cover = msg.text.replace("cover @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = zz7.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        zz7.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = zz7.channel.getHome(target)
+                                h = vipro.channel.getHome(target)
                                 objId = h["result"]["homeInfo"]["objectId"]
-                                zz7.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
                             except Exception as error:
                                 print error
-                                zz7.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
 
             elif "Cover @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("Cover @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = zz7.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        zz7.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = zz7.channel.getHome(target)
+                                h = vipro.channel.getHome(target)
                                 objId = h["result"]["homeInfo"]["objectId"]
-                                zz7.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
                             except Exception as error:
                                 print error
-                                zz7.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
                                 
             elif "Cpp" in msg.text:
                 if msg.from_ in admin:
-                    path = "zz7.jpg"
-                    zz7.sendText(msg.to,"Update PP :")
-                    zz7.sendImage(msg.to,path)
-                    zz7.updateProfilePicture(path)                                
+                    path = "vipro.jpg"
+                    vipro.sendText(msg.to,"Update PP :")
+                    vipro.sendImage(msg.to,path)
+                    vipro.updateProfilePicture(path)                                
                                 
                                 
             elif "pp @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("pp @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = zz7.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        zz7.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = zz7.getContact(target)
-                                zz7.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+                                h = vipro.getContact(target)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
                             except Exception as error:
                                 print error
-                                zz7.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
 
             elif "Pp @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("Pp @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = zz7.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        zz7.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = zz7.getContact(target)
-                                zz7.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+                                h = vipro.getContact(target)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
                             except Exception as error:
                                 print error
-                                zz7.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
 
             elif msg.text.lower() in ["pap owner","pap creator"]:
                                 link = ["http://dl.profile.line-cdn.net/0hFR-rB8h-GX0QCzWZMOZmKixOFxBnJR81aG9eSTUNREhtOVYqJWgFSWYDR05vOwp7K2sCGTELRUVo"]
                                 pilih = random.choice(link)
-                                zz7.sendImageWithURL(msg.to,pilih)
+                                vipro.sendImageWithURL(msg.to,pilih)
 
  
             elif "Spam: " in msg.text:
                   bctxt = msg.text.replace("Spam: ", "")
                   t = 10
                   while(t):
-                    zz7.sendText(msg.to, (bctxt))
+                    vipro.sendText(msg.to, (bctxt))
                     t-=1
 
             elif "Scbc " in msg.text:
                   bctxt = msg.text.replace("Scbc ", "")
-                  orang = zz7.getAllContactIds()
+                  orang = vipro.getAllContactIds()
                   t = 20
                   for manusia in orang:
                     while(t):
-                      zz7.sendText(manusia, (bctxt))
+                      vipro.sendText(manusia, (bctxt))
                       t-=1
 
             elif "Cbc " in msg.text:
                   broadcasttxt = msg.text.replace("Cbc ", "") 
-                  orang = zz7.getAllContactIds()
+                  orang = vipro.getAllContactIds()
                   for manusia in orang:
-                    zz7.sendText(manusia, (broadcasttxt))
+                    vipro.sendText(manusia, (broadcasttxt))
 
  
             elif 'ig ' in msg.text.lower():
@@ -2862,10 +2848,10 @@ def bot(op):
                     link = "Link: " + "https://www.instagram.com/" + instagram
                     detail = "========INSTAGRAM INFO ========\n"
                     details = "\n========INSTAGRAM INFO ========"
-                    zz7.sendText(msg.to, detail + user + user1 + followers + following + post + link + details)
-                    zz7.sendImageWithURL(msg.to, tj)
+                    vipro.sendText(msg.to, detail + user + user1 + followers + following + post + link + details)
+                    vipro.sendImageWithURL(msg.to, tj)
                 except Exception as njer:
-                	zz7.sendText(msg.to, str(njer))
+                	vipro.sendText(msg.to, str(njer))
                 	
                 	
             elif "Checkig " in msg.text:
@@ -2890,10 +2876,10 @@ def bot(op):
                                 r = x.get(page)
                                 url = re.search(r'"video_url": "([^"]+)"', r.text).group(1)
                                 print(url)
-                                zz7.sendVideoWithURL(msg.to,url)
+                                vipro.sendVideoWithURL(msg.to,url)
                             else:
                                 print (node['display_src'])
-                                zz7.sendImageWithURL(msg.to,node['display_src'])
+                                vipro.sendImageWithURL(msg.to,node['display_src'])
                         end_cursor = re.search(r'"end_cursor": "([^"]+)"', r.text).group(1)                	
 
 
@@ -2906,9 +2892,9 @@ def bot(op):
                     html = response.read()
                     soup = BeautifulSoup(html, "html.parser")
                     results = soup.find(attrs={'class':'yt-uix-tile-link'})
-                    zz7.sendText(msg.to,'https://www.youtube.com' + results['href'])
+                    vipro.sendText(msg.to,'https://www.youtube.com' + results['href'])
                 except:
-                    zz7.sendText(msg.to,"Could not find it")
+                    vipro.sendText(msg.to,"Could not find it")
                     
                     
             elif 'Youtubevideo ' in msg.text:
@@ -2920,9 +2906,9 @@ def bot(op):
                         html = response.read()
                         soup = BeautifulSoup(html, "html.parser")
                         results = soup.find(attrs={'class': 'yt-uix-tile-link'})
-                        zz7.sendVideoWithURL(msg.to,'https://www.youtube.com' + results['href'])
+                        vipro.sendVideoWithURL(msg.to,'https://www.youtube.com' + results['href'])
                     except:
-                        zz7.sendText(msg.to, "Could not find it")                    
+                        vipro.sendText(msg.to, "Could not find it")                    
 
  
             elif "Say " in msg.text:
@@ -2930,29 +2916,29 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
             elif "Say-en " in msg.text:
                 say = msg.text.replace("Say-en ","")
                 lang = 'en'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
             elif "Say-jp " in msg.text:
                 say = msg.text.replace("Say-jp ","")
                 lang = 'ja'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
             elif "Say welcome" in msg.text:
-                gs = zz7.getGroup(msg.to)
+                gs = vipro.getGroup(msg.to)
                 say = msg.text.replace("Say welcome","Selamat Datang Di "+ gs.name)
                 lang = 'id'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
                 
             elif "lurk on" == msg.text.lower():
                #if msg.from_ in admin:
@@ -2969,7 +2955,7 @@ def bot(op):
                         wait2['ROM'][msg.to] = {}
                         with open('sider.json', 'w') as fp:
                          json.dump(wait2, fp, sort_keys=True, indent=4)
-                         zz7.sendText(msg.to,"Lurking already on")
+                         vipro.sendText(msg.to,"Lurking already on")
                 else:
                     try:
                             del wait2['readPoint'][msg.to]
@@ -2983,14 +2969,14 @@ def bot(op):
                     wait2['ROM'][msg.to] = {}
                     with open('sider.json', 'w') as fp:
                      json.dump(wait2, fp, sort_keys=True, indent=4)
-                     zz7.sendText(msg.to, "Set the lastseens' point (｀・ω・´)\n\n" + datetime.now().strftime('%H:%M:%S'))
+                     vipro.sendText(msg.to, "Set the lastseens' point (｀・ω・´)\n\n" + datetime.now().strftime('%H:%M:%S'))
                      print wait2
 
 
             elif "lurk off" == msg.text.lower():
                #if msg.from_ in admin:
                 if msg.to not in wait2['readPoint']:
-                    zz7.sendText(msg.to,"Lurking already off")
+                    vipro.sendText(msg.to,"Lurking already off")
                 else:
                     try:
                             del wait2['readPoint'][msg.to]
@@ -2998,7 +2984,7 @@ def bot(op):
                             del wait2['setTime'][msg.to]
                     except:
                           pass
-                    zz7.sendText(msg.to, "Delete reading point:\n" + datetime.now().strftime('%H:%M:%S'))
+                    vipro.sendText(msg.to, "Delete reading point:\n" + datetime.now().strftime('%H:%M:%S'))
 
 
 
@@ -3007,13 +2993,13 @@ def bot(op):
             	#if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
-                             zz7.sendText(msg.to, "Lurkers:\nNone")
+                             vipro.sendText(msg.to, "Lurkers:\nNone")
                         else:
                             chiya = []
                             for rom in wait2["ROM"][msg.to].items():
                                 chiya.append(rom[1])
                                
-                            cmem = zz7.getContacts(chiya)
+                            cmem = vipro.getContacts(chiya)
                             zx = ""
                             zxc = ""
                             zx2 = []
@@ -3035,36 +3021,36 @@ def bot(op):
                         print lol
                         msg.contentMetadata = lol
                         try:
-                          zz7.sendMessage(msg)
-                          zz7.sendText(msg.to, "Jika sudah lihat sider please\ntulis lurk on lagi kak  (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
+                          vipro.sendMessage(msg)
+                          vipro.sendText(msg.to, "Jika sudah lihat sider please\ntulis lurk on lagi kak  (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
                         except Exception as error:
                               print error
                         pass
                
                     else:
-                        zz7.sendText(msg.to, "Lurking has not been set (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))    
+                        vipro.sendText(msg.to, "Lurking has not been set (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))    
 
 
             elif msg.text.lower() in ["hi","hai","halo","hallo"]:
-                    beb = "Hi Sayang 😘 " +zz7.getContact(msg.from_).displayName + " 􀸂􀆇starry heart􏿿"
-                    zz7.sendText(msg.to,beb)
+                    beb = "Hi Sayang 😘 " +vipro.getContact(msg.from_).displayName + " 􀸂􀆇starry heart􏿿"
+                    vipro.sendText(msg.to,beb)
 
 
 
             elif "playstore " in msg.text.lower():
                 tob = msg.text.lower().replace("playstore ","")
-                zz7.sendText(msg.to,"Sedang Mencari...")
-                zz7.sendText(msg.to,"Title : "+tob+"\nSource : Google Play\nLink : https://play.google.com/store/search?q=" + tob)
-                zz7.sendText(msg.to,"Tuh Linknya Kak (^_^)")
+                vipro.sendText(msg.to,"Sedang Mencari...")
+                vipro.sendText(msg.to,"Title : "+tob+"\nSource : Google Play\nLink : https://play.google.com/store/search?q=" + tob)
+                vipro.sendText(msg.to,"Tuh Linknya Kak (^_^)")
 
 
             elif "Mid @" in msg.text:
                 _name = msg.text.replace("Mid @","")
                 _nametarget = _name.rstrip(' ')
-                gs = zz7.getGroup(msg.to)
+                gs = vipro.getGroup(msg.to)
                 for g in gs.members:
                     if _nametarget == g.displayName:
-                        zz7.sendText(msg.to, g.mid)
+                        vipro.sendText(msg.to, g.mid)
                     else:
                         pass
 
@@ -3072,32 +3058,35 @@ def bot(op):
             elif "Mybio " in msg.text:
                     string = msg.text.replace("Mybio ","")
                     if len(string.decode('utf-8')) <= 500:
-                        profile = zz7.getProfile()
+                        profile = vipro.getProfile()
                         profile.statusMessage = string
-                        zz7.updateProfile(profile)
-                        zz7.sendText(msg.to,"Done")
+                        vipro.updateProfile(profile)
+                        vipro.sendText(msg.to,"Done")
 
-            elif "Myname " in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("Myname ","")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = zz7.getProfile()
-                        profile.displayName = string
-                        zz7.updateProfile(profile)
-                        zz7.sendText(msg.to,"Done")
+            elif "Myname: " in msg.text:
+                string = msg.text.replace("Myname: ","")
+                if len(string.decode('utf-8')) <= 10000000000:
+                    profile = cl.getProfile()
+                    profile.displayName = string
+                    cl.updateProfile(profile)
+                    cl.sendText(msg.to,"Changed " + string + "")
 
 
 
             elif msg.text.lower() in ["mymid","myid"]:
-                middd = "Name : " +zz7.getContact(msg.from_).displayName + "\nMid : " +msg.from_
-                zz7.sendText(msg.to,middd)
+                middd = "Name : " +vipro.getContact(msg.from_).displayName + "\nMid : " +msg.from_
+                vipro.sendText(msg.to,middd)
 
             elif msg.text.lower() in ["me"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.from_}
-                zz7.sendMessage(msg)
-
-            elif msg.text in ["Kibaran","My zz7Combat Team"]:
+                vipro.sendMessage(msg)
+				
+            elif msg.text in ["Myname:"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"===[DisplayName]===\n" + h.displayName)
+				
+	    elif msg.text in ["Kibaran","My zz7Combat Team"]:
                    msg.contentType = 13
                    fams1 = "uc00a7fc61069447f8db907f40233fb34"
                    fams2 = "u1dcc9fd3de21d87b9b01440039080197"
@@ -3114,6 +3103,7 @@ def bot(op):
                    fams13 = "uebb63a9d4f5b00064dde1b388adb4cf1"
                    fams14 = "uff0da18a1c365ac365d729fbc8e34a45"
 		   fams15 = "uaeb6354399e465e3f137565c729d5d67"
+		   fams16 = "u96282e96a8aefaee1198324ea2849800"
                    msg.contentMetadata = {'mid': vip}
                    random.choice(KAC).sendMessage(msg)
                    msg.contentMetadata = {'mid': fams1}
@@ -3146,8 +3136,10 @@ def bot(op):
                    random.choice(KAC).sendMessage(msg)
                    msg.contentMetadata = {'mid': fams15}
                    random.choice(KAC).sendMessage(msg)
+	           msg.contentMetadata = {'mid': fams16}
+                   random.choice(KAC).sendMessage(msg)
 		   random.choice(KAC).sendText(msg.to,"👽♅LOE SONGONG BERARTI LOE SIAP ANCUR♅👽SALAM JARI TENGAH BUAT PECUNDANG♅👽")
-		
+		   
             elif "apakah " in msg.text:
                 apk = msg.text.replace("apakah ","")
                 rnd = ["Ya","Tidak","Bisa Jadi","Mungkin"]
@@ -3155,7 +3147,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
                 
             elif "hari " in msg.text:
                 apk = msg.text.replace("hari ","")
@@ -3164,7 +3156,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")   
+                vipro.sendAudio(msg.to,"hasil.mp3")   
 
 
             elif "berapa " in msg.text:
@@ -3174,7 +3166,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
                 
             elif "berapakah " in msg.text:
                 apk = msg.text.replace("berapakah ","")
@@ -3183,7 +3175,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")                
+                vipro.sendAudio(msg.to,"hasil.mp3")                
 
             elif "kapan " in msg.text:
                 apk = msg.text.replace("kapan ","")
@@ -3192,16 +3184,18 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                zz7.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
  
             elif msg.text in ["Simisimi on","Simisimi:on"]:
                 settings["simiSimi"][msg.to] = True
-                zz7.sendText(msg.to,"BOT SIMISIMI TURN ON")
-                ki.sendText(msg.to,"already turn active")
+                wait["Simi"] = True
+                vipro.sendText(msg.to," Simisimi Di Aktifkan")
+                
             elif msg.text in ["Simisimi off","Simisimi:off"]:
                 settings["simiSimi"][msg.to] = False
-                zz7.sendText(msg.to,"BOT SIMISIMI TURN OFF")
+                wait["Simi"] = False
+                vipro.sendText(msg.to,"Simisimi Di Nonaktifkan")
 
  
             elif "Image " in msg.text:
@@ -3213,7 +3207,7 @@ def bot(op):
                 path = random.choice(items)
                 print path
                 try:
-                    zz7.sendImageWithURL(msg.to,path)
+                    vipro.sendImageWithURL(msg.to,path)
                 except:
                     pass
  
@@ -3229,7 +3223,7 @@ def bot(op):
                         for a in soup.select('.yt-lockup-title > a[title]'):
                             if '&list=' not in a['href']:
                                 hasil += ''.join((a['title'],'\nUrl : http://www.youtube.com' + a['href'],'\n\n'))
-                        zz7.sendText(msg.to,hasil)
+                        vipro.sendText(msg.to,hasil)
                         print '[Command] Youtube Search'
 
 
@@ -3240,7 +3234,7 @@ def bot(op):
                 hasil = translator.translate(isi, dest='id')
                 A = hasil.text
                 A = A.encode('utf-8')
-                zz7.sendText(msg.to, A)
+                vipro.sendText(msg.to, A)
 
             elif "Tr-en " in msg.text:
                 isi = msg.text.replace("Tr-en ","")
@@ -3248,7 +3242,7 @@ def bot(op):
                 hasil = translator.translate(isi, dest='en')
                 A = hasil.text
                 A = A.encode('utf-8')
-                zz7.sendText(msg.to, A)
+                vipro.sendText(msg.to, A)
                 
             elif "Tr-th " in msg.text:
                 isi = msg.text.replace("Tr-th ","")
@@ -3256,7 +3250,7 @@ def bot(op):
                 hasil = translator.translate(isi, dest='th')
                 A = hasil.text
                 A = A.encode('utf-8')
-                zz7.sendText(msg.to, A)                
+                vipro.sendText(msg.to, A)                
 
             
             elif "Id@en" in msg.text:
@@ -3270,7 +3264,7 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                zz7.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Inggris----\n" + "" + result)
+                vipro.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Inggris----\n" + "" + result)
 
 
             elif "En@id" in msg.text:
@@ -3284,7 +3278,7 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                zz7.sendText(msg.to,"----Dari Inggris----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)
+                vipro.sendText(msg.to,"----Dari Inggris----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)
                 
             
             elif "Id@th" in msg.text:
@@ -3298,7 +3292,7 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                zz7.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Thailand----\n" + "" + result)
+                vipro.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Thailand----\n" + "" + result)
                 
             
             elif "Th@id" in msg.text:
@@ -3312,29 +3306,29 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                zz7.sendText(msg.to,"----Dari Thailand----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)                
+                vipro.sendText(msg.to,"----Dari Thailand----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)                
  
             elif msg.text in ["Friendlist"]:    
-                contactlist = zz7.getAllContactIds()
-                kontak = zz7.getContacts(contactlist)
+                contactlist = vipro.getAllContactIds()
+                kontak = vipro.getContacts(contactlist)
                 num=1
-                msgs="━━━━━━━━━List Friend━━━━━━━━━"
+                msgs="═════════List Friend═════════"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
-                msgs+="\n━━━━━━━━━List Friend━━━━━━━━━\n\nTotal Friend : %i" % len(kontak)
-                zz7.sendText(msg.to, msgs)
+                msgs+="\n═════════List Friend═════════\n\nTotal Friend : %i" % len(kontak)
+                vipro.sendText(msg.to, msgs)
 
             elif msg.text in ["Memlist"]:   
-                kontak = zz7.getGroup(msg.to)
+                kontak = vipro.getGroup(msg.to)
                 group = kontak.members
                 num=1
-                msgs="━━━━━━━━━List Member━�����━━━━━━━-"
+                msgs="═════════List Member═�����═══════-"
                 for ids in group:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
-                msgs+="\n━━━━━━━━━List Member━━━━━━━━━\n\nTotal Members : %i" % len(group)
-                zz7.sendText(msg.to, msgs)
+                msgs+="\n═════════List Member═════════\n\nTotal Members : %i" % len(group)
+                vipro.sendText(msg.to, msgs)
 
             
 
@@ -3343,58 +3337,58 @@ def bot(op):
                 print "[Command]dp executing"
                 _name = msg.text.replace("Getvid @","")
                 _nametarget = _name.rstrip('  ')
-                gs = zz7.getGroup(msg.to)
+                gs = vipro.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
                     if _nametarget == g.displayName:
                         targets.append(g.mid)
                 if targets == []:
-                    zz7.sendText(msg.to,"Contact not found")
+                    vipro.sendText(msg.to,"Contact not found")
                 else:
                     for target in targets:
                         try:
-                            contact = zz7.getContact(target)
+                            contact = vipro.getContact(target)
                             path = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                            zz7.sendVideoWithURL(msg.to, path)
+                            vipro.sendVideoWithURL(msg.to, path)
                         except Exception as e:
                             raise e
                 print "[Command]dp executed"
 
 
             elif "Getgroup image" in msg.text:
-                group = zz7.getGroup(msg.to)
+                group = vipro.getGroup(msg.to)
                 path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                zz7.sendImageWithURL(msg.to,path)
+                vipro.sendImageWithURL(msg.to,path)
 
             elif "Urlgroup image" in msg.text:
-                group = zz7.getGroup(msg.to)
+                group = vipro.getGroup(msg.to)
                 path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                zz7.sendText(msg.to,path)
+                vipro.sendText(msg.to,path)
  
             elif "Name" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = zz7.getContact(key1)
-                cu = zz7.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 try:
-                    zz7.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
+                    vipro.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
                 except:
-                    zz7.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
+                    vipro.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
 
 
             elif "Profile" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = zz7.getContact(key1)
-                cu = zz7.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 path = str(cu)
                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                 try:
-                    zz7.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nBio :\n" + contact.statusMessage)
-                    zz7.sendText(msg.to,"Profile Picture " + contact.displayName)
-                    zz7.sendImageWithURL(msg.to,image)
-                    zz7.sendText(msg.to,"Cover " + contact.displayName)
-                    zz7.sendImageWithURL(msg.to,path)
+                    vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nBio :\n" + contact.statusMessage)
+                    vipro.sendText(msg.to,"Profile Picture " + contact.displayName)
+                    vipro.sendImageWithURL(msg.to,image)
+                    vipro.sendText(msg.to,"Cover " + contact.displayName)
+                    vipro.sendImageWithURL(msg.to,path)
                 except:
                     pass
 
@@ -3402,37 +3396,37 @@ def bot(op):
             elif "Contact" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]                
-                mmid = zz7.getContact(key1)
+                mmid = vipro.getContact(key1)
                 msg.contentType = 13
                 msg.contentMetadata = {"mid": key1}
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif "Info" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = zz7.getContact(key1)
-                cu = zz7.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 try:
-                    zz7.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nHeader :\n" + str(cu))
+                    vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nHeader :\n" + str(cu))
                 except:
-                    zz7.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\n" + str(cu))
+                    vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\n" + str(cu))
 
 
             elif "Bio" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = zz7.getContact(key1)
-                cu = zz7.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 try:
-                    zz7.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
+                    vipro.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
                 except:
-                    zz7.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
+                    vipro.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
 
 
             elif msg.text.lower() == 'runtime':
                 eltime = time.time() - mulai
                 van = "Bot Sudah Berjalan Selama :\n"+waktu(eltime)
-                zz7.sendText(msg.to,van)
+                vipro.sendText(msg.to,van)
                 
                  
             elif "Checkdate " in msg.text:
@@ -3444,7 +3438,7 @@ def bot(op):
                 usia = data["data"]["usia"]
                 ultah = data["data"]["ultah"]
                 zodiak = data["data"]["zodiak"]
-                zz7.sendText(msg.to,"========== I N F O R M A S I ==========\n"+"Date Of Birth : "+lahir+"\nAge : "+usia+"\nUltah : "+ultah+"\nZodiak : "+zodiak+"\n========== I N F O R M A S I ==========")
+                vipro.sendText(msg.to,"========== I N F O R M A S I ==========\n"+"Date Of Birth : "+lahir+"\nAge : "+usia+"\nUltah : "+ultah+"\nZodiak : "+zodiak+"\n========== I N F O R M A S I ==========")
                 
    
             elif msg.text in ["Kalender","Time","Waktu"]:
@@ -3461,85 +3455,85 @@ def bot(op):
                 for k in range(0, len(bulan)):
                     if bln == str(k): bln = bulan[k-1]
                 rst = hasil + ", " + inihari.strftime('%d') + " - " + bln + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M:%S') + " ]"
-                zz7.sendText(msg.to, rst)                
+                vipro.sendText(msg.to, rst)                
                  
                 
             elif "SearchID " in msg.text:
                 userid = msg.text.replace("SearchID ","")
-                contact = zz7.findContactsByUserid(userid)
+                contact = vipro.findContactsByUserid(userid)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': contact.mid}
-                zz7.sendMessage(msg)
+                vipro.sendMessage(msg)
                 
             elif "Searchid " in msg.text:
                 userid = msg.text.replace("Searchid ","")
-                contact = zz7.findContactsByUserid(userid)
+                contact = vipro.findContactsByUserid(userid)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': contact.mid}
-                zz7.sendMessage(msg)       
+                vipro.sendMessage(msg)       
                 
                 
             elif "removechat" in msg.text.lower():
                 if msg.from_ in admin:
                     try:
-                        zz7.removeAllMessages(op.param2)
+                        vipro.removeAllMessages(op.param2)
                         print "[Command] Remove Chat"
-                        zz7.sendText(msg.to,"Done")
+                        vipro.sendText(msg.to,"Done")
                     except Exception as error:
                         print error
-                        zz7.sendText(msg.to,"Error")      
+                        vipro.sendText(msg.to,"Error")      
                         
                         
             elif "Invitemeto " in msg.text:
                 if msg.from_ in admin:
                     gid = msg.text.replace("Invitemeto ","")
                     if gid == "":
-                        zz7.sendText(msg.to,"Invalid group id")
+                        vipro.sendText(msg.to,"Invalid group id")
                     else:
                         try:
-                            zz7.findAndAddContactsByMid(msg.from_)
-                            zz7.inviteIntoGroup(gid,[msg.from_])
+                            vipro.findAndAddContactsByMid(msg.from_)
+                            vipro.inviteIntoGroup(gid,[msg.from_])
                         except:
-                            zz7.sendText(msg.to,"Mungkin Saya Tidak Di Dalaam Grup Itu")
+                            vipro.sendText(msg.to,"Mungkin Saya Tidak Di Dalaam Grup Itu")
 
 
             elif msg.text in ["Glist"]:
-                zz7.sendText(msg.to, "Tunggu Sebentar. . .")                    
-                gid = zz7.getGroupIdsJoined()
+                vipro.sendText(msg.to, "Tunggu Sebentar. . .")                    
+                gid = vipro.getGroupIdsJoined()
                 h = ""
                 for i in gid:
-                    h += "┣🇮🇩━⏩" + "%s\n" % (zz7.getGroup(i).name +" ~> ["+str(len(zz7.getGroup(i).members))+"]")
-                zz7.sendText(msg.to,"╭━━━━━━━━━━━━━━━━━━━━╮\n│      ♠✴ LIST GROUPS✴♠\n│━━━━━━━━━━━━━━━━━━━━\n" + h + "│━━━━━━━━━━━━━━━━━━━━" + "\n│ Total Groups =" +" ["+str(len(gid))+"]\n╰━━━━━━━━━━━━━━━━━━━━╯")
+                    h += "╠➩" + "%s\n" % (vipro.getGroup(i).name +" ~> ["+str(len(vipro.getGroup(i).members))+"]")
+                vipro.sendText(msg.to,"╔═════════════════════════\n║          ☆☞ LIST GROUPS☜☆\n╠═════════════════════════\n" + h + "╠═════════════════════════" + "\n║ Total Groups =" +" ["+str(len(gid))+"]\n╚═════════════════════════")
 
             elif msg.text in ["Glistmid"]:   
-                gruplist = zz7.getGroupIdsJoined()
-                kontak = zz7.getGroups(gruplist)
+                gruplist = vipro.getGroupIdsJoined()
+                kontak = vipro.getGroups(gruplist)
                 num=1
-                msgs="━━━━━━━━━List GrupMid━━━━━━━━━"
+                msgs="═════════List GrupMid═════════"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.id)
                     num=(num+1)
-                msgs+="\n━━━━━━━━━List GrupMid━━━━━━━━━\n\nTotal Grup : %i" % len(kontak)
-                zz7.sendText(msg.to, msgs)
+                msgs+="\n═════════List GrupMid═════════\n\nTotal Grup : %i" % len(kontak)
+                vipro.sendText(msg.to, msgs)
 
 
 
             elif "Google: " in msg.text:
                     a = msg.text.replace("Google: ","")
                     b = urllib.quote(a)
-                    zz7.sendText(msg.to,"Sedang Mencari...")
-                    zz7.sendText(msg.to, "https://www.google.com/" + b)
-                    zz7.sendText(msg.to,"Itu Dia Linknya. . .")     
+                    vipro.sendText(msg.to,"Sedang Mencari...")
+                    vipro.sendText(msg.to, "https://www.google.com/" + b)
+                    vipro.sendText(msg.to,"Itu Dia Linknya. . .")     
 
 
             elif "Details group: " in msg.text:
                 if msg.from_ in admin:
                     gid = msg.text.replace("Details group: ","")
                     if gid in [""," "]:
-                        zz7.sendText(msg.to,"Grup id tidak valid")
+                        vipro.sendText(msg.to,"Grup id tidak valid")
                     else:
                         try:
-                            groups = zz7.getGroup(gid)
+                            groups = vipro.getGroup(gid)
                             if groups.members is not None:
                                 members = str(len(groups.members))
                             else:
@@ -3549,49 +3543,49 @@ def bot(op):
                             else:
                                 pendings = "0"
                             h = "[" + groups.name + "]\n -+GroupID : " + gid + "\n -+Members : " + members + "\n -+MembersPending : " + pendings + "\n -+Creator : " + groups.creator.displayName + "\n -+GroupPicture : http://dl.profile.line.naver.jp/" + groups.pictureStatus
-                            zz7.sendText(msg.to,h)
+                            vipro.sendText(msg.to,h)
                         except Exception as error:
-                            zz7.sendText(msg.to,(error))
+                            vipro.sendText(msg.to,(error))
             
             elif "Cancel invite: " in msg.text:
                 if msg.from_ in admin:
                     gids = msg.text.replace("Cancel invite: ","")
-                    gid = zz7.getGroup(gids)
+                    gid = vipro.getGroup(gids)
                     for i in gid:
                         if i is not None:
                             try:
-                                zz7.rejectGroupInvitation(i)
+                                vipro.rejectGroupInvitation(i)
                             except:
-                                zz7.sendText(msg.to,"Error!")
+                                vipro.sendText(msg.to,"Error!")
                                 break
                         else:
                             break
                     if gid is not None:
-                        zz7.sendText(msg.to,"Berhasil tolak undangan dari grup " + gid.name)
+                        vipro.sendText(msg.to,"Berhasil tolak undangan dari grup " + gid.name)
                     else:
-                        zz7.sendText(msg.to,"Grup tidak ditemukan")
+                        vipro.sendText(msg.to,"Grup tidak ditemukan")
             
             elif msg.text in ["Acc invite"]:
                 if msg.from_ in admin:
-                    gid = zz7.getGroupIdsInvited()
+                    gid = vipro.getGroupIdsInvited()
                     _list = ""
                     for i in gid:
                         if i is not None:
-                            gids = zz7.getGroup(i)
+                            gids = vipro.getGroup(i)
                             _list += gids.name
-                            zz7.acceptGroupInvitation(i)
+                            vipro.acceptGroupInvitation(i)
                         else:
                             break
                     if gid is not None:
-                        zz7.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
+                        vipro.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
                     else:
-                        zz7.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
+                        vipro.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
 
 
             elif "Gif gore" in msg.text:
             	gif = ("https://media.giphy.com/media/l2JHVsQiOZrNMGzYs/giphy.gif","https://media.giphy.com/media/OgltQ2hbilzJS/200w.gif")
                 gore = random.choice(gif)
-                zz7.sendGifWithURL(msg.to,gore)
+                vipro.sendGifWithURL(msg.to,gore)
                 
 
                 
@@ -3604,10 +3598,10 @@ def bot(op):
                 for target in targets:
                     try:
                         mimic["target"][target] = True
-                        zz7.sendText(msg.to,"Target ditambahkan!")
+                        vipro.sendText(msg.to,"Target ditambahkan!")
                         break
                     except:
-                        zz7.sendText(msg.to,"Fail !")
+                        vipro.sendText(msg.to,"Fail !")
                         break
                     
             elif ("Micdel " in msg.text):
@@ -3619,47 +3613,47 @@ def bot(op):
                 for target in targets:
                     try:
                         del mimic["target"][target]
-                        zz7.sendText(msg.to,"Target dihapuskan!")
+                        vipro.sendText(msg.to,"Target dihapuskan!")
                         break
                     except:
-                        zz7.sendText(msg.to,"Fail !")
+                        vipro.sendText(msg.to,"Fail !")
                         break
                     
             elif msg.text in ["Miclist"]:
                         if mimic["target"] == {}:
-                            zz7.sendText(msg.to,"Nothing")
+                            vipro.sendText(msg.to,"Nothing")
                         else:
                             mc = "Target Mimic User:\n"
                             for mi_d in mimic["target"]:
-                                mc += "?? "+zz7.getContact(mi_d).displayName + "\n"
-                            zz7.sendText(msg.to,mc)
+                                mc += "?? "+vipro.getContact(mi_d).displayName + "\n"
+                            vipro.sendText(msg.to,mc)
 
             elif "Mimic target " in msg.text:
                         if mimic["copy"] == True:
                             siapa = msg.text.replace("Mimic target ","")
                             if siapa.rstrip(' ') == "me":
                                 mimic["copy2"] = "me"
-                                zz7.sendText(msg.to,"Mimic change to me")
+                                vipro.sendText(msg.to,"Mimic change to me")
                             elif siapa.rstrip(' ') == "target":
                                 mimic["copy2"] = "target"
-                                zz7.sendText(msg.to,"Mimic change to target")
+                                vipro.sendText(msg.to,"Mimic change to target")
                             else:
-                                zz7.sendText(msg.to,"I dont know")
+                                vipro.sendText(msg.to,"I dont know")
             
             elif "Mimic " in msg.text:
                 cmd = msg.text.replace("Mimic ","")
                 if cmd == "on":
                     if mimic["status"] == False:
                         mimic["status"] = True
-                        zz7.sendText(msg.to,"Reply Message on")
+                        vipro.sendText(msg.to,"Reply Message on")
                     else:
-                        zz7.sendText(msg.to,"Sudah on")
+                        vipro.sendText(msg.to,"Sudah on")
                 elif cmd == "off":
                     if mimic["status"] == True:
                         mimic["status"] = False
-                        zz7.sendText(msg.to,"Reply Message off")
+                        vipro.sendText(msg.to,"Reply Message off")
                     else:
-                        zz7.sendText(msg.to,"Sudah off")
+                        vipro.sendText(msg.to,"Sudah off")
 
 
 
@@ -3673,12 +3667,12 @@ def bot(op):
 
 while True:
     try:
-        Ops = zz7.fetchOps(zz7.Poll.rev, 5)
+        Ops = vipro.fetchOps(vipro.Poll.rev, 5)
     except EOFError:
-        raise Exception("It might be wrong revision\n" + str(zz7.Poll.rev))
+        raise Exception("It might be wrong revision\n" + str(vipro.Poll.rev))
 
     for Op in Ops:
         if (Op.type != OpType.END_OF_OPERATION):
-            zz7.Poll.rev = max(zz7.Poll.rev, Op.revision)
+            vipro.Poll.rev = max(vipro.Poll.rev, Op.revision)
             bot(Op)
 
