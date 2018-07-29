@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#zz7_Bot
+#Vipro Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
@@ -11,7 +11,7 @@ from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
 vipro = LINETCR.LINE()
-vipro.login(token='Ev29n3g4i9STztEd9917.hCYF094H2hUBauqaoqGbLW.8Pjh0IHZm5caZd7huMvWEf6O+gGg95M92OoO1vw54n8=')
+vipro.login(token='EvsW6hJWoyRTAZjwks40.zV5twRAlsQfcM8axgwo30a.nAuzULZn6cysXGTSns3uO/LCbudRO8fRUfU5+1fzbl4=')
 vipro.loginResult()
 
 print "zz7Bot-Ciee Ciee Login\n\n=====[AWAS JANGAN SONGONG LOE]====="
@@ -20,216 +20,216 @@ sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ S E L F ۩۞۩♅ 
+║   ۩۞۩ S E L F ۩۞۩ 
 ╠═════════════════════════
-╠✪〘Hi〙
-╠✪〘Me〙
-╠✪〘Mymid〙
-╠✪〘Mid @〙
-╠✪〘SearchID (ID LINE)〙
-╠✪〘Checkdate (DD/MM/YY)〙
-╠✪〘Kalender〙
-╠✪〘Steal contact〙
-╠✪〘Pp @〙
-╠✪〘Cover @〙
-╠✪〘Auto like〙
-╠✪〘Scbc Text〙
-╠✪〘Cbc Text〙
-╠✪〘Gbc Text〙
-╠✪〘Bio @〙
-╠✪〘Info @〙
-╠✪〘Name @〙
-╠✪〘Profile @〙
-╠✪〘Contact @〙
-╠✪〘Getvid @〙
-╠✪〘Friendlist〙
-╠✪〘Micadd @〙
-╠✪〘Micdel @〙
-╠✪〘Miclist〙
+╠╰☆╮〘Hi〙
+╠╰☆╮〘Me〙
+╠╰☆╮〘Mymid〙
+╠╰☆╮〘Mid @〙
+╠╰☆╮〘SearchID (ID LINE)〙
+╠╰☆╮〘Checkdate (DD/MM/YY)〙
+╠╰☆╮〘Kalender〙
+╠╰☆╮〘Steal contact〙
+╠╰☆╮〘Pp @〙
+╠╰☆╮〘Cover @〙
+╠╰☆╮〘Auto like〙
+╠╰☆╮〘Scbc Text〙
+╠╰☆╮〘Cbc Text〙
+╠╰☆╮〘Gbc Text〙
+╠╰☆╮〘Bio @〙
+╠╰☆╮〘Info @〙
+╠╰☆╮〘Name @〙
+╠╰☆╮〘Profile @〙
+╠╰☆╮〘Contact @〙
+╠╰☆╮〘Getvid @〙
+╠╰☆╮〘Friendlist〙
+╠╰☆╮〘Micadd @〙
+╠╰☆╮〘Micdel @〙
+╠╰☆╮〘Miclist〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
 botMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ B O T ۩۞۩♅
+║   ۩۞۩ B O T ۩۞۩
 ╠═════════════════════════
-╠✪〘Absen〙
-╠✪〘Respon〙
-╠✪〘Runtime〙
-╠✪〘copy @〙
-╠✪〘Copycontact〙
-╠✪〘Mybackup〙
-╠✪〘Mybio (Text)〙
-╠✪〘Myname:〙
-╠✪〘@bye〙
-╠✪〘Bot on/off〙
+╠╰☆╮〘Absen〙
+╠╰☆╮〘Respon〙
+╠╰☆╮〘Runtime〙
+╠╰☆╮〘copy @〙
+╠╰☆╮〘Copycontact〙
+╠╰☆╮〘Mybackup〙
+╠╰☆╮〘Mybio (Text)〙
+╠╰☆╮〘Myname (Text)〙
+╠╰☆╮〘@bye〙
+╠╰☆╮〘Bot on/off〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
 mediaMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ M E D I A ۩۞۩♅
+║   ۩۞۩ M E D I A ۩۞۩
 ╠═════════════════════════
-╠✪〘Gift〙
-╠✪〘Giftbycontact〙
-╠✪〘Gif gore〙
-╠✪〘Google (Text)〙
-╠✪〘Playstore NamaApp〙
-╠✪〘Fancytext Text〙
-╠✪〘musik Judul-Penyanyi〙
-╠✪〘lirik Judul-Penyanyi〙
-╠✪〘musrik Judul-Penyanyi〙
-╠✪〘ig UrsnameInstagram〙
-╠✪〘Checkig UrsnameInstagram〙
-╠✪〘apakah Text (Kerang Ajaib)〙
-╠✪〘kapan Text (Kerang Ajaib)〙
-╠✪〘hari Text (Kerang Ajaib)〙
-╠✪〘berapa Text (Kerang Ajaib)〙
-╠✪〘berapakah Text〙
-╠✪〘Youtube Judul Video〙
-╠✪〘Youtubevideo Judul Video〙
-╠✪〘Youtubesearch:0 Judul Video〙
-╠✪〘Image NamaGambar〙
-╠✪〘Say Text〙
-╠✪〘Say-en Text〙
-╠✪〘Say-jp Text〙
-╠✪〘Tr-id Text (Translate En Ke ID〙
-╠✪〘Tr-en Text (Translate ID Ke En〙
-╠✪〘Tr-th Text (Translate ID Ke Th〙
-╠✪〘Id@en Text (Translate ID Ke En〙
-╠✪〘Id@th Text (Translate ID Ke TH〙
-╠✪〘En@id Text (Translate En Ke ID〙
+╠╰☆╮〘Gift〙
+╠╰☆╮〘Giftbycontact〙
+╠╰☆╮〘Gif gore〙
+╠╰☆╮〘Google (Text)〙
+╠╰☆╮〘Playstore NamaApp〙
+╠╰☆╮〘Fancytext Text〙
+╠╰☆╮〘musik Judul-Penyanyi〙
+╠╰☆╮〘lirik Judul-Penyanyi〙
+╠╰☆╮〘musrik Judul-Penyanyi〙
+╠╰☆╮〘ig UrsnameInstagram〙
+╠╰☆╮〘Checkig UrsnameInstagram〙
+╠╰☆╮〘apakah Text (Kerang Ajaib)〙
+╠╰☆╮〘kapan Text (Kerang Ajaib)〙
+╠╰☆╮〘hari Text (Kerang Ajaib)〙
+╠╰☆╮〘berapa Text (Kerang Ajaib)〙
+╠╰☆╮〘berapakah Text〙
+╠╰☆╮〘Youtube Judul Video〙
+╠╰☆╮〘Youtubevideo Judul Video〙
+╠╰☆╮〘Youtubesearch:0 Judul Video〙
+╠╰☆╮〘Image NamaGambar〙
+╠╰☆╮〘Say Text〙
+╠╰☆╮〘Say-en Text〙
+╠╰☆╮〘Say-jp Text〙
+╠╰☆╮〘Tr-id Text (Translate En Ke ID〙
+╠╰☆╮〘Tr-en Text (Translate ID Ke En〙
+╠╰☆╮〘Tr-th Text (Translate ID Ke Th〙
+╠╰☆╮〘Id@en Text (Translate ID Ke En〙
+╠╰☆╮〘Id@th Text (Translate ID Ke TH〙
+╠╰☆╮〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
 groupMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ G R O U P ۩۞۩♅
+║   ۩۞۩ G R O U P ۩۞۩
 ╠═════════════════════════
-╠✪〘Welcome〙
-╠✪〘Say welcome〙
-╠✪〘Invite creator〙
-╠✪〘Setview/Cctv〙
-╠✪〘Viewseen/Ciduk〙
-╠✪〘Gn: (NamaGroup)〙
-╠✪〘Tag all〙
-╠✪〘lurk on/off〙
-╠✪〘lurkers〙
-╠✪〘Recover〙
-╠✪〘Cancel〙
-╠✪〘Cancelall〙
-╠✪〘Gcreator〙
-╠✪〘Ginfo〙
-╠✪〘Gurl〙
-╠✪〘List group〙
-╠✪〘Pict group: (NamaGroup)〙
-╠✪〘Spam: (Text)〙
-╠✪〘Add all〙
-╠✪〘Kick: (Mid)〙
-╠✪〘Invite: (Mid)〙
-╠✪〘Invite〙
-╠✪〘Memlist〙
-╠✪〘Getgroup image〙
-╠✪〘Urlgroup Image〙
+╠╰☆╮〘Welcome〙
+╠╰☆╮〘Say welcome〙
+╠╰☆╮〘Invite creator〙
+╠╰☆╮〘Setview/Cctv〙
+╠╰☆╮〘Viewseen/Ciduk〙
+╠╰☆╮〘Gn: (NamaGroup)〙
+╠╰☆╮〘Tag all〙
+╠╰☆╮〘lurk on/off〙
+╠╰☆╮〘lurkers〙
+╠╰☆╮〘Recover〙
+╠╰☆╮〘Cancel〙
+╠╰☆╮〘Cancelall〙
+╠╰☆╮〘Gcreator〙
+╠╰☆╮〘Ginfo〙
+╠╰☆╮〘Gurl〙
+╠╰☆╮〘List group〙
+╠╰☆╮〘Pict group: (NamaGroup)〙
+╠╰☆╮〘Spam: (Text)〙
+╠╰☆╮〘Add all〙
+╠╰☆╮〘Kick: (Mid)〙
+╠╰☆╮〘Invite: (Mid)〙
+╠╰☆╮〘Invite〙
+╠╰☆╮〘Memlist〙
+╠╰☆╮〘Getgroup image〙
+╠╰☆╮〘Urlgroup Image〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
-vip="u1dcc9fd3de21d87b9b01440039080197"
+vip="u66fe535ab68b4aa1429bc0171963b7d0 "
 
 setMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ S E T ۩۞۩♅
+║   ۩۞۩ S E T ۩۞۩
 ╠═════════════════════════
-╠✪〘Notif on/off〙
-╠✪〘Mimic on/off〙
-╠✪〘Url on/off〙
-╠✪〘Alwaysread on/off〙
-╠✪〘Sider on/off〙
-╠✪〘Contact on/off〙
-╠✪〘Sticker on〙
-╠✪〘Simisimi on/off〙
+╠╰☆╮〘Notif on/off〙
+╠╰☆╮〘Mimic on/off〙
+╠╰☆╮〘Url on/off〙
+╠╰☆╮〘Alwaysread on/off〙
+╠╰☆╮〘Sider on/off〙
+╠╰☆╮〘Contact on/off〙
+╠╰☆╮〘Sticker on〙
+╠╰☆╮〘Simisimi on/off〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
 creatorMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ C R E A T O R ۩۞۩♅
+║   ۩۞۩ C R E A T O R ۩۞۩
 ╠═════════════════════════
-╠✪〘Crash〙
-╠✪〘Kickall〙
-╠✪〘Bc: (Text)〙
-╠✪〘Join group: (NamaGroup〙
-╠✪〘Leave group: (NamaGroup〙
-╠✪〘Leave all group〙
-╠✪〘Tag on/off〙
-╠✪〘Bot restart〙
-╠✪〘Turn off〙
+╠╰☆╮〘Crash〙
+╠╰☆╮〘Kickall〙
+╠╰☆╮〘Bc: (Text)〙
+╠╰☆╮〘Join group: (NamaGroup〙
+╠╰☆╮〘Leave group: (NamaGroup〙
+╠╰☆╮〘Leave all group〙
+╠╰☆╮〘Tag on/off〙
+╠╰☆╮〘Bot restart〙
+╠╰☆╮〘Turn off〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
 adminMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ A D M I N ۩۞۩♅
+║   ۩۞۩ A D M I N ۩۞۩
 ╠═════════════════════════
-╠✪〘Allprotect on/off〙
-╠✪〘Ban〙
-╠✪〘Unban〙
-╠✪〘Ban @〙
-╠✪〘Unban @〙
-╠✪〘Ban list〙
-╠✪〘Clear ban〙
-╠✪〘Kill〙
-╠✪〘Kick @〙
-╠✪〘Set member: (Jumblah)〙
-╠✪〘Ban group: (NamaGroup〙
-╠✪〘Del ban: (NamaGroup〙
-╠✪〘List ban〙
-╠✪〘Kill ban〙
-╠✪〘Glist〙
-╠✪〘Glistmid〙
-╠✪〘Details group: (Gid)〙
-╠✪〘Cancel invite: (Gid)〙
-╠✪〘Invitemeto: (Gid)〙
-╠✪〘Acc invite〙
-╠✪〘Removechat〙
-╠✪〘Qr on/off〙
-╠✪〘Autokick on/off〙
-╠✪〘Autocancel on/off〙
-╠✪〘Invitepro on/off〙
-╠✪〘Join on/off〙
-╠✪〘Joincancel on/off〙
-╠✪〘Respon1 on/off〙
-╠✪〘Respon2 on/off〙
-╠✪〘Respon3 on/off〙
-╠✪〘Responkick on/off〙
+╠╰☆╮〘Allprotect on/off〙
+╠╰☆╮〘Ban〙
+╠╰☆╮〘Unban〙
+╠╰☆╮〘Ban @〙
+╠╰☆╮〘Unban @〙
+╠╰☆╮〘Ban list〙
+╠╰☆╮〘Clear ban〙
+╠╰☆╮〘Kill〙
+╠╰☆╮〘Kick @〙
+╠╰☆╮〘Set member: (Jumblah)〙
+╠╰☆╮〘Ban group: (NamaGroup〙
+╠╰☆╮〘Del ban: (NamaGroup〙
+╠╰☆╮〘List ban〙
+╠╰☆╮〘Kill ban〙
+╠╰☆╮〘Glist〙
+╠╰☆╮〘Glistmid〙
+╠╰☆╮〘Details group: (Gid)〙
+╠╰☆╮〘Cancel invite: (Gid)〙
+╠╰☆╮〘Invitemeto: (Gid)〙
+╠╰☆╮〘Acc invite〙
+╠╰☆╮〘Removechat〙
+╠╰☆╮〘Qr on/off〙
+╠╰☆╮〘Autokick on/off〙
+╠╰☆╮〘Autocancel on/off〙
+╠╰☆╮〘Invitepro on/off〙
+╠╰☆╮〘Join on/off〙
+╠╰☆╮〘Joincancel on/off〙
+╠╰☆╮〘Respon1 on/off〙
+╠╰☆╮〘Respon2 on/off〙
+╠╰☆╮〘Respon3 on/off〙
+╠╰☆╮〘Responkick on/off〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
-teamMessage ="""👽👽👽WELCOME👽👽👽
+teamMessage ="""╰☆╮WELCOME╰☆╮
 ┏━┳┳┳┓┏┳┳┳┳┳┓┏┳┳┓
 ┃zz7Bot┃   BANTAI PECUNDANG ┃
 ┗ⓞ━━ⓞ┻━┻ⓞ━ⓞ┻┻ⓞ━ⓞ╯
-👽line.me/ti/p/ricco1311👽
+╰☆╮line.me/ti/p/ricco1311╰☆╮
 .        (҂`_´)
          <,︻╦̵̵̿╤━ ҉     ~  •
 █۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
@@ -242,7 +242,7 @@ teamMessage ="""👽👽👽WELCOME👽👽👽
 ║╚═╝║╔╗║╚╣╔╗║║║║
 ╚═══╩╝╚╩═╩╝╚╩╩╩╝
 ────────────────────────────
-👽        (҂`_´)
+╰☆╮    (҂`_´)
          <,︻╦̵̵̿╤─ ҉     ~  •
 █۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
 ▂▄▅█████████▅▄▃▂…
@@ -250,40 +250,40 @@ teamMessage ="""👽👽👽WELCOME👽👽👽
 ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙
 ────────────────────────────
 
-👽DILARANG BANYAK BACOT KEPADA KAMI👽
-👽BECAUSE WE ARE COMBAT TEAM👽
+╰☆╮DILARANG BANYAK BACOT KEPADA KAMI╰☆╮
+╰☆╮BECAUSE WE ARE COMBAT TEAM╰☆╮
 ────────────────────────────
-🇮🇩 👽 🇮🇩 👽 🇮🇩 👽 🇮🇩 
-🇮🇩 ┏━┳┳┳━┳┳┓
-🇮🇩 ┃━┫┃┃┏┫━┫
-🇮🇩 ┃┏┫┃┃┗┫┃┃
-🇮🇩 ┗┛┗━┻━┻┻┛
-🇮🇩 ┏┳┳━┳┳┓ 
-🇮🇩 ┃┃┃┃┃┃┃
-🇮🇩 ┣┓┃┃┃┃┃
-🇮🇩 ┗━┻━┻━┛
-🇮🇩 👽 🇮🇩 👽 🇮🇩 👽 🇮🇩
+╰☆╮╰☆╮╰☆╮╰☆╮╰☆╮ 
+╰☆╮ ┏━┳┳┳━┳┳┓
+╰☆╮ ┃━┫┃┃┏┫━┫
+╰☆╮ ┃┏┫┃┃┗┫┃┃
+╰☆╮ ┗┛┗━┻━┻┻┛
+╰☆╮ ┏┳┳━┳┳┓ 
+╰☆╮ ┃┃┃┃┃┃┃
+╰☆╮ ┣┓┃┃┃┃┃
+╰☆╮ ┗━┻━┻━┛
+╰☆╮╰☆╮╰☆╮╰☆╮╰☆╮
 ━━━━━━━━━━━━━━━━━━━━━━━━━ """
 
 helpMessage ="""
 ╔═════════════════════════
-║   ♅۩۞۩ H E L P ۩۞۩♅
+║   ۩۞۩ H E L P ۩۞۩
 ╠═════════════════════════
-╠✪〘Help self〙
-╠✪〘Help bot〙
-╠✪〘Help group〙
-╠✪〘Help set〙
-╠✪〘Help media〙
-╠✪〘Help admin〙
-╠✪〘Help creator〙
-╠✪〘Owner〙
-╠✪〘Speed〙
-╠✪〘Speed test〙
-╠✪〘Status〙
-╠✪〘Team〙
+╠╰☆╮〘Help self〙
+╠╰☆╮〘Help bot〙
+╠╰☆╮〘Help group〙
+╠╰☆╮〘Help set〙
+╠╰☆╮〘Help media〙
+╠╰☆╮〘Help admin〙
+╠╰☆╮〘Help creator〙
+╠╰☆╮〘Owner〙
+╠╰☆╮〘Speed〙
+╠╰☆╮〘Speed test〙
+╠╰☆╮〘Status〙
+╠╰☆╮〘Team〙
 ╠═════════════════════════
-║      👽By : zz7ComBat👽
-║  👽line.me/ti/p/ricco1311👽
+║      ┌▬By : ZeroZeveN▬┐
+║  ┌▬line.me/ti/p/ricco1311▬┐
 ╚═════════════════════════
 """
 
@@ -291,8 +291,8 @@ helpMessage ="""
 KAC=[vipro]
 mid = vipro.getProfile().mid
 Bots=[mid]
-Creator=["u1dcc9fd3de21d87b9b01440039080197"]
-admin=["u1dcc9fd3de21d87b9b01440039080197"]
+Creator=["u66fe535ab68b4aa1429bc0171963b7d0"]
+admin=["u66fe535ab68b4aa1429bc0171963b7d0"]
 
 contact = vipro.getProfile()
 backup1 = vipro.getProfile()
@@ -628,15 +628,15 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        vipro.sendText(op.param1, "Eehh" + "♠♠ " + Name + " ♠♠" + "\nNgapain Ngintip2??\nSini Chat\nDemen Banget Loe Ngintipin Janda")
+                                        vipro.sendText(op.param1, "Waduh Ada " + "╩╦ " + Name + " ╦╩" + "\nLagi Ngintip\nSini Ikutan Chat Bos Jangan Sider Mulu(-__-)   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
-                                        vipro.sendText(op.param1, "Yaeellaahh" + "♠♠ " + Name + " ♠♠" + "\nKalo Mau Cari Tikungan Jangan Disini\nDisini Yang Ada Jones Kayak Loe\nYang Doyannya Ngintip Doang")
+                                        vipro.sendText(op.param1, "Hallo Kak " + "╩╦ " + Name + " ╦╩" + "\nGimana Kabarnya...Udah Gak Baper Kan??\nSini Ikutan Chat Sama Kita(-__-)   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    vipro.sendText(op.param1, "Waduuuhhh ada" + "♠♠ " + Name + " ♠♠" + "\nNongol\nKabur Aah Daripada Dibajak Tikel")
+                                    vipro.sendText(op.param1, "Haii Jomblo Permanen " + "╩╦ " + Name + " ╦╩" + "\nUdah Mandi Belum???\nCepetan Mandi Pake Rinso Biar Gak Jomblo Terus...   ")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -845,7 +845,7 @@ def bot(op):
             ginfo = vipro.getGroup(op.param1)
             contact = vipro.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            vipro.sendText(op.param1,"Hallo " + vipro.getContact(op.param2).displayName + "\nWelcome To ╩╦♠ " + str(ginfo.name) + " ♠╦╩" + "\nIni Rumah Kami Yang Sederhana\nSemoga Betah Disini ^_^")
+            vipro.sendText(op.param1,"Hallo " + vipro.getContact(op.param2).displayName + "\nWelcome To ╩╦ " + str(ginfo.name) + " ╦╩" + "\nIni Rumah Kami Yang Sederhana\nSemoga Betah Disini ^_^")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             vipro.sendMessage(c)  
@@ -871,7 +871,7 @@ def bot(op):
             vipro.sendMessage(d)                  
             print "MEMBER HAS LEFT THE GROUP"
             
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
             
             if msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
@@ -910,7 +910,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk Anu",cName + " Ngapain Ngetag? Mau Dicipok?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Japri Aja","Dia Lagi Nanggung", cName + " Ngapain Sih Tag Gue Trus?","Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gue " + cName, "Loe Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, lagi Modol!"]
+                     balas = ["Dilarang Tag!! Lagi Sibuk Cari Janda Bodong",cName + " Ngapain Ngetag? Mau Dicipok?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Japri Aja","Gue Lagi Nanggung", cName + " Ngapain Sih Tag Gue Trus?","Keur Nonggeng\nTong Di Tag " + cName, "Jangan Suka Tag Gue " + cName, "Loe Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, lagi Modol!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -924,20 +924,20 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = vipro.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Gda Kerjaan Nih Jones, Ngetag Mulu!","Nggak Usah Tag-Tag! Gue Tau Loe Kangen Berat Ke Gue","Woii " + cName + " Jangan Ngetag, Lagi Enak Nih!"]
+                    balas = ["Gda Kerjaan Nih Jones, Ngetag Mulu!","Yang Nge Tag Gue Sumpahin Pantatnya Petot!!","Nggak Usah Tag-Tag! Gue Tau Loe Kangen Berat Ke Gue","Woii " + cName + " Jangan Ngetag, Lagi Enak Nih!"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                     mentionees = mention['MENTIONEES']
                     for mention in mentionees:
-                                if mention['M'] in Bots:
+                           if mention['M'] in Bots:
                                   vipro.sendText(msg.to,ret_)
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
-                                  "STKID": "20001316",
-                                  "STKPKGID": "1582380",
-                                  "STKVER": "1" }
+                                                       "STKID": "20001316",
+                                                       "STKPKGID": "1582380",
+                                                       "STKVER": "1" }
                                   vipro.sendMessage(msg)                                
                                   break
                               
@@ -971,7 +971,7 @@ def bot(op):
                               
             if msg.text in ["Bot on"]:
                 wait["Bot"] = True
-                vipro.sendText(msg.to,"Siap Lapor Kalo Ada Yang Nongol Bos.")  
+                vipro.sendText(msg.to,"Siap Lempar Bata Kalo Ada Yang Nongol Bos")  
 
         if op.type == 25:
           if wait["Bot"] == True:    
@@ -1229,10 +1229,6 @@ def bot(op):
                                       vipro.sendText(msg.to,"Limit Invite")
                                       wait['invite'] = False
                                       break
-									  
-	    elif msg.text in ["Team","team"]:
-            	 vipro.sendText(msg.to,teamMessage)               
-                 vipro.sendText(msg.to, "My zz7Combat Team")
                                   
  
             elif msg.text in ["Key creator","help creator","Help creator"]:
@@ -1252,7 +1248,7 @@ def bot(op):
 
             elif msg.text in ["Key set","help set","Help set"]:
                 vipro.sendText(msg.to,setMessage)
-				
+
             elif msg.text in ["Key media","help media","Help media"]:
                 vipro.sendText(msg.to,mediaMessage)
                 
@@ -1641,37 +1637,37 @@ def bot(op):
 
             elif msg.text in ["Status"]:
                 md = ""
-		if wait["Sambutan"] == True: md+="╠👽✔️ Sambutan : On\n"
-		else:md+="╠👽❌ Sambutan : Off\n"
-		if wait["AutoJoin"] == True: md+="╠👽✔️ Auto Join : On\n"
-                else: md +="╠👽❌ Auto Join : Off\n"
-		if wait["AutoJoinCancel"] == True: md+="╠👽✔️ Auto Join Cancel : On\n"
-                else: md +="╠👽❌ Auto Join Cancel : Off\n"                
-		if wait["Contact"] == True: md+="╠👽✔️ Info Contact : On\n"
-		else: md+="╠👽❌ Info Contact : Off\n"
-                if wait["AutoCancel"] == True:md+="╠👽✔️ Auto Cancel : On\n"
-                else: md+= "╠👽❌ Auto Cancel : Off\n"
-                if wait["inviteprotect"] == True:md+="╠👽✔️ Invite Protect : On\n"
-                else: md+= "╠👽❌ Invite Protect : Off\n"                
-		if wait["Qr"] == True: md+="╠👽✔️ Qr Protect : On\n"
-		else:md+="╠👽❌ Qr Protect : Off\n"
-		if wait["AutoKick"] == True: md+="╠👽✔️ Auto Kick : On\n"
-		else:md+="╠👽❌ Auto Kick : Off\n"
-		if wait["alwaysRead"] == True: md+="╠👽✔️ Always Read : On\n"
-		else:md+="╠👽❌ Always Read: Off\n"
-		if wait["detectMention"] == True: md+="╠👽✔️ Auto Respon1 : On\n"
-		else:md+="╠👽❌ Auto Respon1 : Off\n"		
-		if wait["detectMention2"] == True: md+="╠👽✔️ Auto Respon2 : On\n"
-		else:md+="╠👽❌ Auto Respon2 : Off\n"	
-		if wait["detectMention3"] == True: md+="╠👽✔️ Auto Respon3 : On\n"
-		else:md+="╠👽❌ Auto Respon3 : Off\n"			
-		if wait["kickMention"] == True: md+="╠👽✔️ Auto Respon Kick : On\n"
-		else:md+="╠👽❌ Auto Respon Kick : Off\n"				
-		if wait["Sider"] == True: md+="╠👽✔️ Auto Sider : On\n"
-		else:md+="╠👽❌ Auto Sider: Off\n"	
-		if wait["Simi"] == True: md+="╠👽✔️ Simisimi : On\n"
-		else:md+="╠👽❌ Simisimi: Off\n"		
-                vipro.sendText(msg.to,"╔═════════════════════════\n""║         👽۩۞۩ S T A T U S ۩۞۩👽\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
+		if wait["Sambutan"] == True: md+="╠➩✔️ Sambutan : On\n"
+		else:md+="╠➩❌ Sambutan : Off\n"
+		if wait["AutoJoin"] == True: md+="╠➩✔️ Auto Join : On\n"
+                else: md +="╠➩❌ Auto Join : Off\n"
+		if wait["AutoJoinCancel"] == True: md+="╠➩✔️ Auto Join Cancel : On\n"
+                else: md +="╠➩❌ Auto Join Cancel : Off\n"                
+		if wait["Contact"] == True: md+="╠➩✔️ Info Contact : On\n"
+		else: md+="╠➩❌ Info Contact : Off\n"
+                if wait["AutoCancel"] == True:md+="╠➩✔️ Auto Cancel : On\n"
+                else: md+= "╠➩❌ Auto Cancel : Off\n"
+                if wait["inviteprotect"] == True:md+="╠➩✔️ Invite Protect : On\n"
+                else: md+= "╠➩❌ Invite Protect : Off\n"                
+		if wait["Qr"] == True: md+="╠➩✔️ Qr Protect : On\n"
+		else:md+="╠➩❌ Qr Protect : Off\n"
+		if wait["AutoKick"] == True: md+="╠➩✔️ Auto Kick : On\n"
+		else:md+="╠➩❌ Auto Kick : Off\n"
+		if wait["alwaysRead"] == True: md+="╠➩✔️ Always Read : On\n"
+		else:md+="╠➩❌ Always Read: Off\n"
+		if wait["detectMention"] == True: md+="╠➩✔️ Auto Respon1 : On\n"
+		else:md+="╠➩❌ Auto Respon1 : Off\n"		
+		if wait["detectMention2"] == True: md+="╠➩✔️ Auto Respon2 : On\n"
+		else:md+="╠➩❌ Auto Respon2 : Off\n"	
+		if wait["detectMention3"] == True: md+="╠➩✔️ Auto Respon3 : On\n"
+		else:md+="╠➩❌ Auto Respon3 : Off\n"			
+		if wait["kickMention"] == True: md+="╠➩✔️ Auto Respon Kick : On\n"
+		else:md+="╠➩❌ Auto Respon Kick : Off\n"				
+		if wait["Sider"] == True: md+="╠➩✔️ Auto Sider : On\n"
+		else:md+="╠➩❌ Auto Sider: Off\n"	
+		if wait["Simi"] == True: md+="╠➩✔️ Simisimi : On\n"
+		else:md+="╠➩❌ Simisimi: Off\n"		
+                vipro.sendText(msg.to,"╔═════════════════════════\n""║         ۩۞۩ S T A T U S ۩۞۩\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
 
 
             elif msg.text in ["Gift","gift"]:
@@ -3064,13 +3060,14 @@ def bot(op):
                         vipro.updateProfile(profile)
                         vipro.sendText(msg.to,"Done")
 
-            elif "Myname: " in msg.text:
-                string = msg.text.replace("Myname: ","")
-                if len(string.decode('utf-8')) <= 10000000000:
-                    profile = cl.getProfile()
-                    profile.displayName = string
-                    cl.updateProfile(profile)
-                    cl.sendText(msg.to,"Changed " + string + "")
+            elif "Myname " in msg.text:
+		if msg.from_ in Creator:
+                    string = msg.text.replace("Myname ","")
+                    if len(string.decode('utf-8')) <= 5000:
+                        profile = vipro.getProfile()
+                        profile.displayName = string
+                        vipro.updateProfile(profile)
+                        vipro.sendText(msg.to,"Done")
 
 
 
@@ -3083,12 +3080,9 @@ def bot(op):
                 msg.contentMetadata = {'mid': msg.from_}
                 vipro.sendMessage(msg)
 				
-            elif msg.text in ["Myname:"]:
-                    h = cl.getContact(mid)
-                    cl.sendText(msg.to,"===[DisplayName]===\n" + h.displayName)
-				
-	    elif msg.text in ["Kibaran","My zz7Combat Team"]:
+            elif msg.text in ["Team","My zz7Combat Team"]:
                    msg.contentType = 13
+	           vipro.sendText(msg.to,teamMessage)               
                    fams1 = "uc00a7fc61069447f8db907f40233fb34"
                    fams2 = "u1dcc9fd3de21d87b9b01440039080197"
 		   fams3 = "u5680d1c1857163e9d1372a40b18c587a"
@@ -3149,7 +3143,7 @@ def bot(op):
 	           msg.contentMetadata = {'mid': fams19}
                    random.choice(KAC).sendMessage(msg)
 		   random.choice(KAC).sendText(msg.to,"👽♅LOE SONGONG BERARTI LOE SIAP ANCUR♅👽SALAM JARI TENGAH BUAT PECUNDANG♅👽")
-		   
+
             elif "apakah " in msg.text:
                 apk = msg.text.replace("apakah ","")
                 rnd = ["Ya","Tidak","Bisa Jadi","Mungkin"]
