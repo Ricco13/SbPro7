@@ -306,7 +306,7 @@ responsename = vipro.getProfile().displayName
 wait = {
     "LeaveRoom":True,
     "Bot":True,
-    "AutoJoin":True,
+    "AutoJoin":False,
     "AutoJoinCancel":False,
     "memberscancel":30,
     "Members":1,
@@ -318,8 +318,8 @@ wait = {
     'gift':{},
     'copy':{},    
     'likeOn':{},
-    'detectMention':False,
-    'detectMention2':True,
+    'detectMention':True,
+    'detectMention2':False,
     'detectMention3':False,
     'kickMention':False,  
     'sticker':False,  
@@ -628,15 +628,15 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        vipro.sendText(op.param1, "Waduh Ada " + "╩╦ " + Name + " ╦╩" + "\nLagi Ngintip\nSini Ikutan Chat Bos Jangan Sider Mulu(-__-)   ")
+                                        vipro.sendText(op.param1, "Waduh Ada " + "╩╦ " + Name + " ╦╩" + "\nLagi Ngintip\nSini Ikutan Chat Bos Jangan Sider Mulu(-__-)")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
-                                        vipro.sendText(op.param1, "Hallo Kak " + "╩╦ " + Name + " ╦╩" + "\nGimana Kabarnya...Udah Gak Baper Kan??\nSini Ikutan Chat Sama Kita(-__-)   ")
+                                        vipro.sendText(op.param1, "Sue Nih " + "╩╦ " + Name + " ╦╩" + "\nKerjaannya Ngintip Terus\nSini Ikutan Chat Sama Kita(-__-)")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    vipro.sendText(op.param1, "Haii Jomblo Permanen " + "╩╦ " + Name + " ╦╩" + "\nUdah Mandi Belum???\nCepetan Mandi Pake Rinso Biar Gak Jomblo Terus...   ")
+                                    vipro.sendText(op.param1, "Hallo Jones " + "╩╦ " + Name + " ╦╩" + "\nUdah Mandi Belum???\nCepetan Mandi Pake Rinso Biar Gak Bau Comberan Tuh Kelek Loe...")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -910,7 +910,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dilarang Tag!! Lagi Sibuk Cari Janda Bodong",cName + " Ngapain Ngetag? Mau Dicipok?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Japri Aja","Gue Lagi Nanggung", cName + " Ngapain Sih Tag Gue Trus?","Keur Nonggeng\nTong Di Tag " + cName, "Jangan Suka Tag Gue " + cName, "Loe Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, lagi Modol!"]
+                     balas = ["Dilarang Tag!! Lagi Sibuk Kojom Ama Cowok Gue",cName + " Ngapain Ngetag? Mau Di Tabok?",cName + " Nggak Usah Tag-Tag! Kalo Mau Kirim Tikel Langsung Aja","Gue Lagi Nanggung Ama Cowok Gue", cName + " Ngapain Sih Tag Gue Trus?","Keur Nonggeng\nTong Di Tag " + cName, "Jangan Suka Tag Gue Woyy Koplak " + cName, "Loe Siapa Sih SKSD Banget Jadi Orang" + cName + "?", "Ada Perlu Apa Sih " + cName + "?","Woii " + cName + " Jangan Ngetag, lagi Jalan Jalan Ama Cowok Gue!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -924,7 +924,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = vipro.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Gda Kerjaan Nih Jones, Ngetag Mulu!","Yang Nge Tag Gue Sumpahin Pantatnya Petot!!","Nggak Usah Tag-Tag! Gue Tau Loe Kangen Berat Ke Gue","Woii " + cName + " Jangan Ngetag, Lagi Enak Nih!"]
+                    balas = ["Gda Kerjaan Nih Jones, Ngetag Mulu!","Yang Nge Tag Gue Sumpahin Pantatnya Petot!!","Nggak Usah Tag-Tag! Gue Tau Loe Kangen Berat Ke Gue","Woii " + cName + " Jangan Ngetag, Lagi Enak Ama Cowok Gue Nih!"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
